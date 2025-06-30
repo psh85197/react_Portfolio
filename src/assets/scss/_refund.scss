@@ -1,0 +1,162 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+.refund-wrap {
+  .info-guide {
+    @include rem(margin-top, 40);
+    .info-guide-tit {
+      @include f(20, 700, 1.4);
+      color: $color-262626;
+    }
+
+    .info-guide-list {
+      display: flex;
+      @include rem(gap, 24);
+      @include rem(margin-top, 16);
+      li {
+        flex: 50%;
+        @include rem(padding, 24px 32px);
+        background: #f8f9fa;
+        @include rem(border-radius, 20);
+        border: 1px solid $color-f1f3f5;
+        .tit {
+          @include f(20, 700, 1.4);
+        }
+      }
+
+      @include mobile {
+        flex-direction: column; 
+        @include rem(gap, 16);
+        li {
+          @include rem(padding, 20px 20px);
+          .tit {
+            @include f(18, 700, 1.4);
+          }
+
+        }
+      }
+    }
+
+    .link-btn {
+      margin-left: auto;
+      display: inline-flex;
+      width: 100%;
+      justify-content: flex-end;
+      @include rem(margin-top, 16);
+      @include rem(gap, 4);
+      align-items: center;
+      color: $color-495057;
+        &:hover {
+        color: $color-495057;
+      }
+     
+    }
+  }
+
+  .tax-inner .left-bx .hgroup-wrap {
+    @include mobile {
+      @include rem(margin-bottom, 24);
+    }
+  }
+
+  .f40-700-130 {
+    color: $color-212529;
+  }
+
+  .tax-inner .desc-list {
+    @include mobile {
+       @include rem(gap, 4);
+       @include rem(margin-top, 8);
+    }
+  }
+  
+  .tax-inner .right-bx .info-bx {
+    @include rem(padding, 24px 32px 32px);
+    border-bottom-left-radius : 2rem;
+    border-bottom-right-radius : 2rem;
+    @include mobile {
+      @include rem(padding, 20px 20px 24px);
+      border-bottom-left-radius : 1.6rem;
+      border-bottom-right-radius : 1.6rem;
+    }
+  }
+
+  .tax-inner .right-bx .tax-info-bx .info-bx {
+    padding: 0;
+  }
+
+  .tax-inner .right-bx .tax-info-bx .info-bx .info-list {
+    height: auto;
+    @include rem(padding, 32px 32px 40px);
+    @include mobile {
+      @include rem(padding, 20px 20px 24px);
+    }
+  }
+
+
+  .info-bx {
+    @include mobile {
+      @include rem(padding, 20px 20px 24px 20px);
+    }
+  }
+
+  .tax-info-bx .info-bx:first-child {
+    background: $color-effbfc;
+    .info-head {
+      background-color: $color-d6f1f7;
+    }
+  }
+
+  section:nth-child(4) {
+    @include rem(margin-top, 40);
+  }
+
+  section:first-child + section { 
+    @include rem(margin-top, 104);
+  }
+
+
+  .info-bx .info-list .info-item:not(.dot) + .info-item.dot {
+    @include rem(margin-top, 12);
+    @include mobile {
+      @include rem(margin-top, 8);
+    }
+  }
+
+  .info-title {
+    display: flex;
+    align-items: center;
+    &.link {
+      &::after {
+        content: '';
+        position: relative;
+        display: inline-flex;
+        @include rem(width, 20);
+        @include rem(height, 20);
+        background: url("../images/icon/ico_newtab.png") 50% 50% / 100% no-repeat;
+        @include rem(margin-left, 4);
+      }
+    }
+  }
+
+  @include mobile {
+    .info-bx {
+      height: auto;
+    }
+
+   
+    section:nth-child(3) {
+      .left-bx .hgroup-wrap {
+        @include rem(margin-bottom, 24);
+      }
+    }
+
+    section:first-child + section {
+      @include rem(margin-top, 40);
+      .left-bx + .right-group {
+        @include rem(margin-top, 24);
+      }
+    }
+  }
+}
+

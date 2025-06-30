@@ -1,0 +1,1517 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// 메인 인트로 용
+body.intro {
+	overflow: hidden;
+}
+
+.main {
+	@include rem (padding-bottom, 112);
+
+	@include mobile {
+		@include rem (padding-bottom, 48);
+	}
+
+	// 메인에만 버튼 클릭시 scale값 조정
+	// a {
+	// 	@include mobile {
+	// 		transition: transform 0.1s ease;
+	// 		&:active {
+	// 			/* 클릭할 때 살짝 작아짐 */
+	// 			transform: scale(0.95);
+	// 		}
+	// 	}
+	// }
+
+	// 스와이퍼
+	.swiper-wrapper {
+		transition-timing-function: linear !important;
+		display: flex;
+		align-items: center;
+
+		.swiper-slide {
+			width: auto !important;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include rem (height, 48);
+
+			@include mobile {
+				@include rem (height, 24);
+			}
+
+			img {
+				@include rem (height, 48);
+
+				@include mobile {
+					@include rem (height, 24);
+				}
+			}
+		}
+	}
+
+	.main-visual {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		height: calc(100vh - 8.8rem);
+
+		@include mobile {
+			height: calc(100vh - 6.8rem);
+			height: calc(100svh - 6.8rem);
+		}
+
+		.main-visual-content {
+			@include rem (height, 100%);
+			position: relative;
+
+			.main-visual-img {
+				position: absolute;
+				top: calc(80% + 14rem - 29.6rem);
+				@include rem (left, 0);
+				@include rem (width, 100%);
+				@include rem (height, 100%);
+				clip-path: inset(20% 5% 45.1% 5.1% round 20px 20px 20px 20px);
+
+				@include mobile {
+					top: calc(80% + 6.8rem - 30.1rem);
+					clip-path: inset(20% 8% 20.1% 8.1% round 20px 20px 20px 20px);
+				}
+
+				.pc-img {
+					visibility: block;
+
+					@include mobile {
+						display: none;
+					}
+				}
+
+				.mo-img {
+					display: none;
+
+					@include mobile {
+						display: block;
+					}
+				}
+
+				img {
+					position: relative;
+					top: 12%;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					transform: scale(0.9);
+				}
+			}
+
+			.main-title {
+				@include rem (width, 100%);
+				@include rem (bottom, 201);
+				@include rem (left, 50%);
+				@include rem (transform, translateX(-50%));
+				position: absolute;
+				text-align: center;
+				color: $color-000000;
+				@include f(52, 600, 1.3);
+
+				@include mobile {
+					@include rem (padding, 0 44px);
+					@include rem (bottom, 297);
+				}
+
+				p {
+
+					@include mobile {
+						@include f(32, 700, 1.3);
+	
+					}
+
+					&+p {
+						@include rem (margin-top, 4);
+					}
+				}
+			}
+		}
+
+		.scroll-icon {
+			position: absolute;
+			@include rem(width, 36);
+			@include rem(height, 52);
+			left: 50%;
+			transform: translateX(-50%);
+			@include rem(bottom, 49);
+			border: 1.5px solid $color-ffffff;
+			@include rem(border-radius, 50);
+			color: $color-ffffff;
+			opacity: 0;
+
+			@include mobile {
+				display: none;
+			}
+
+			span {
+				@include rem (width, 45);
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				@include rem(bottom, -24);
+				@include f(16, 400, 1.3);
+				text-align: center;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				@include rem(width, 2);
+				@include rem(height, 6);
+				@include rem(top, 15);
+				left: 50%;
+				transform: translate(-50%);
+				background: $color-ffffff;
+				animation-duration: 1.1s;
+
+				animation-iteration-count: infinite;
+				animation-name: scroll;
+			}
+
+			&.active {
+				&::before {
+					background: $color-ffffff;
+				}
+			}
+		}
+	}
+
+	.main-visual-rolling-wrap {
+		@include rem (margin-top, 24);
+		@include rem (margin-bottom, 24);
+		@include mobile {
+			@include rem (margin-top, 20);
+			@include rem (margin-bottom, 0);
+		}
+		.inner {
+			overflow: hidden;
+
+			.rolling-bx {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				@include mobile {
+					height: 3.2rem !important;
+				}
+
+				.rolling-wrapper {
+					position: relative;
+					overflow: hidden;
+					width: 100%;
+					height: 100%;
+					&::before {
+						content: '';
+						position: absolute;
+						left: 0;
+						@include rem (width, 200);
+						background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+						height: 100%;
+						z-index: 3;
+	
+						@include mobile {
+							@include rem (width, 40);
+						}
+					}
+	
+					&::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						right: 0;
+						@include rem (width, 200);
+						background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+						height: 100%;
+						z-index: 3;
+	
+						@include mobile {
+							@include rem (width, 40);
+						}
+					}
+				}
+
+				.rolling-boxes {
+					position: relative;
+					display: flex;
+					align-items: center;
+					height: 100%;
+				}
+
+				.item {
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					padding: 0;
+					font-size: 0;
+
+					img {
+						width: auto;
+						height: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+
+		.main-visual-rolling {
+			.swiper {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+
+				
+			}
+
+			.rolling-bx {
+				position: relative;
+				display: flex;
+				@include rem (height, 140);
+				@include rem (column-gap, 24);
+				align-items: center;
+				opacity: 0;
+
+				@include mobile {
+					@include rem (height, 68);
+				}
+
+				ul {
+					position: relative;
+					@include rem (column-gap, 104);
+					display: flex;
+					align-items: center;
+					overflow-x: hidden;
+
+					@include mobile {
+						@include rem (column-gap, 48);
+					}
+
+					li {
+						flex-shrink: 0;
+
+						img {
+							width: 100%;
+							@include rem (height, 48);
+							object-fit: contain;
+							display: block;
+
+							@include mobile {
+								@include rem (height, 24);
+							}
+						}
+					}
+				}
+
+				.status-btn-bx {
+					position: absolute;
+					right: 0;
+					flex-shrink: 0;
+					z-index: 3;
+
+					@include mobile {
+						position: relative;
+						@include rem (right, 16);
+					}
+
+					.btn-status {
+						@include rem (width, 40);
+						@include rem (height, 40);
+						background: url("../images/icon/ico_rolling_stop.png")no-repeat center center;
+						background-size: 100% auto;
+						box-shadow: none;
+
+						&:hover {
+							outline: none;
+							border: none;
+						}
+
+						@include mobile {
+							@include rem (width, 32);
+							@include rem (height, 32);
+						}
+
+						&.stop {
+							background: url("../images/icon/ico_rolling_play.png")no-repeat center center;
+							background-size: 100% auto;
+						}
+					}
+				}
+			}
+		}
+
+		.item {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			img {
+				width: auto;
+				height: 100%;
+				display: block;
+			}
+		}
+
+	}
+
+	.main-content-step01 {
+		@include rem (margin-top, 104);
+		transition-duration: 0.3s;
+
+		@include mobile {
+			@include rem (margin-top, 48);
+			@include rem (padding, 0 20px);
+		}
+
+		.content-grid-top {
+			@include rem (column-gap, 24);
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: 1fr;
+
+			@include mobile {
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.main-content-item {
+				@include rem (height, 440);
+				position: relative;
+
+				@include mobile {
+					@include rem (height, 272);
+				}
+
+				&.img-bx {
+					grid-column: span 2;
+					background: url("../images/contents/main/main_contents_01.png") 50% 50% / 100% no-repeat;
+					background-size: cover;
+					@include rem (border-radius, 32);
+
+					@include mobile {
+						@include rem (border-radius, 20);
+					}
+				}
+
+				
+				&.application-bx {
+					@include rem (border-radius, 32);
+					@include rem (padding, 48);
+					position: relative;
+					background: url("../images/contents/main/main_contents_02.png")no-repeat center center;
+
+					span {
+						@include f(18, 500, 1.6);
+						color: $color-212529;
+					}
+
+					.btn-application span {
+						@include f(28, 700, 1.4);
+						color: $color-ffffff;
+					}
+
+					p {
+						@include rem (margin-top, 8);
+						@include f(40, 700, 1.3);
+						@include mobile {
+							@include f(26, 700, 1.4);
+						}
+					}
+
+					.btn-application {
+						@include rem (padding, 16px 32px 16px 28px);
+						@include rem (border-radius, 80);
+						@include rem (bottom, 48);
+						@include rem (left, 48);
+						@include f(28, 700, 1.4);
+						@include rem (max-width, 390);
+						display: flex;
+						align-items: center;
+						position: absolute;
+						background-color: $color-212529;
+						color: $color-ffffff;
+
+						i {
+							@include rem (width, 40);
+							@include rem (min-width, 40);
+							@include rem (height, 40);
+
+							@include mobile {
+								@include rem (width, 20);
+								@include rem (min-width, 20);
+								@include rem (height, 20);
+							}
+						}
+
+
+
+						i+span {
+							@include rem (margin-left, 12);
+						}
+					}
+
+					.bulb-bx {
+						@include rem (width, 120);
+						@include rem (height, 100);
+						@include rem (top, 0);
+						@include rem (right, 0);
+						@include rem (border-bottom-left-radius, 32);
+						position: absolute;
+						background-color: $color-ffffff;
+
+						&::before,
+						&::after {
+							content: '';
+							position: absolute;
+							@include rem (width, 32);
+							@include rem (height, 32);
+						}
+
+						&::before {
+							top: 0%;
+							right: 100%;
+							background: #ffffff;
+							mask-image:
+								radial-gradient(circle at bottom left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 31px,
+									transparent 32px),
+								linear-gradient(#000000, #000000);
+							mask-size: 100%, 100%;
+							mask-position: 0 0;
+							mask-composite: exclude;
+						}
+
+						&::after {
+							right: 0%;
+							top: 100%;
+							background: #ffffff;
+							mask-image:
+								radial-gradient(circle at bottom left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 31px,
+									transparent 32px),
+								linear-gradient(#000000, #000000);
+							mask-size: 100%, 100%;
+							mask-position: 0 0;
+							mask-composite: exclude;
+						}
+
+						img {
+							@include rem (width, 100%);
+							@include rem (height, 100%);
+							object-fit: contain;
+						}
+					}
+				}
+
+				.main-content-item-img {
+					@include rem (height, 100%);
+
+					img {
+						@include rem (width, 100%);
+						@include rem (height, 100%);
+						object-fit: cover;
+					}
+				}
+
+				.main-content-item-txt-bx {
+					position: absolute;
+					@include rem (padding-top, 24);
+					@include rem (padding-left, 96);
+					@include rem (left, 0);
+					@include rem (bottom, 0);
+					@include rem (width, 544);
+					@include rem (height, 106);
+					background: $color-ffffff;
+					@include rem (border-top-right-radius, 32);
+
+					&::before,
+					&::after {
+						content: '';
+						position: absolute;
+						@include rem (width, 32);
+						@include rem (height, 32);
+
+						@include mobile {
+							@include rem (width, 20);
+							@include rem (height, 20);
+						}
+					}
+
+					&::before {
+						left: 0;
+						bottom: 100%;
+						background: #ffffff;
+						mask-image:
+							radial-gradient(circle at top right,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 3.1rem,
+								transparent 3.2rem),
+							linear-gradient(#000000, #000000);
+						mask-size: 100%, 100%;
+						mask-position: 0 0;
+						mask-composite: exclude;
+
+						@include mobile {
+							mask-image:
+								radial-gradient(circle at top right,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 1.9rem,
+									transparent 2rem),
+								linear-gradient(#000000, #000000);
+						}
+					}
+
+					&::after {
+						left: 100%;
+						bottom: 0;
+						background: #ffffff;
+						mask-image:
+							radial-gradient(circle at top right,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 3.1rem,
+								transparent 3.2rem),
+							linear-gradient(#000000, #000000);
+						mask-size: 100%, 100%;
+						mask-position: 0 0;
+						mask-composite: exclude;
+
+						@include mobile {
+							mask-image:
+								radial-gradient(circle at top right,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 1.9rem,
+									transparent 2rem),
+								linear-gradient(#000000, #000000);
+						}
+					}
+
+					@include mobile {
+						width: calc(100% - 5rem);
+						@include rem (height, 66);
+						@include rem (padding-top, 12);
+						@include rem (padding-left, 48);
+						@include rem (border-top-right-radius, 20);
+
+					}
+
+					strong {
+						@include f(40, 700, 1.3);
+
+						&::before {
+							content: '';
+							position: absolute;
+							@include rem (width, 80);
+							@include rem (height, 80);
+							@include rem (left, 0);
+							bottom: 0;
+							background: url("../images/icon/ico_arrow_bottom.png")no-repeat center center / contain;
+
+							@include mobile {
+								@include rem (width, 40);
+								@include rem (height, 40);
+								@include rem (bottom, 4);
+							}
+						}
+
+						@include mobile {
+							@include f(24, 700, 1.4);
+						}
+					}
+
+					p {
+						@include f(18, 500, 1.6);
+	
+
+						@include mobile {
+							@include f(12, 400, 1.4);
+						}
+					}
+				}
+			}
+		}
+
+		.content-grid-bottom {
+			@include rem (margin-top, 32);
+			@include rem (column-gap, 24);
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			@include mobile {
+				@include rem (row-gap, 16);
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.main-content-item {
+				position: relative;
+				@include rem (width, 100%);
+				@include rem (border-radius, 32);
+
+				&:hover {
+					.arrow-bx .arrow {
+						background: $color-112b3b;
+					}
+
+					.arrow-bx .arrow::before {
+						animation: moveArrow01 0.35s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+					}
+
+					.arrow-bx .arrow::after {
+						animation: moveArrow02 0.35s 0.1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+					}
+
+					.txt-bx p {
+						@include f(48, 700, 1.3);
+						transition-duration: 0.35s;
+
+						@include mobile {
+							@include f(24, 700, 1.4);
+							transition-duration: 0s;
+						}
+					}
+				}
+
+				@include mobile {
+					@include rem (border-radius, 20);
+				}
+
+				.txt-bx {
+					position: relative;
+					display: block;
+					@include rem (width, 100%);
+					@include rem (height, 392);
+					@include rem (padding, 48px 48px 108px 48px);
+					background: $color-259abd;
+					background-size: 100% 100%;
+					@include rem (border-radius, 32);
+
+					p {
+						@include rem (margin-bottom, 16);
+						@include f(40, 700, 1.3);
+						color: $color-ffffff;
+						transition-duration: 0.35s;
+	
+					}
+
+					span {
+						@include f(24, 700, 1.6);
+						color: $color-b2e4ef;
+	
+					}
+
+					@include mobile {
+						@include rem (height, 165);
+						@include rem (padding, 24px 24px 64px 24px);
+						@include rem (border-radius, 20);
+
+						p {
+							@include f(24, 700, 1.4);
+							@include rem (margin-bottom, 4);
+						}
+
+						span {
+							@include f(15, 600, 1.4);
+						}
+					}
+				}
+
+				.arrow-bx {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					@include rem (width, 92);
+					@include rem (height, 92);
+					background: $color-ffffff;
+					@include rem (border-top-left-radius, 32);
+
+					@include mobile {
+						@include rem (border-top-left-radius, 20);
+					}
+
+					&::before,
+					&::after {
+						content: '';
+						position: absolute;
+						@include rem (width, 32);
+						@include rem (height, 32);
+
+						@include mobile {
+							@include rem (width, 20);
+							@include rem (height, 20);
+						}
+					}
+
+					&::before {
+						right: 0;
+						bottom: 100%;
+						background: #ffffff;
+						mask-image:
+							radial-gradient(circle at top left,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 3.1rem,
+								transparent 3.2rem),
+							linear-gradient(#000000, #000000);
+						mask-size: 100%, 100%;
+						mask-position: 0 0;
+						mask-composite: exclude;
+
+						@include mobile {
+							mask-image:
+								radial-gradient(circle at top left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 1.9rem,
+									transparent 2rem),
+								linear-gradient(#000000, #000000);
+						}
+					}
+
+					&::after {
+						right: 100%;
+						bottom: 0;
+						background: #ffffff;
+						mask-image:
+							radial-gradient(circle at top left,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 3.1rem,
+								transparent 3.2rem),
+							linear-gradient(#000000, #000000);
+						mask-size: 100%, 100%;
+						mask-position: 0 0;
+						mask-composite: exclude;
+
+						@include mobile {
+							mask-image:
+								radial-gradient(circle at top left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 1.9rem,
+									transparent 2rem),
+								linear-gradient(#000000, #000000);
+						}
+					}
+
+					.arrow {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						display: inline-block;
+						@include rem (width, 72);
+						@include rem (height, 72);
+						background: $color-259abd;
+						border-radius: 50%;
+						transition: .35s;
+
+						&::before {
+							content: '';
+							position: absolute;
+							display: inline-block;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							@include rem (width, 29);
+							@include rem (height, 29);
+							background: url("../images/icon/ico_arrow_lg.svg") 50% 50% / 100% no-repeat;
+						}
+
+						&::after {
+							content: '';
+							position: absolute;
+							display: inline-block;
+							top: 110%;
+							left: -10%;
+							transform: translate(-50%, -50%);
+							@include rem (width, 29);
+							@include rem (height, 29);
+							background: url("../images/icon/ico_arrow_lg.svg") 50% 50% / 100% no-repeat;
+						}
+
+						@include mobile {
+							@include rem (width, 40);
+							@include rem (height, 40);
+
+							.arrow {
+								&::after {
+									@include rem (width, 16);
+									@include rem (height, 16);
+								}
+							}
+						}
+					}
+
+					@include mobile {
+						@include rem (width, 50);
+						@include rem (height, 50);
+
+						.arrow {
+
+							&::before,
+							&::after {
+								@include rem (width, 16);
+								@include rem (height, 16);
+							}
+						}
+					}
+				}
+
+
+				&.application-bx {
+					@include rem (height, 240);
+					@include rem (border-radius, 32);
+					@include rem (padding, 24);
+					position: relative;
+					background: $color-f1f3f5;
+
+					@include mobile {
+						@include rem (border-radius, 20);
+					}
+
+					span {
+						@include f(12, 400, 1.4);
+					}
+
+					p {
+						@include rem (margin-top, 4);
+						@include f(26, 700, 1.4);
+					}
+
+					.btn-application {
+						@include rem (padding, 8px 16px 8px 16px);
+						@include rem (border-radius, 80);
+						@include rem (bottom, 24);
+						@include rem (left, 24);
+						display: flex;
+						align-items: center;
+						position: absolute;
+						background-color: $color-212529;
+						color: $color-ffffff;
+
+						i+span {
+							@include rem (margin-left, 8);
+							@include f(16, 700, 1.4);
+		
+						}
+					}
+
+					.bulb-bx {
+						@include rem (width, 50);
+						@include rem (height, 50);
+						@include rem (top, 0);
+						@include rem (right, 0);
+						@include rem (border-bottom-left-radius, 32);
+						position: absolute;
+						background-color: $color-ffffff;
+
+						@include mobile {
+							@include rem (border-bottom-left-radius, 20);
+						}
+
+						&::before,
+						&::after {
+							content: '';
+							position: absolute;
+							@include rem (width, 32);
+							@include rem (height, 32);
+
+							@include mobile {
+								@include rem (width, 20);
+								@include rem (height, 20);
+							}
+						}
+
+						&::before {
+							right: 100%;
+							top: 0;
+							background: #ffffff;
+							mask-image:
+								radial-gradient(circle at bottom left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 3.1rem,
+									transparent 3.2rem),
+								linear-gradient(#000000, #000000);
+							mask-size: 100%, 100%;
+							mask-position: 0 0;
+							mask-composite: exclude;
+
+							@include mobile {
+								mask-image:
+									radial-gradient(circle at bottom left,
+										rgba(255, 0, 0, 1) 0,
+										rgba(255, 0, 0, 1) 1.9rem,
+										transparent 2rem),
+									linear-gradient(#000000, #000000);
+							}
+						}
+
+						&::after {
+							right: 0;
+							top: 100%;
+							background: #ffffff;
+							mask-image:
+								radial-gradient(circle at bottom left,
+									rgba(255, 0, 0, 1) 0,
+									rgba(255, 0, 0, 1) 3.1rem,
+									transparent 3.2rem),
+								linear-gradient(#000000, #000000);
+							mask-size: 100%, 100%;
+							mask-position: 0 0;
+							mask-composite: exclude;
+
+							@include mobile {
+								mask-image:
+									radial-gradient(circle at bottom left,
+										rgba(255, 0, 0, 1) 0,
+										rgba(255, 0, 0, 1) 1.9rem,
+										transparent 2rem),
+									linear-gradient(#000000, #000000);
+							}
+						}
+
+						img {
+							@include rem (width, 100%);
+							@include rem (height, 100%);
+							object-fit: contain;
+						}
+					}
+				}
+			}
+		}
+
+		@include mobile {
+			.ico-application {
+				@include rem (width, 20);
+				@include rem (height, 20);
+				@include rem (background-size, 20px 20px);
+			}
+		}
+	}
+
+	.main-content-step02 {
+		position: relative;
+		@include rem (height, 430);
+		@include rem (margin-top, 116);
+		@include rem (padding, 104px 0 116px);
+		background: url("../images/contents/main/main_step02.png") no-repeat;
+		background-size: cover;
+
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(83.92deg, rgba(0, 0, 0, 0.7) 25.02%, rgba(0, 0, 0, 0) 70.65%);
+			backdrop-filter: blur(4px);
+		}
+
+		@include mobile {
+			height: auto;
+			@include rem (margin-top, 48);
+			@include rem (padding, 40px 24px 48px);
+			background: linear-gradient(83.92deg, rgba(0, 0, 0, 0.7) 25.02%, rgba(0, 0, 0, 0) 70.65%), url("../images/contents/main/main_step02_mo.png") no-repeat;
+			background-position: 100% 50%;
+		}
+
+		.inner.type03 {
+			@include rem (padding, 0 48px);
+
+			@include mobile {
+				@include rem (padding, 0);
+			}
+		}
+
+		.main-info-bx {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		
+			p {
+				position: relative;
+				@include f(32, 700, 1.4);
+				color: $color-ffffff;
+
+				@include mobile {
+					@include f(22, 700, 1.4);
+				}
+			}
+		}
+
+		.link-bx {
+			@include rem (margin-top, 48);
+			@include rem (column-gap, 24);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			@include mobile {
+				display: grid;
+				flex-wrap: wrap;
+				grid-template-columns: repeat(1, 1fr);
+				@include rem (margin-top, 40);
+				@include rem (gap, 16);
+			}
+
+
+
+			a,button {
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				@include rem (width, 100%);
+				@include rem (height, 72);
+				@include rem (padding, 16px 20px 16px 40px);
+				@include rem (border-radius, 12);
+				@include rem (border, 1px solid $color-ffffff);
+				background-color: $color-transparent;
+				color: $color-ffffff;
+				transition-duration: 0.35s;
+				transition-property: background-color;
+				&.pc-alipay,&.pc-cube {
+					@include mobile {
+						display: none;
+					}
+				}
+				&.mo-alipay,&.mo-cube {
+					display: none;
+					@include mobile {
+						display: flex;
+					}
+				}
+				@include mobile {
+					width: 100%;
+					@include rem (padding, 9.5px 8px 9.5px 12px);
+					@include rem (height, 40);
+					@include rem (border-radius, 8);
+				}
+
+				&:hover {
+					background-color: rgba(17, 43, 59, 0.8);
+					transition: 0.35s;
+
+					.arrow {
+						&::before {
+							animation: moveArrow01 0.35s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+						}
+
+						&::after {
+							animation: moveArrow02 0.35s 0.1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+						}
+					}
+				}
+
+				.arrow {
+					position: relative;
+					display: inline-block;
+					@include rem (width, 26);
+					@include rem (height, 26);
+					background: $color-ffffff;
+					border-radius: 50%;
+					overflow: hidden;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						@include rem (width, 10);
+						@include rem (height, 10);
+						background: url("../images/icon/ico_main_info_arrow.png") 50% 50% / 100% no-repeat;
+
+						@include mobile {
+							@include rem (width, 6.5);
+							@include rem (height, 6.5);
+						}
+					}
+
+					&::after {
+						content: '';
+						position: absolute;
+						top: 110%;
+						left: -10%;
+						transform: translate(-50%, -50%);
+						@include rem (width, 10);
+						@include rem (height, 10);
+						background: url("../images/icon/ico_main_info_arrow.png") 50% 50% / 100% no-repeat;
+
+						@include mobile {
+							@include rem (width, 6.5);
+							@include rem (height, 6.5);
+						}
+					}
+
+					@include mobile {
+						@include rem (width, 16);
+						@include rem (height, 16);
+					}
+				}
+
+				&:nth-child(1) span:first-child::before {
+					background: url("../images/icon/ico_main01.png") no-repeat center center;
+					background-size: 100% auto;
+				}
+
+				&:nth-child(2) span:first-child::before {
+					background: url("../images/icon/ico_main02.png")no-repeat center center;
+					background-size: 100% auto;
+				}
+
+				&:nth-child(3) span:first-child::before {
+					background: url("../images/icon/ico_main01.png")no-repeat center center;
+					background-size: 100% auto;
+				}
+
+				&:nth-child(4) span:first-child::before {
+					background: url("../images/icon/ico_main02.png")no-repeat center center;
+					background-size: 100% auto;
+				}
+
+				span:first-child {
+					position: relative;
+					display: flex;
+					align-items: center;
+					@include f(24, 700, 1.6);
+					white-space: nowrap;
+
+					@include mobile {
+						@include f(15, 600, 1.4);
+					}
+
+					&::before {
+						content: '';
+						position: relative;
+						display: inline-block;
+						@include rem(margin-right, 8);
+						@include rem (width, 32);
+						@include rem (height, 32);
+
+						@include mobile {
+							@include rem (width, 20);
+							@include rem (height, 20);
+							@include rem(margin-right, 4);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-content-step03 {
+		@include mobile {
+			@include rem (margin-top, 40);
+			@include rem (padding, 0 20px);
+		}
+
+		.grid-bx {
+			@include rem (column-gap, 24);
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			@include mobile {
+				grid-template-columns: repeat(1, 1fr);
+				@include rem (gap, 16);
+			}
+		}
+
+		.main-content-item {
+			position: relative;
+			@include rem (padding, 48);
+			@include rem (height, 442);
+			@include rem (border-radius, 32);
+
+
+			@include mobile {
+				@include rem (border-radius, 20);
+				@include rem (padding, 24);
+				@include rem (height, 272);
+			}
+
+
+
+			&:nth-child(1) {
+				background: url("../images/contents/main/main_step03_01.png") 50% 50% / 100% no-repeat;
+				background-size: cover;
+				.link-bx a {
+					background: $color-3a8bcb;
+				}
+
+				@include mobile {
+					background: url("../images/contents/main/main_step03_01_mo.png") 50% 50% / 100% no-repeat;
+					background-size: cover;
+				}
+			}
+
+			&:nth-child(2) {
+				background: url("../images/contents/main/main_step03_02.png") 50% 50% / 100% no-repeat;
+				background-size: cover;
+
+				@include mobile {
+					background: url("../images/contents/main/main_step03_02_mo.png") 50% 50% / 100% no-repeat;
+					background-size: cover;
+				}
+			}
+
+			.txt-bx {
+				.tit {
+					@include f(40, 700, 1.3);
+					color: $color-ffffff;
+
+					@include mobile {
+						@include f(22, 700, 1.4);
+					}
+				}
+
+				.desc {
+					@include rem(margin-top, 8);
+					@include f(24, 500, 1.4);
+					color: $color-ffffff;
+
+
+					@include mobile {
+						@include f(16, 500, 1.6);
+					}
+				}
+			}
+
+			.link-bx {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: flex-end;
+				@include rem (right, 0);
+				@include rem (bottom, 0);
+				width: max-content;
+				@include rem (min-width, 298);
+				@include rem (padding-top, 34);
+				@include rem (padding-left, 34);
+				height: auto;
+				@include rem (border-top-left-radius, 32);
+				background: $color-ffffff;
+
+				@include mobile {
+					width: max-content;
+					min-width: 55%;
+					@include rem (border-top-left-radius, 20);
+					@include rem (padding-top, 20);
+					@include rem (padding-left, 20);
+				}
+
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+					@include rem (width, 32);
+					@include rem (height, 32);
+
+					@include mobile {
+						@include rem (width, 20);
+						@include rem (height, 20);
+					}
+				}
+
+				&::before {
+					right: 0;
+					bottom: 100%;
+					background: #ffffff;
+					mask-image:
+						radial-gradient(circle at top left,
+							rgba(255, 0, 0, 1) 0,
+							rgba(255, 0, 0, 1) 3.1rem,
+							transparent 3.2rem),
+						linear-gradient(#000000, #000000);
+					mask-size: 100%, 100%;
+					mask-position: 0 0;
+					mask-composite: exclude;
+
+					@include mobile {
+						mask-image:
+							radial-gradient(circle at top left,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 1.9rem,
+								transparent 2rem),
+							linear-gradient(#000000, #000000);
+					}
+				}
+
+				&::after {
+					right: 100%;
+					bottom: 0;
+					background: #ffffff;
+					mask-image:
+						radial-gradient(circle at top left,
+							rgba(255, 0, 0, 1) 0,
+							rgba(255, 0, 0, 1) 3.1rem,
+							transparent 3.2rem),
+						linear-gradient(#000000, #000000);
+					mask-size: 100%, 100%;
+					mask-position: 0 0;
+					mask-composite: exclude;
+
+					@include mobile {
+						mask-image:
+							radial-gradient(circle at top left,
+								rgba(255, 0, 0, 1) 0,
+								rgba(255, 0, 0, 1) 1.9rem,
+								transparent 2rem),
+							linear-gradient(#000000, #000000);
+					}
+				}
+
+				a {
+					position: relative;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					@include rem (padding, 17px 20px 17px 28px);
+					@include rem (border-radius, 40);
+					color: $color-ffffff;
+					background-color: $color-259abd;
+					transition: 0.35s;
+
+					
+
+					&:hover {
+						background-color: $color-112b3b;
+
+						.arrow {
+							&::before {
+								animation: moveArrow01 0.35s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+							}
+
+							&::after {
+								animation: moveArrow02 0.35s 0.1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+							}
+						}
+					}
+
+					+a {
+						@include rem (margin-top, 8);
+					}
+
+					span {
+						@include f(24, 700, 1.6);
+					}
+
+					.arrow {
+						position: relative;
+						display: inline-block;
+						@include rem (width, 26);
+						@include rem (min-width, 26);
+						@include rem (height, 26);
+						border-radius: 50%;
+						overflow: hidden;
+						background: $color-ffffff;
+						@include rem (margin-left, 12);
+
+						@include mobile {
+							@include rem (width, 20);
+							@include rem (min-width, 20);
+							@include rem (height, 20);
+						}
+
+						&::before {
+							content: '';
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+							@include rem (width, 10);
+							@include rem (height, 10);
+							background: url("../images/icon/ico_main_info_arrow.png") 50% 50% / 100% no-repeat;
+
+							@include mobile {
+								@include rem (width, 6.5);
+								@include rem (height, 6.5);
+							}
+						}
+
+
+						&::after {
+							content: '';
+							position: absolute;
+							top: 110%;
+							left: -10%;
+							transform: translate(-50%, -50%);
+							@include rem (width, 10);
+							@include rem (height, 10);
+							background: url("../images/icon/ico_main_info_arrow.png") 50% 50% / 100% no-repeat;
+
+							@include mobile {
+								@include rem (width, 6.5);
+								@include rem (height, 6.5);
+							}
+						}
+					}
+
+					@include mobile {
+						width: 100%;
+						@include rem (padding, 8px 16px);
+
+						+ a {
+							@include rem (margin-top, 4);
+						}
+
+						span {
+							@include f(16, 600, 1.6);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// 화살표 애로우 공통
+@keyframes moveArrow01 {
+	100% {
+		top: -10%;
+		left: 110%;
+	}
+}
+
+@keyframes moveArrow02 {
+	100% {
+		top: 50%;
+		left: 50%;
+	}
+}
+
+// 스크롤 애니메이션
+@keyframes scroll {
+	0% {
+		@include rem(top, 15);
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		@include rem(top, 30);
+		opacity: 0;
+	}
+}
+
+html.scroll-hide {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+html.modal-open {
+	overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}

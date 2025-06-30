@@ -1,0 +1,260 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.newspaper-wrap {
+    section {
+        display: flex;
+        justify-content: space-between;
+        + section {
+            @include rem (margin-top, 104);
+            @include mobile {
+                @include rem (margin-top, 64);
+            }
+        }
+    }
+    .left-bx {
+        @include rem (width, 300);
+        @include rem (margin-right, 105);
+        flex-shrink: 0;
+        color: $color-212529;
+    }
+    .right-bx {
+        @include rem (width, 100%);
+        .txt-bx {
+            color: $color-495057;
+            p {
+                @include rem (margin-bottom, 24);
+            }
+        }
+        .card-list {
+            @include rem (column-gap, 24);
+            @include rem (row-gap, 32);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .card-item {
+                .img-bx {
+                    img {
+                        @include rem (border-top-left-radius, 20);
+                        @include rem (border-top-right-radius, 20);
+                        @include rem (width, 100%);
+                        @include rem (height, 100%);
+                        @include mobile {
+                            @include rem (border-top-left-radius, 16);
+                            @include rem (border-top-right-radius, 16);
+                        }
+                    }
+                }
+                .card-info-bx {
+                    @include rem (border-bottom-left-radius, 20);
+                    @include rem (border-bottom-right-radius, 20);
+                    @include rem (padding, 24px 32px);
+                    background-color: $color-f8f9fa;
+                    strong {
+                        color: $color-212529;
+                    }
+
+                    p {
+                        @include rem (margin-top, 8);
+                        color: $color-495057;
+                    }
+                    @include mobile {
+                        @include rem (border-bottom-left-radius, 16);
+                        @include rem (border-bottom-right-radius, 16);
+                    }
+                }
+            }
+        }
+        .component-group {
+            margin: 0;
+            .accordion-wrap {
+                @include rem (width, 100%);
+                border-top: 1px solid $color-868e96;
+                .accordion-content {
+                    @include rem (padding, 32);
+                    @include mobile {
+                        @include rem (padding, 16px 20px 24px 16px);
+                    }
+                    &[data-state="open"] {
+                        animation: slideDown02 0.3s ease-out;
+                        @include mobile {
+                            animation: slideDown03 0.3s ease-out;
+                        }
+                    }
+        
+                    &[data-state="closed"] {
+                        animation: slideUp02 0.3s ease-out;
+                        @include mobile {
+                            animation: slideUp03 0.3s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+        .info-bx {
+            & + .info-bx {
+                @include rem (margin-top, 24);
+            }
+        }
+    }
+
+    .info-bx {
+        border: 0;
+        .info-txt {
+            @include f(20, 700, 1.4);
+            @include mobile {
+                @include f(18, 700, 1.6);
+            }
+        }
+
+        .info-list .info-item {
+            @include f(18, 400, 1.6);
+            @include mobile {
+                @include f(16, 400, 1.6);
+            }
+        }
+    }
+
+    .accordion-wrap .accordion-header {
+        @include f(24, 700, 1.6);
+        @include mobile {
+            @include f(18, 700, 1.4);
+        }
+    }
+
+    .accordion-wrap .accordion-content {
+        @include f(20, 400, 1.6);
+        @include mobile {
+            @include rem(padding, 16px 20px 24px 16px);
+            @include f(16, 400, 1.6);
+        }
+    }
+}
+
+@keyframes slideDown02 {
+	from {
+		height: 0;
+		opacity: 0;
+		padding: 0 32px 0 32px;
+	}
+
+	to {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 32px 32px 32px 32px;
+	}
+}
+
+@keyframes slideUp02 {
+	from {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 32px 32px 32px 32px;
+	}
+
+	to {
+		height: 0;
+		opacity: 0;
+		padding: 0 32px 0 32px;
+	}
+}
+
+
+@keyframes slideDown03 {
+	from {
+		height: 0;
+		opacity: 0;
+        padding: 0 20px 0 16px;
+	}
+
+	to {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 16px 20px 24px 16px;
+	}
+}
+
+@keyframes slideUp03 {
+	from {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 16px 20px 24px 16px;
+	}
+
+	to {
+		height: 0;
+		opacity: 0;
+		padding: 0 20px 0 16px;
+	}
+}
+
+
+@media (max-width: 1023px) {
+    .newspaper-wrap {
+        section {
+            @include rem (margin-top, 40);
+            display: block;
+            + section {
+                @include rem (margin-top, 64);
+            }
+        }
+
+        .info-bx {
+            @include mobile {
+                @include rem (padding, 20px 20px 24px 20px);
+            }
+        }
+
+
+        .left-bx {
+            @include rem (width, 100%);
+            @include rem (margin-right, 0);
+            p {
+                @include rem (margin-bottom, 24);
+            }
+        }
+        .right-bx {
+            .txt-bx {
+                p {
+                    &.f20-500-160 {
+                        color: $color-495057;
+                    }
+                    @include rem (margin-bottom, 24);
+                    @include mobile {
+                        @include rem (margin-bottom, 16);
+                    }
+                }
+            }
+            .card-list {
+                display: block;
+                .card-item {
+                    & + .card-item {
+                        @include rem (margin-top, 16);
+                    }
+                    .img-bx {
+                        img {
+                        }
+                    }
+                    .card-info-bx {
+                        @include rem (padding, 20);
+                        p {
+                            @include rem (margin-top, 4);
+                        }
+                    }
+                }
+            }
+            .component-group {
+                // margin: 0;
+                .accordion-wrap {
+                    // @include rem (width, 100%);
+                    // border-top: 1px solid $color-868e96;
+                }
+            }
+            .info-bx {
+                & + .info-bx {
+                    @include rem (margin-top, 16);
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+.component-table {
+	>div {
+		border-right: 0;
+			border-left: 0;
+	}
+}
+
+.table-wrap {
+	thead {
+		@include rem (border-top-right-radius, 8);
+		@include rem (border-bottom-right-radius, 4);
+
+		@include mobile {
+			display: none;
+		}
+
+		tr {
+			th {
+				@include rem (padding, 16px 0);
+				@include f(16, 500, 1.4);
+				color: $color-212529;
+				background-color: $color-f1f3f5;
+				text-align: center;
+
+				&:first-child {
+					@include rem (width, 100);
+					@include rem (border-top-left-radius, 8);
+					@include rem (border-bottom-left-radius, 4);
+				}
+
+				&:last-child {
+					@include rem (width, 150);
+					@include rem (border-top-right-radius, 8);
+					@include rem (border-bottom-right-radius, 4);
+				}
+			}
+
+			&.number {
+				@include rem (width, 98);
+			}
+
+			&.data {
+				@include rem (width, 128);
+			}
+		}
+	}
+
+	tbody {
+		@include mobile {
+			border-top: 1px solid $color-868e96;
+		}
+
+		tr {
+			border-bottom: 1px solid $color-dee2e6;
+
+			@include mobile {
+				display: flex;
+				flex-direction: column;
+				@include rem (padding, 20px 0);
+			}
+
+			td {
+				@include rem (padding, 24px 16px);
+				@include f(18, 500, 1.6);
+				color: $color-212529;
+				text-align: center;
+
+				@include mobile {
+					&+td {
+						@include rem (margin-top, 8);
+					}
+
+					@include rem (padding, 0);
+					text-align: left;
+
+					&:first-child {
+						@include mobile {
+							&:has(.text-center):not(:has(.bage)) {
+								display: none;
+							}
+						}
+					}
+				}
+				&:last-child {
+					@include f(16, 400, 1.4);
+					color: $color-868e96;
+					@include mobile {
+						@include f(14, 400, 1.4);
+					}
+				}
+				a {
+					@include f(18, 600, 1.6);
+					@include rem (width, 100%);
+					text-align: left;
+					display: block;
+					color: $color-212529 !important;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				.bage {
+					@include rem (border-radius, 50);
+					@include rem (padding, 3px 12px);
+					@include f(15, 400, 1.4);
+					color: $color-259abd;
+					background-color: $color-d6f1f7;
+					display: inline-block;
+				}
+
+				&.number {
+					@include rem (width, 98);
+					color: $color-555555;
+				}
+
+				&.title {
+					@include rem (padding-left, 16);
+					@include f(18, 600, 1.6);
+					color: $color-212529;
+					text-align: left;
+
+					@include mobile {
+						@include rem (padding-left, 0);
+					}
+
+					.new-bage {
+						position: relative;
+
+						&::after {
+							@include rem (width, 18);
+							@include rem (height, 18);
+							@include rem (right, -24);
+							@include rem (top, 50%);
+							content: '';
+							position: absolute;
+							transform: translateY(-50%);
+							background: url('@/assets/images/icon/ico_new.png') no-repeat center center / contain;
+						}
+					}
+				}
+
+				&.date {
+					@include f(16, 400, 1.4);
+					color: $color-868e96;
+				}
+			}
+		}
+	}
+}

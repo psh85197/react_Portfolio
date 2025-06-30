@@ -1,0 +1,734 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+// 모바일 햄버거 메뉴 클릭시 body-hidden 클래스 생성
+body {
+	&.body-hidden {
+		overflow: hidden;
+	}
+}
+
+.header {
+	@include rem (width, 100%);
+	@include rem (top, 0);
+	position: fixed;
+	z-index: 25;
+	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+	.header-inner {
+		@include rem (max-width, 1800);
+		@include rem (margin, 16px auto 0);
+		@include rem (padding, 0 32px);
+		@include rem (border-radius, 0);
+		@include rem (height, 72);
+		backdrop-filter: blur(0px);
+		transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+		@include mobile {
+			@include rem (margin, 0 auto);
+		}
+	}
+
+	
+
+	&.scrolled {
+		@include rem (top, 32);
+		transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+		&::before {
+			@include rem (width, 100%);
+			@include rem (height, 90);
+			@include rem (top, -32);
+			@include rem (left, 0);
+			content: "";
+			display: block;
+			position: absolute;
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+			backdrop-filter: blur(16px);
+			-webkit-backdrop-filter: blur(16px);
+			overflow: hidden;
+			@include mobile {
+				@include rem (height, 72);
+				@include rem (top, -16);
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+				backdrop-filter: blur(4px);
+				-webkit-backdrop-filter: blur(4px);
+			}
+		}
+		.header-inner {
+			@include rem (margin-top, 0);
+			@include rem (max-width, 1720);
+			@include rem (border-radius, 40);
+			background-color: rgba(246, 246, 246, 0.75);
+			backdrop-filter: blur(16px);
+			transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+		}
+
+		&.active {
+			background-color: $color-transparent;
+			.header-inner {
+				transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+			}
+		}
+
+		.depth2-bg {
+			@include rem (max-width, 1720);
+			@include rem (top, 50);
+			@include rem (left, 50%);
+			@include rem (border-bottom-left-radius, 40);
+			@include rem (border-bottom-right-radius, 40);
+			transform: translateX(-50%);
+			transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+
+	&.active {
+		background-color: rgba(241, 243, 245, 0.75);
+
+		&:hover {
+			.nav-list {
+				@include rem (column-gap, 104);
+			}
+		}
+
+		.header-inner {
+			transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+			backdrop-filter: blur(16px);
+		}
+
+		.nav-list {
+			.nav-item {
+				> a {
+					@include f(18, 700, 1.4);
+					position: relative;
+					display: block;
+					color: $color-212529;
+
+					
+					&:hover {
+						span {
+							color: $color-259abd;
+						}
+
+						&::before {
+							content: "";
+							display: block;
+							@include rem (width, 8);
+							@include rem (height, 8);
+							@include rem (left, 50%);
+							@include rem (bottom, -18);
+							transform: translateX(-50%);
+							position: absolute;
+							background: url("../images/icon/ico_blit.png")no-repeat center center;
+							background-size: 100% auto;
+						}
+					}
+				}
+
+				
+
+
+				.depth2 {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(-50%) translateY(0);
+					transition-delay: 0.1s;
+				}
+			}
+		}
+	}
+
+	.header-content {
+		width: 100%;
+	}
+
+	.gnb-wrap {
+		@include rem (max-width, 1760);
+		@include rem (height, 72);
+		@include rem (margin, 0 auto);
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 5;
+
+		.gnb-logo {
+			@include rem (left, 0);
+			@include rem (top, 50%);
+			position: absolute;
+			transform: translateY(-50%);
+
+			.logo {
+				@include rem (width, 204);
+				@include rem (height, 80);
+				@include rem (margin, 0);
+				display: inline-block;
+				background: url("../images/contents/logo.png")no-repeat center center;
+				background-size: 100% auto;
+				white-space: nowrap;
+				overflow: hidden;
+				vertical-align: middle;
+			}
+		}
+
+		.nav {
+			.nav-list {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include rem (column-gap, 80);
+				transition: column-gap 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+				.nav-item {
+					position: relative;
+					height: 100%;
+					display: flex;
+					align-items: center;
+
+					> a {
+						@include f(18, 700, 1.4);
+						display: block;
+						color: $color-212529;
+						transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+
+					&.active {
+						> a {
+							color: $color-259abd;
+						}
+					}
+				}
+			}
+
+			.depth2 {
+				@include rem (top, 56);
+				@include rem (left, 50%);
+				@include rem (min-width, 130);
+				@include rem (width, 100%);
+				position: absolute;
+				transform: translateX(-50%) translateY(10px);
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.05s cubic-bezier(0.4, 0, 1, 1);
+				z-index: 10;
+
+				.depth2-item {
+					text-align: center;
+
+					&+.depth2-item {
+						@include rem (margin-top, 16);
+					}
+
+					>a {
+						display: block;
+						font-size: 14px;
+						color: $color-868e96;
+						
+						&:hover {
+							color: $color-212529;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.depth2-bg {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 0;
+		background-color: rgba(241, 243, 245, 0.75);
+		opacity: 0;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		pointer-events: none;
+		backdrop-filter: blur(16px);
+		z-index: -1;
+
+		&.active {
+			height: 257px;
+			opacity: 0.98;
+			pointer-events: auto;
+		}
+	}
+
+	// header select : pc
+	.language-select-wrap {
+		position: absolute;
+		@include rem (width, 94);
+		@include rem (height, 40);
+		@include rem (right, 0);
+
+		&.login {
+			display: none;
+		}
+
+		.language-select {
+			@include rem (width, 94);
+			@include rem (height, 40);
+			@include f(14, 500, 1.4);
+			@include rem (padding, 10px 12px 10px 44px);
+			@include rem (border-radius, 20);
+			position: relative;
+			color: $color-ffffff;
+			background-color: $color-343A40;
+			cursor: pointer;
+			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+			&::before {
+				content: "";
+				@include rem (width, 24);
+				@include rem (height, 24);
+				@include rem (left, 12);
+				@include rem (top, 50%);
+				position: absolute;
+				transform: translateY(-50%);
+				background: url("../images/icon/ico_header_select.png")no-repeat center center;
+				background-size: 100% auto;
+				pointer-events: none;
+			}
+
+			&::after {
+				content: "";
+				@include rem (width, 12);
+				@include rem (height, 12);
+				@include rem (right, 12);
+				@include rem (top, 50%);
+				position: absolute;
+				transform: translateY(-50%);
+				background: url("../images/icon/ico_header_arrow.png")no-repeat center center;
+				background-size: 12px 12px;
+				pointer-events: none;
+				transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+
+			&.active {
+				&::after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+
+				.language-select-options {
+					opacity: 1;
+					visibility: visible;
+					transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+					transition-delay: 0.05s;
+
+					&:before {
+						@include rem (height, 198);
+						transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+
+					.language-select-option {
+						opacity: 1;
+						transition-delay: 0.1s !important;
+						transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+						
+					}
+				}
+			}
+
+			.language-select-current {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				transition-delay: 0.05s;
+			}
+
+			.language-select-options {
+				@include rem (width, 94);
+				@include rem (left, 0);
+				position: absolute;
+				opacity: 1;
+				visibility: hidden;
+				transform: translateY(10px);
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	
+				z-index: 10;
+				@include rem (border-bottom-left-radius, 20);
+				@include rem (border-bottom-right-radius, 20);
+				z-index: -1;
+
+				&:before {
+					content: '';
+					position: absolute;
+					@include rem (top, -40);
+					left: 0;
+					width: 100%;
+					@include rem (height, 40);
+					background: $color-343a40;
+					@include rem (border-radius, 20);
+					z-index: -1;
+					transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.language-select-option {
+					@include rem (padding, 10px 12px 10px 44px);
+					display: flex;
+					align-items: center;
+					transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+					opacity: 0;
+					
+					&:last-child {
+						@include rem (border-bottom-left-radius, 20);
+						@include rem (border-bottom-right-radius, 20);
+					}
+					&:hover {
+						background-color: $color-495057;
+						transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.header {
+		@include rem (width, 100%);
+		left: 50%;
+		transform: translateX(-50%);
+		@include rem (top, 0);
+		position: fixed;
+		z-index: 25;
+
+		.accordion-wrap {
+			>div {
+				&[data-state=open] {
+					border-bottom: 1px solid $color-e9ecef;
+				}
+			}
+
+			.accordion-header {
+				@include rem (height, 65);
+
+				&::after {
+					@include rem (width, 20);
+					@include rem (height, 20);
+					@include rem (right, 16);
+					background: url("../images/btn/btn_menu_arrow.svg") 50% 50% / 100% no-repeat;
+				}
+			}
+		}
+
+		&.scrolled {
+			@include rem (top, 16);
+
+			&.active {
+				background-color: $color-ffffff;
+				@include rem (top, 0);
+
+				.header-inner {
+					width: 100%;
+					background-color: $color-ffffff;
+					@include rem (height, 56);
+					transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+				}
+
+			}
+
+			.header-inner {
+				width: calc(100% - 3.2rem);
+				@include rem (padding, 0 20px 0 28px);
+				@include rem (height, 56);
+				transition-delay: 0s;
+			}
+
+			.gnb-wrap {
+				@include rem (height, 56);
+				transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+			}
+		}
+
+		&.active {
+			background-color: $color-ffffff;
+
+			.language-select-wrap {
+				transition-delay: 0.2s;
+				transition-duration: 0.3s;
+				opacity: 1;
+			}
+
+			&:hover {
+				.nav-list {}
+			}
+
+			.gnb-wrap {
+				.gnb-logo {
+					.logo {
+						@include rem (width, 24);
+						@include rem (height, 24);
+						background: url("../images/contents/mo_logo.png")no-repeat center center;
+						background-size: 100% auto;
+					}
+				}
+			}
+
+			.header-inner {
+				@include rem (padding, 0 24px 0 28px);
+				@include rem (height, 64);
+			}
+
+			.nav-list {
+				.nav-item {
+					>a {}
+
+					.depth2 {}
+				}
+			}
+		}
+
+		.header-inner {
+			@include rem (height, 64);
+			@include rem (padding, 0 16px);
+			background-color: $color-ffffff;
+		}
+
+		.header-content {}
+
+		.gnb-wrap {
+			@include rem (height, 64);
+			transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+
+			.gnb-logo {
+
+				.logo {
+					@include rem (width, 125);
+					@include rem (height, 24);
+				}
+			}
+
+			.gnb-menu-mobile-wrap {
+				@include rem (right, 0);
+				position: absolute;
+
+				.gnb-menu-mobile-btn {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@include rem (width, 24);
+					@include rem (height, 24);
+					@include rem (padding, 0);
+					background-color: transparent;
+					border: none;
+					box-shadow: none;
+					cursor: pointer;
+
+					.hamburger {
+						position: relative;
+						display: flex;
+						@include rem (width, 20);
+						@include rem (height, 20);
+						flex-direction: column;
+						align-items: flex-end;
+						justify-content: center;
+
+						&.active {
+							.line {
+								&:nth-child(1) {
+									top: 50%;
+									transform: rotate(45deg);
+									@include rem (width, 20);
+								}
+
+								&:nth-child(2) {
+									opacity: 0;
+								}
+
+								&:nth-child(3) {
+									top: 50%;
+									transform: rotate(-45deg);
+									@include rem (width, 20);
+								}
+							}
+						}
+					}
+
+					.line {
+						position: absolute;
+						display: block;
+						@include rem (width, 20);
+						@include rem (height, 2);
+						top: 50%;
+						transform: translateY(-50%);
+						border-radius: 1px;
+						background: $color-343a40;
+						transition-duration: 0.3s;
+
+						&:nth-child(1) {
+							top: calc(50% - 0.6rem);
+						}
+
+						&:nth-child(2) {
+							@include rem (width, 12);
+							opacity: 1;
+						}
+
+						&:nth-child(3) {
+							top: calc(50% + 0.6rem);
+						}
+					}
+				}
+			}
+
+			.gnb-menu-mobile-list {
+				@include rem (width, 100%);
+				@include rem (top, 56);
+				height: 100vh;
+				position: fixed;
+				right: 0;
+				background-color: $color-ffffff;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(100%);
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				z-index: 0;
+
+				&.active {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0);
+				}
+
+				.gnb-menu-list {
+					.gnb-menu-item {
+						&+.gnb-menu-item {
+							@include rem (margin-top, 24);
+						}
+
+						a {
+							color: $color-495057;
+							text-decoration: none;
+						}
+					}
+				}
+
+				.gnb-menu {
+					@include rem (padding, 0 16px 16px 16px);
+					height: 100%;
+					overflow-y: auto;
+
+					.accordion-wrap {
+						position: relative;
+						display: block;
+						@include rem (width, 100%);
+						height: auto;
+						@include rem (padding, 0 0 70px 0);
+
+						.accordion-header {
+							@include rem (padding, 20px 16px);
+
+							&[data-state="open"] {
+								color: $color-259abd;
+
+								span {
+									position: relative;
+									color: $color-259abd;
+
+									&::before {
+										content: '';
+										@include rem (width, 8);
+										@include rem (height, 8);
+										@include rem (right, -18);
+										@include rem (top, 50%);
+										position: absolute;
+										transform: translateY(-50%);
+										background: url("../images/icon/ico_blit.png")no-repeat center center;
+										background-size: 100% auto;
+
+									}
+								}
+							}
+						}
+
+						.accordion-content {
+							@include rem (padding, 0);
+							background-color: $color-transparent;
+						}
+					}
+
+					.gnb-menu-list {
+						@include rem (padding, 0 16px 32px);
+					}
+				}
+			}
+		}
+
+		// header select : mo
+		.language-select-wrap {
+			@include rem (width, 68);
+			@include rem (height, 28);
+			@include rem (right, 36);
+			@include rem (top, 50%);
+			transform: translateY(-50%);
+			// opacity: 0;
+
+			.language-select {
+				@include rem (width, 68);
+				@include rem (height, 28);
+				@include f(14, 500, 1.3);
+				@include rem (padding, 6px 8px 6px 26px);
+
+				&::before {
+					@include rem (width, 16);
+					@include rem (height, 16);
+					@include rem (left, 8);
+				}
+
+				&::after {
+					@include rem (right, 6);
+				}
+
+				&.active {
+					@include rem (border-top-left-radius, 15);
+					@include rem (border-top-right-radius, 15);
+					@include rem (border-bottom-left-radius, 0);
+					@include rem (border-bottom-right-radius, 0);
+				}
+
+				.language-select-options {
+					@include rem (width, 68);
+					@include rem (top, 28);
+
+					&.active {
+						@include rem (border-bottom-left-radius, 15);
+						@include rem (border-bottom-right-radius, 15);
+
+						&:before {
+							@include rem (height, 168);
+						}
+					}
+
+					&:before {
+						@include rem (height, 28);
+						@include rem (top, -38);
+					}
+
+					.language-select-option {
+						@include rem (padding, 6px 8px 6px 26px);
+
+						&:hover {}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1920px) and (min-width: 1024px) {
+	.header {
+		@include rem (padding, 0 40px);
+	}
+}
+@media screen and (max-width: 1450px) and (min-width: 1024px) {
+	.header {
+		.gnb-wrap {
+			.gnb-logo {
+				.logo {
+					@include rem (width, 40);
+					@include rem (height, 40);
+					background: url("../images/contents/header_logo.png")no-repeat center center;
+					background-size: 100% auto;
+				}
+			} 
+		} 
+	} 
+}

@@ -1,0 +1,77 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// 가맹 절차 안내 css 영역입니다.
+.process-wrap{
+  @include rem (padding, 40px 0 144px 0);
+  @include mobile {
+    @include rem (padding, 32px 0 80px 0);
+  }
+  section {
+    & + section {
+      @include rem (margin-top, 16);
+    }
+  }
+
+  .mb-16 {
+    @include mobile {
+      margin-bottom:  1.2rem !important;
+    }
+  }
+
+  .tab-head.tab-sticky {
+    @include rem (margin-bottom, 80);
+    @include mobile {
+      @include rem (margin-bottom, 28);
+    }
+  }
+
+  @include mobile {
+    .cont-wrap .step-tit .num {
+      @include rem (min-width, 79);
+    }
+  }
+
+  .process-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include rem(gap, 24 );
+    & + .process-content{
+      @include rem(margin-top, 104 );
+      @include mobile{
+        @include rem(margin-top, 64);
+      }
+    }
+    @include mobile{
+      flex-direction: column;
+    }
+    .img-cont {
+      @include rem (border-radius, 20);
+      img {
+        @include rem (border-radius, 20);
+      }
+    }
+  }
+  .title-wrap{
+    @include rem(width, 384);
+    @include mobile{
+      @include rem(width, 100%);
+    }
+  }
+  .btn-wrap{
+    @include rem(margin-top, 104 );
+    @include rem(padding-top, 40);
+    border-top: 1px solid $color-dee2e6 ;
+    text-align: center;
+    @include mobile{
+      @include rem(margin-top, 64);
+    }
+  }
+
+  @include mobile {
+    .step-cont .desc-list li {
+      @include f(16, 400, 1.6);
+    }
+  }
+}

@@ -1,0 +1,304 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.accordion-wrap {
+	&.line{
+		border-top: 1px solid $color-868e96;
+	}
+	&.ico-type {
+		.accordion-header {
+			@include rem (padding, 24px 24px 24px 72px);
+			@include f(18, 500, 1.6);
+			@include mobile {
+				@include rem (padding, 24px 40px 24px 48px);
+				@include f(16, 500, 1.6);
+			}
+			&[data-state="open"] {
+				font-weight: 600;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				@include rem (width, 24);
+				@include rem (height, 24);
+				@include rem (left, 24);
+				@include rem (top, 50%);
+				background: url("../images/icon/ico_accordion_off.png") no-repeat center center;
+				background-size: 100% auto;
+				transform: translateY(-50%);
+				@include mobile {
+					@include rem (left, 12);
+				}
+			}
+
+			&::after {
+				@include rem (width, 16);
+				@include rem (height, 16);
+				@include rem (right, 24);
+				@include rem (top, 50%);
+				content: '';
+				position: absolute;
+				background: url("../images/icon/ico_accordion.png") no-repeat center center;
+				background-size: 100% auto;
+				transform: translateY(-50%) rotate(0deg);
+				transition: transform 0.3s ease-in-out;
+				@include mobile {
+					@include rem (right, 8);
+				}
+			}
+
+			&[data-state="open"] {
+				&::after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+
+		}
+
+		.accordion-content {
+			@include rem (padding, 24px 24px 24px 72px);
+		
+			@include mobile {
+				@include rem (padding, 20px 12px 32px 48px);
+			}
+			
+			&:before {
+				content: '';
+				position: absolute;
+				@include rem (width, 24);
+				@include rem (height, 24);
+				@include rem (left, 24);
+				@include rem (top, 24);
+				background: url("../images/icon/ico_accordion_on.png") no-repeat center center;
+				background-size: 100% auto;
+				@include mobile {
+					@include rem (left, 12);
+				}
+			}
+
+			&[data-state="open"] {
+				animation: icotypeslideDown 0.3s ease-out;
+			}
+
+			&[data-state="closed"] {
+				animation: icotypeslideUp 0.3s ease-out;
+			}
+
+		}
+
+	}
+
+	>div {
+		border-bottom: 1px solid $color-e9ecef;
+
+		&[data-state="open"] {
+			border-bottom: none;
+		}
+	}
+
+	.accordion-header {
+		@include rem (width, 100%);
+		@include rem (padding, 32px 24px);
+		@include f(18, 600, 1.6);
+		position: relative;
+		text-align: left;
+		color: $color-212529;
+		border-bottom: 1px solid $color-e9ecef;
+		background-color: $color-ffffff;
+		cursor: pointer;
+		border: none;
+
+		&::after {
+			@include rem (width, 24);
+			@include rem (height, 24);
+			@include rem (right, 24);
+			@include rem (top, 50%);
+			content: '';
+			position: absolute;
+			background: url("../images/icon/ico_accordion.png") no-repeat center center;
+			background-size: 100% auto;
+			transform: translateY(-50%) rotate(0deg);
+			transition: transform 0.3s ease-in-out;
+		}
+
+		&[data-state="open"] {
+			&::after {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+
+		&:focus-visible,
+		&:hover {
+			outline: none;
+			border: none;
+		}
+	}
+
+	.accordion-content {
+		@include rem (padding, 32px 24px);
+		@include f(16, 400, 1.6);
+		@include rem (border-radius, 12);
+		position: relative;
+		color: $color-495057;
+		background-color: $color-f8f9fa;
+		overflow: hidden;
+
+		&[data-state="open"] {
+			animation: slideDown 0.3s ease-out;
+		}
+
+		&[data-state="closed"] {
+			animation: slideUp 0.3s ease-out;
+		}
+
+		a {
+			@include rem (margin-top, 16);
+			@include f(15, 400, 1.4);
+			display: inline-block;
+			color: $color-2686d1;
+			text-decoration: underline;
+		}
+	}
+}
+
+@keyframes slideDown {
+	from {
+		height: 0;
+		opacity: 0;
+		padding: 0 24px 0 24px;
+	}
+
+	to {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 32px 24px 32px 24px;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 32px 24px 32px 24px;
+	}
+
+	to {
+		height: 0;
+		opacity: 0;
+		padding: 0 24px 0 24px;
+	}
+}
+
+@keyframes icotypeslideDown {
+	from {
+		height: 0;
+		opacity: 0;
+		padding: 0 24px 0 72px;
+	}
+
+	to {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 24px 24px 24px 72px;
+	}
+}
+
+@keyframes icotypeslideUp {
+	from {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		padding: 24px 24px 24px 72px;
+	}
+
+	to {
+		height: 0;
+		opacity: 0;
+		padding: 0 24px 0 72px;
+	}
+}
+
+
+@media (max-width: 1023px) {
+	.accordion-wrap {
+		.accordion-header {
+			@include rem (padding, 20px 8px);
+			@include f(18, 600, 1.4);
+
+			&:before {
+				@include rem (left, 12);
+			}
+
+			&::after {
+				@include rem (right, 4);
+			}
+		}
+
+		.accordion-content {
+			@include rem (padding, 20px 8px);
+
+			&[data-state="open"] {
+				animation: slideDown 0.3s ease-out;
+			}
+
+			&[data-state="closed"] {
+				animation: slideUp 0.3s ease-out;
+			}
+		}
+	}
+
+	@keyframes slideDown {
+		from {
+			height: 0;
+			opacity: 0;
+			padding: 0 8px 0 8px;
+		}
+
+		to {
+			height: var(--radix-accordion-content-height);
+			opacity: 1;
+			padding: 20px 8px 20px 8px;
+		}
+	}
+
+	@keyframes slideUp {
+		from {
+			height: var(--radix-accordion-content-height);
+			opacity: 1;
+			padding: 20px 8px 20px 8px;
+		}
+
+		to {
+			height: 0;
+			opacity: 0;
+			padding: 0 8px 0 8px;
+		}
+	}
+
+	@keyframes icotypeslideDown {
+		from {
+			height: 0;
+			opacity: 0;
+			padding: 0 8px 0 48px;
+		}
+
+		to {
+			height: var(--radix-accordion-content-height);
+			opacity: 1;
+			padding: 20px 12px 32px 48px;
+		}
+	}
+
+	@keyframes icotypeslideUp {
+		from {
+			height: var(--radix-accordion-content-height);
+			opacity: 1;
+			padding: 20px 12px 32px 48px;
+		}
+
+		to {
+			height: 0;
+			opacity: 0;
+			padding: 0 8px 0 48px;
+		}
+	}
+}

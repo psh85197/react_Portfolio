@@ -1,0 +1,218 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.tax-inner {
+	@include rem (column-gap, 24);
+	display: flex;
+	align-items: flex-start;
+
+	.left-bx {
+		@include rem (width, 384);
+		flex-shrink: 0;
+	}
+	.right-group {
+		.right-bx {
+			& + .right-bx {
+				@include rem (margin-top, 40);
+				@include mobile {
+					@include rem (margin-top, 16);
+				}
+			}
+		}	
+	}
+	.right-bx {
+		@include rem (width, 100%);
+
+		.tax-txt {
+			@include rem (margin-bottom, 40);
+			@include f(20, 400, 1.6);
+			color: $color-495057;
+		}
+
+		.tax-txt-bx {
+			@include rem (width, 100%);
+			@include rem (margin-bottom, 24);
+			@include rem (padding, 18px 0);
+			@include rem (border-radius, 16);
+			@include f(20, 700, 1.4);
+			color: $color-259abd;
+			background-color: $color-d6f1f7;
+			text-align: center
+		}
+
+		.tax-img-bx {
+			@include rem (border-top-left-radius, 20);
+			@include rem (border-top-right-radius, 20);
+			overflow: hidden;
+
+			img {
+				@include rem (border-top-left-radius, 20);
+				@include rem (border-top-right-radius, 20);
+				@include rem (width, 100%);
+			}
+
+			@include mobile {
+				@include rem (border-top-left-radius, 16);
+				@include rem (border-top-right-radius, 16);
+				img {
+					@include rem (border-top-left-radius, 16);
+					@include rem (border-top-right-radius, 16);
+				}
+			}
+		}
+
+		.tax-info-bx {
+			@include rem (column-gap, 24);
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			.info-bx {
+				@include rem (padding, 0);
+				@include rem (border-radius, 16);
+				height: 100%;
+
+				.info-head {
+					@include rem (border-top-left-radius, 16);
+					@include rem (border-top-right-radius, 16);
+					@include rem (padding, 18px 0);
+					text-align: center;
+					background-color: $color-f1f3f5;
+					@include mobile {
+						@include rem (padding, 12px 0);
+					}
+				}
+
+				.info-list {
+					@include rem (padding, 32);
+				}
+			}
+		}
+
+		.info-bx {
+			@include rem (border-top-left-radius, 0);
+			@include rem (border-top-right-radius, 0);
+			border: none;
+		}
+	}
+	.info-content{
+		& + .info-content{
+			@include rem(margin-top, 40 );
+			@include mobile{
+				@include rem(margin-top, 16 );
+			}
+		}
+	}
+	.desc-list {
+		display: flex;
+		@include rem(margin-top, 12 );
+		flex-direction: column;
+		justify-content: flex-start;
+		@include rem(gap, 8);
+		@include mobile{
+			@include rem(gap, 8);
+			@include rem(margin-top,4 );
+		}
+		li {
+			color: $color-495057;
+			@include f(18, 400, 1.6); 
+			position: relative;
+			@include rem(padding-left, 12);
+			@include mobile{
+			@include f(16, 400, 1.6); 
+		}
+		&::before {
+			content: '';
+			display: block;
+			@include rem(width, 3 );
+			@include rem(height, 3 );
+			position: absolute;
+			@include rem(left, 0 );
+			@include rem(top, 12 );
+			background-color: $color-868e96;
+			@include mobile{
+				@include rem(top,10 );
+			}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.tax-inner {
+		// @include rem (column-gap, 24);
+		display: block;
+		// align-items: flex-start;
+	
+		.left-bx {
+			@include rem (width, 100%);
+			// flex-shrink: 0;
+			.hgroup-wrap {
+				@include rem (margin-bottom, 8);
+			}
+		}
+	
+		.right-bx {
+			// @include rem (width, 100%);
+	
+			.tax-txt {
+				@include rem (margin-bottom, 24);
+				@include f(18, 500, 1.6);
+				// color: $color-495057;
+			}
+	
+			.tax-txt-bx {
+				// @include rem (width, 100%);
+				@include rem (margin-bottom, 16);
+				@include rem (padding, 12px 0);
+				// @include rem (border-radius, 16);
+				// @include f(20, 700, 1.4);
+				// color: $color-259abd;
+				// background-color: $color-d6f1f7;
+				// text-align: center
+			}
+	
+			.tax-img-bx {
+				// @include rem (border-top-left-radius, 12);
+				// @include rem (border-top-right-radius, 12);
+				// overflow: hidden;
+	
+				img {
+					// @include rem (border-top-left-radius, 12);
+					// @include rem (border-top-right-radius, 12);
+					// @include rem (width, 100%);
+				}
+			}
+	
+			.tax-info-bx {
+				// @include rem (column-gap, 24);
+				@include rem (row-gap, 12);
+				// display: grid;
+				grid-template-columns: repeat(1, 1fr);
+	
+				.info-bx {
+					// @include rem (padding, 0);
+					// @include rem (border-radius, 16);
+					// height: 100%;
+	
+					.info-head {
+						// @include rem (border-top-left-radius, 16);
+						// @include rem (border-top-right-radius, 16);
+						// @include rem (padding, 18px 0);
+						// text-align: center;
+						// background-color: $color-f1f3f5;
+					}
+	
+					.info-list {
+						@include rem (padding, 20);
+					}
+				}
+			}
+	
+			.info-bx {
+				// @include rem (border-top-left-radius, 0);
+				// @include rem (border-top-right-radius, 0);
+				// border: none;
+			}
+		}
+	}
+}

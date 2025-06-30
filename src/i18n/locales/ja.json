@@ -1,0 +1,2375 @@
+{
+  "contactPage": {
+    "title": "가입 문의 및 신청"
+  },
+  "unit": "ウォン",
+  "introduction": {
+    "title": "Tax Refundのご紹介",
+    "whatIsTaxRefund": {
+      "title": "タックスリファンドとは？",
+      "description": "外国人観光客が購入した品物を所持して出国する場合、その品物の値段に含まれている消費税相当額を返金する制度",
+      "relatedLaw": "※ 関連法令",
+      "lawDescription": "「租税特例制限法」　外国人観光客等に対する付加価値税及び個別消費税の特例規程"
+    },
+    "eligibleItems": {
+      "title": "どんな人が還付可能ですか？",
+      "eligiblePersons": {
+        "title": "還付対象者",
+        "items": [
+          "韓国に居住せず、かつ韓国で所得がない人",
+          "韓国滞在期間が6ヶ月以内の外国人 (外国為替取引法にもとづく非居住者)",
+          "2年以上海外に居住し、韓国での滞在期間が3ヶ月未満の在外韓国人（駐在員、留学生、就業者、研修生など）"
+        ]
+      },
+      "ineligiblePersons": {
+        "title": "還付非対象者",
+        "items": [
+          "滞在期間が超過した人(外国人6ヶ月/韓国人3ヶ月)",
+          "韓国駐在の外交官(これに準ずる外国公館員含む)",
+          "韓国駐在の国際連合軍及び米国軍の将兵や軍務員",
+          "韓国で所得がある就職者",
+          "法人事業者"
+        ]
+      },
+      "ineligibleNotices": {
+        "title": "・還付対象および手続きのご案内ページへ",
+        "link": "移動する",
+        "items": {
+          "1": "還付対象の詳細案内",
+          "2": "還付手続きの詳細案内"
+        }
+      }
+    }
+  },
+  "features": {
+    "title": "サービスの特長",
+    "description": "Tax Refund店舗サービスの特長をご紹介いたします。",
+    "mainTitle": "Tax Refundの店舗を運営するとこのようなとメリットできます。",
+    "feature1": {
+      "title": "外国人観光客による売り上げの増加",
+      "description": "6〜8％の税金還付による割引効果で、より多くの観光客を呼び込み、売上の向上につながります。"
+    },
+    "feature2": {
+      "title": "事後免除店舗として広報可能",
+      "description": [
+        "オンライン・オフラインを通じ、Tax Refund店舗として広報することができます。",
+        "特に中国や日本、台湾、東南アジアの観光客の間では事後免除制度の認知度が高く、店舗訪問時の満足度が高くなっています。"
+      ]
+    },
+    "feature3": {
+      "title": "加盟店の追加費用負担なし",
+      "description": "お客様に返金される還付金は品物の値段に含まれる付加価値税で、店舗側に別途費用負担はありません。"
+    },
+    "feature4": {
+      "title": "全国のどの店舗でもサービス可能",
+      "description": [
+        "外国人観光客が訪問する店舗であれば、全国どこでも免除事業所として運営が可能です。",
+        "通常の店舗と比べ、還付額並みの競争力があり、集客にも有利です。"
+      ]
+    },
+    "whyCubeRefundButton": "Why CubeRefund?"
+  },
+  "traveler": {
+    "announcement": {
+      "modal": {
+        "title": "地図を見る",
+        "addressCopySuccess": "アドレスがコピーされました。",
+        "confirm": "確認",
+         "title": "地図を見る"
+      }
+    },
+    "applyRefund": {
+      "title": "還付照会および申請",
+      "description": "番号と金額を入力し、還付内訳をご確認ください。",
+      "tabs": {
+        "step1": "申請に関する同意",
+        "step2": "還付申請および還付手段の登録",
+        "step3": "還付申請結果"
+      },
+      "terms": {
+        "uniqueId": {
+          "title": "固有識別情報の取得・利用への同意(必須)"
+        }
+      },
+      "form": {
+        "gender": {
+          "label": "性别",
+          "options": {
+            "male": "男",
+            "female": "女"
+          }
+        }
+      },
+      "step2": {
+        "title": "払い戻し伝票の申請履歴",
+        "refundable": "払い戻し可能",
+        "receiptNumber": "伝票シリアル番号",
+        "purchaseDate": "購入日",
+        "totalAmount": "購入総額",
+        "refundAmount": "払い戻し額",
+        "totalRefundAmount": "総還付見積額 (ウォン)",
+        "passportInfo": {
+          "title": "パスポート情報の作成",
+          "required": "必須入力項目",
+          "name": {
+            "label": "パスポート声明（英語）",
+            "lastName": "Last Name",
+            "firstName": "First Name"
+          },
+          "number": "パスポート番号",
+          "nationality": "国籍",
+          "gender": "性別",
+          "birthDate": "生年月日"
+        },
+        "contactInfo": {
+          "title": "連絡先情報の作成",
+          "phone": {
+            "label": "お問い合わせ",
+            "placeholder": "- 除外して数字のみ入力"
+          },
+          "email": {
+            "label": "メール",
+            "id": "ID"
+          }
+        },
+        "paymentMethod": {
+          "title": "お支払い方法",
+          "cardSelection": "カードタック",
+          "creditCard": "クレジットカード",
+          "alipay": "アリペイ",
+          "wechatPay": "ウィチャペイ",
+          "cardNumber": {
+            "label": "カード番号",
+            "placeholder": "- 除外して数字のみ入力"
+          }
+        },
+        "notes": {
+          "title": "注意事項",
+          "items": [
+            "為替レートによっては、実際の払い戻し額と多少の差が生じる場合があります。",
+            "払い戻し申請が完了した件については修正ができませんので、入力した情報をもう一度確認してください。"
+          ]
+        },
+        "buttons": {
+          "prev": "前へ",
+          "apply": "申請"
+        }
+      },
+      "step3": {
+        "title": "還付伝票の照会内訳"
+      }
+    },
+    "refundEligibility": {
+      "title": "還付手続きのご案内",
+      "description": "分野別還付方法と対象をご確認ください。",
+      "tabs": {
+        "goods": "物品",
+        "medical": "医疗",
+        "accommodation": "宿泊"
+      },
+      "goods": {
+        "title": "物品",
+        "description1": "法律で禁止する物品および税関で肉眼による確認ができない物品ならびに免税品を除く、すべての物品",
+        "description2": "",
+        "imageAlt": "CubeRefund 手机自助申报开放",
+        "eligiblePerson": {
+          "title": "対象者",
+          "description": "韓国の非居住者であり、かつ韓国で所得のない人",
+          "eligible": "還付対象者",
+          "eligibleList": [
+            "韓国での滞在期間が6か月以内の外国人",
+            "海外に2年以上居住し、国内滞在期間が3か月以内の在外韓国人"
+          ],
+          "ineligible": "海外に2年以上居住し、国内滞在期間が3か月以内の在外韓国人",
+          "ineligibleList": [
+            "滞在期間が超過した人、韓国駐在外交官、在韓米軍、韓国内で就職した人、代理人、法人"
+          ]
+        },
+        "eligibleItems": {
+          "title": "対象物品",
+          "description": "免税販売場で購入した物品のうち、法律で禁止されていない物品",
+          "eligible": "還付対象物品",
+          "eligibleList": [
+            "1回の購入金が15,000ウォン以上",
+            "購入後3か月以内に税関で海外搬出が確認された物品"
+          ],
+          "ineligible": "還付対象外の物品",
+          "ineligibleList": [
+            "海外搬出前に開封または消費された物品",
+            "税関で搬出確認を受けていない物品",
+            "銃砲、刀剣、火薬、文化財、麻薬など法律で禁止している物品",
+            "調理して飲食店で販売する飲食物、マッサージなど税関で目視による確認ができない物品",
+            "免税品"
+          ]
+        },
+        "procedures": {
+          "title": "還付手続きに進む",
+          "immediate": "即時還付",
+          "city": "都心還付",
+          "departure": "出国港還付",
+          "mobile": "モバイル還付"
+        }
+      },
+      "medical": {
+        "title": "医療",
+        "description1": "特例が適用される医療機関で外国人患者に提供された医療サービス",
+        "description2": "特例が適用される医療機関で外国人患者に提供された医療サービス",
+        "eligiblePerson": {
+          "title": "対象者",
+          "description": "韓国の非居住者であり、かつ韓国で所得のない人",
+          "eligible": "還付対象者",
+          "eligibleList": [
+            "韓国での滞在期間が6か月以内の外国人",
+            "韓国での滞在期間が3ヶ月以内で、海外に2年以上居住している在外同胞の"
+          ],
+          "ineligible": "還付対象外",
+          "ineligibleList": [
+            "滞在期間が超過した人、韓国駐在外交官、在韓米軍、韓国内で就職した人、代理人、法人"
+          ]
+        },
+        "eligibleItems": {
+          "title": "適用範囲",
+          "description": "特例適用医療機関によって提供される、付加価値税の課税対象となる医療サービス",
+          "eligible": "還付施術範囲",
+          "eligibleList1": [
+            "二重まぶた手術",
+            "鼻の整形手術",
+            "乳房整形手術",
+            "脂肪吸引手術",
+            "しわの除去術",
+            "顔の輪郭形成術",
+            "歯の整形術",
+            "顎顔面矯正術",
+            "その他"
+          ],
+          "eligibleList2": [
+            "ニキビ治療",
+            "脱毛施術",
+            "色素性母斑・そばかす・黒子・肝斑の治療",
+            "脱毛症の治療",
+            "タトゥー施術および除去，ピアス施術",
+            "脂肪溶解術",
+            "肌再生治療、美白治療",
+            "アンチエイジング治療および毛穴縮小施術"
+          ],
+          "ineligible": "還付対象外の施術",
+          "ineligibleList": [
+            "対象以外の施術"
+          ]
+        },
+        "procedures": {
+          "title": "還付手続きに進む",
+          "city": "都心還付",
+          "departure": "出国港還付",
+          "mobile": "モバイル還付"
+        }
+      },
+      "accommodation": {
+        "title": "宿泊",
+        "description1": "特例指定の観光ホテルで外国人観光客に提供された宿泊サービス",
+        "description2": "",
+        "imageAlt": "キューブリファンド モバイルセルフ搬出 オープン",
+        "eligiblePerson": {
+          "title": "対象者",
+          "description": "韓国の非居住者であり、かつ韓国で所得のない人",
+          "eligible": "還付対象者",
+          "eligibleList": [
+            "韓国での滞在期間が6か月以内の外国人",
+            "海外に2年以上居住し、韓国での滞在期間が3ヶ月以内の在外韓国人",
+            "宿泊サービスが供給された日から3か月以内に海外に出国する人"
+          ],
+          "ineligible": "還付対象外",
+          "ineligibleList": [
+            "滞在期間が超過した人、韓国駐在外交官、在韓米軍、韓国内で就職した人、代理人、法人"
+          ]
+        },
+        "eligibleItems": {
+          "title": "適用範囲",
+          "description": "外国人観光客が特例適用の観光宿泊施設で提供を受けた宿泊サービス",
+          "eligible": "還付対象範囲",
+          "eligibleList": [
+            "30泊以下の客室料金 (客室料金に含まれる朝食を含む)",
+            "個別観光客 (FIT)",
+            "チェックアウト後3か月以内に出国した観光客"
+          ],
+          "ineligible": "還付対象外",
+          "ineligibleList": [
+            "30泊を超過した場合",
+            "別途購入した朝食、サービス料金その他",
+            "団体観光客 (パッケージ商品)"
+          ]
+        },
+        "procedures": {
+          "title": "還付手続きに進む",
+          "city": "都心還付",
+          "departure": "出国港還付",
+          "mobile": "モバイルの還付"
+        }
+      }
+    }
+  },
+  "greeting": {
+    "welcome": "CEO Message",
+    "marketLeader1": "Kショッピングを完成させるスマートタックスリファンド・プラットフォーム",
+    "marketLeader2": "",
+    "marketLeader3": "",
+    "marketLeader4": "",
+    "companyMission": "CubeRefundにお越しいただき、誠にありがとうございます。",
+    "hello": "CubeRefundは、訪韓される外国人観光客の皆様が、韓国でのショッピングをより便利に、そして心地よく締めくくっていただけるよう、革新的なタックスリファンドサービスを提供することを目的に設立されました。",
+    "globalPartnership": "設立以来、LOTTE Innovateならびにグローバルなタックスリファンド専門企業であるPlanet Payment Group Holdingsとの投資および協力を通じて、 確かな技術力とサービス競争力を備えた企業へと成長してまいりました。",
+    "planet": "現在、CubeRefundはタックスリファンドサービスにとどまらず、外国人観光客向けの事後免税店舗を対象とした特化型マーケティングサービスも展開しており、お客様とパートナーの皆様に実質的な価値を提供する【バリュークリエイター（Value Creator）】として確固たる地位を築いています。",
+    "futureCommitment": "今後もCubeRefundは、外国人のお客様のショッピング体験をより幸せに締めくくるプラットフォームとして、韓国ブランドの価値を世界へ発信してまいります。",
+    "happy": "技術革新と顧客中心のサービスを原動力に、より良い未来を創造していくCube Refundに、どうぞご期待ください。",
+    "thankYou": "心より感謝申し上げます。",
+    "ceoTitle": "Jeong Hun Jwa, CEO",
+    "ceoName": "ャ・ジョンフン"
+  },
+  "location": {
+    "title": "アクセス",
+    "headOfficeTitle": "CubeRefund",
+    "addressLabel": "住所",
+    "headOfficeAddress": "ソウル市衿川区加山デジタル2路187、2階",
+    "phoneLabel": "代表電話番号",
+    "emailLabel": "メールアドレス",
+    "faxLabel": "FAX",
+    "salesOfficeTitle": "営業事務所",
+    "salesOfficeAddress": "ソウル市中区乙支路264、11階",
+    "viewMap": "マップを見る",
+    "refundInfoTitle": "還付窓口のご案内",
+    "refundLocationDowntown": "都心",
+    "refundLocationDeparture": "出国港湾",
+    "learnMore": "案内を見る"
+  },
+  "history": {
+    "pageTitle": "沿革",
+    "tabs": {
+      "2014To2010": "現在 ～ 2020",
+      "2019To2015": "2019 ~ 2015",
+      "currentTo2020": "2014 ~ 2010"
+    },
+    "milestones": {
+      "currentTo2020": {
+        "title": "現在 ~ 2020",
+        "years": {
+          "y2025": {
+            "title": "2025",
+            "items": {
+              "y2025_06": {
+                "date": "2025. 06",
+                "desc": "CubeRefundホームページをリニューアル"
+              },
+              "y2025_04": {
+                "date": "2025. 04",
+                "desc": "クラウド還付システムを構築"
+              }
+            }
+          },
+          "y2024": {
+            "title": "2024",
+            "items": {
+              "y2024_12": {
+                "date": "2024. 12",
+                "desc": "BI Reportシステムをオープン"
+              },
+              "y2024_05": {
+                "date": "2024. 05",
+                "desc": "釜山都心還付センターOPEN"
+              },
+              "y2024_04": {
+                "date": "2024. 04",
+                "desc": "都心還付センターをオープン(ロッテホテル釜山店)"
+              },
+              "y2024_02_01": {
+                "date": "2024. 02",
+                "desc": "次世代キオスクを導入"
+              },
+              "y2024_02_02": {
+                "date": "2024. 02",
+                "desc": "モバイルセルフ搬出のパイロットプロジェクト開始"
+              },
+              "y2024_01": {
+                "date": "2024. 01",
+                "desc": "全国メンテナンスサービスのネットワークを構築"
+              }
+            }
+          },
+          "y2022": {
+            "title": "2022",
+            "items": {
+              "y2022_01": {
+                "date": "2022. 01",
+                "desc": "予約発行システムをオープン"
+              }
+            }
+          },
+          "y2020": {
+            "title": "2020",
+            "items": {
+              "y2020": {
+                "date": "2020",
+                "desc": "韓国観光公社の地域観光拠点都市の即時還付事業者に選定(全州/安東)"
+              }
+            }
+          }
+        }
+      },
+      "2019To2015": {
+        "title": "2019 ~ 2015",
+        "imageAlt": "キューブリファンド QR 画像",
+        "imageKey": "history_images02",
+        "years": {
+          "y2019": {
+            "title": "2019",
+            "items": {
+              "y2019_04_01": {
+                "date": "2019. 04",
+                "desc": "Alipayアプリ還付サービス開始"
+              },
+              "y2019_04_02": {
+                "date": "2019. 04",
+                "desc": "CubeRefundモバイル還付サービス開始"
+              },
+              "y2019_04_03": {
+                "date": "2019. 04",
+                "desc": "ロッテマートで還付サービス開始"
+              }
+            }
+          },
+          "y2018": {
+            "title": "2018",
+            "items": {
+              "y2018_09": {
+                "date": "2018. 09",
+                "desc": "Alipayリアルタイム還付と業務提携"
+              },
+              "y2018_08": {
+                "date": "2018. 08",
+                "desc": "ロッテ百貨店に還付窓口を運営"
+              },
+              "y2018_04": {
+                "date": "2018. 04",
+                "desc": "ロッテホテル宿泊サービス還付を開始"
+              },
+              "y2018_03": {
+                "date": "2018. 03",
+                "desc": "Tenpay社WeChat Payリアルタイム還付と業務提携"
+              },
+              "y2018_01": {
+                "date": "2018. 01",
+                "desc": "ホテル宿泊サービス還付窓口運営事業者指定"
+              }
+            }
+          },
+          "y2017": {
+            "title": "2017",
+            "items": {
+              "y2017_08": {
+                "date": "2017. 08",
+                "desc": "ロッテ百貨店本店で即時還付サービス開始"
+              },
+              "y2017_03_01": {
+                "date": "2017. 03",
+                "desc": "都心還付センターオープン(ロッテFITIN東大門店)"
+              },
+              "y2017_03_02": {
+                "date": "2017. 03",
+                "desc": "欧州Tax Refund社Planet(旧Fintrax)の投資誘致及び事業提携"
+              }
+            }
+          },
+          "y2016": {
+            "title": "2016",
+            "items": {
+              "y2016_09": {
+                "date": "2016. 09",
+                "desc": "仁川国際空港有人還付窓口運営"
+              },
+              "y2016_08": {
+                "date": "2016. 08",
+                "desc": "釜山都心還付センターOPEN"
+              },
+              "y2016_05": {
+                "date": "2016. 05",
+                "desc": "ロッテイノベート(旧ロッテ情報通信)の投資誘致"
+              },
+              "y2016_01": {
+                "date": "2016. 01",
+                "desc": "即時還付サービス開始"
+              }
+            }
+          },
+          "y2015": {
+            "title": "2015",
+            "items": {
+              "y2015_10_01": {
+                "date": "2015. 10",
+                "desc": "釜山港還付窓口を運営"
+              },
+              "y2015_10_02": {
+                "date": "2015. 10",
+                "desc": "平沢港還付窓口を運営"
+              },
+              "y2015_03": {
+                "date": "2015. 03",
+                "desc": "弘大都心還付センターOPEN"
+              },
+              "y2015_01_01": {
+                "date": "2015. 01",
+                "desc": "仁川港第2ターミナルで還付サービス開始"
+              },
+              "y2015_01_02": {
+                "date": "2015. 01",
+                "desc": "済州都心還付センターOPEN"
+              }
+            }
+          }
+        }
+      },
+      "2014To2010": {
+        "title": "2014 ~ 2010",
+        "imageAlt": "キューブリファンド 空港 画像",
+        "imageKey": "history_images03",
+        "years": {
+          "y2014": {
+            "title": "2014",
+            "items": {
+              "y2014_12": {
+                "date": "2014. 12",
+                "desc": "大邱・襄陽国際空港還付サービス開始"
+              },
+              "y2014_11": {
+                "date": "2014. 11",
+                "desc": "清州国際空港還付サービス開始"
+              },
+              "y2014_10": {
+                "date": "2014. 10",
+                "desc": "仁川港第1ターミナルで還付サービス開始"
+              },
+              "y2014_07_01": {
+                "date": "2014. 07",
+                "desc": "還付窓口運営システムおよび方法に関する特許登録"
+              },
+              "y2014_05": {
+                "date": "2014. 05",
+                "desc": "都心還付センターオープン(ソウル市明洞中小企業流通センター)"
+              },
+              "y2014_02_01": {
+                "date": "2014. 02",
+                "desc": "オンラインを利用した国内税還付システムおよびその方法の特許登録"
+              }
+            }
+          },
+          "y2013": {
+            "title": "2013",
+            "items": {
+              "y2013_09": {
+                "date": "2013. 09",
+                "desc": "仁川国際空港電子還付サービス開始"
+              },
+              "y2013_01": {
+                "date": "2013. 01",
+                "desc": "金浦国際空港で還付サービス開始"
+              }
+            }
+          },
+          "y2012": {
+            "title": "2012",
+            "items": {
+              "y2012_12": {
+                "date": "2012. 12",
+                "desc": "済州国際空港で還付サービス開始"
+              },
+              "y2012_01": {
+                "date": "2012. 01",
+                "desc": "ベンチャー企業登録"
+              }
+            }
+          },
+          "y2011": {
+            "title": "2011",
+            "items": {
+              "y2011_07_01": {
+                "date": "2011. 07",
+                "desc": "新韓銀行-内国税指定運営会社業務提携の契約締結"
+              },
+              "y2011_07_02": {
+                "date": "2011. 07",
+                "desc": "金浦国際空港で無人キオスクを設置および運営"
+              },
+              "y2011_02": {
+                "date": "2011. 02",
+                "desc": "還付窓口運営事業者に指定"
+              }
+            }
+          },
+          "y2010": {
+            "title": "2010",
+            "items": {
+              "y2010_12": {
+                "date": "2010. 12",
+                "desc": "新韓Love KOREAカードサービス開始"
+              },
+              "y2010_08": {
+                "date": "2010. 08",
+                "desc": "法人設立"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "franchise": "加盟顧客",
+    "franchiseLocations": "Why CubeRefund?",
+    "franchiseProcess": "加盟手続きのご案内",
+    "franchiseNotice": "가맹점 공지사항",
+    "franchiseNoticeNoticeDetail": "가맹점 공지사항 상세",
+    "franchiseSupplies": "소모품 신청",
+    "franchiseManual": "매뉴얼",
+    "traveler": "旅行客",
+    "travelerEligibility": "還付対象のご案内",
+    "travelerMethods": "還付手続きのご案内",
+    "travelerReceipts": "還付場所のご案内",
+    "travelerApplyRefund": "還付照会および申請",
+    "travelerApplyRefundSelect": "還付照会および申請",
+    "travelerApplyRefundApply": "還付申請",
+    "taxRefund": "サービス",
+    "taxRefundIntroduction": "Tax Refundのご紹介",
+    "taxRefundFeatures": "サービスの特長",
+    "contact": "コンタクト",
+    "contactSignupInquiry": "登録および一般のお問い合わせ",
+    "contactFaq": "よくあるご質問",
+    "company": "会社紹介",
+    "companyGreeting": "CEO Message",
+    "companyHistory": "沿革",
+    "companyLocation": "アクセス",
+    "companyNotice": "お知らせ",
+    "companyNoticeNoticeList": "お知らせ メッセージリスト",
+    "companyNoticeNoticeDefault": "詳細",
+    "footer": "Footer",
+    "footer1Dep": "Footer1Dep",
+    "footerTermFairTrade": "Compliance",
+    "footerEthicsGuide": "Ombudsman",
+    "footerEthicsReport": "Submit a Report",
+    "footerSitemap": "サイトマップ",
+    "footer2Dep": "Footer2Dep",
+    "footerTermPrivacyPolicy": "Privacy Policy",
+    "footerTermVideoPrivacy": "Use of CCTVs",
+    "footerTermServiceTerms": "Terms of Service",
+    "footerTermLegalNotice": "Legal Notice",
+    "footerTermEmailReject": "Opt Out of Email Address Collection"
+  },
+  "notice": {
+    "pageTitle": "お知らせ",
+    "searchPlaceholder": "検索語を入力してください。",
+    "noLabel": "No",
+    "titleLabel": "タイトル",
+    "registrationDateLabel": "登録日",
+    "noResultsFound": "該当する履歴が見つかりませんでした。",
+    "topNoticeBadge": "お知らせ",
+    "noTitle": "タイトルなし",
+    "badge": "お知らせ",
+    "prev": "前へ",
+    "next": "次へ",
+    "list": "一覧"
+  },
+  "footer": {
+    "addressTitle": "住所",
+    "addressValue": "08500 ソウル市衿川区加山デジタル2路187、2階",
+    "telTitle": "代表電話番号",
+    "emailTitle": "メールアドレス ",
+    "copyright": "© COPYRIGHTⓒCUBEREFUND Co.、LTD. ALL RIGHT RESERVED.",
+    "familySiteTitle": "関連サイト",
+    "fax": "FAX",
+    "familySite": {
+      "lotteHoldings": "ロッテ持株会社",
+      "lotteInnovate": "ロッテイノベート",
+      "planet": "planet"
+    }
+  },
+  "common": {
+    "logoAltText": "ロゴ",
+    "required": "必須入力項目",
+    "cancel": "キャンセル",
+    "submit": "登録",
+    "confirm": "確認",
+    "noData": "照会された履歴はありません。",
+    "noContent": "照会されたコンテンツはありません。"
+  },
+  "file": {
+    "uploadLimitMessage": "最大5件まで登録可能です。10MB未満の書類、画像、圧縮ファイルのみ登録できます。",
+    "confirm": "確認",
+    "uploadButton": "登録する",
+    "success": {
+      "title": "アップロード成功",
+      "desc": "{{fileName}} ファイルがアップロードされました."
+    },
+    "error": {
+      "title": "アップロードエラー"
+    },
+    "exception": {
+      "no": {
+        "file": "ファイルが選択されていません.",
+        "fileUploadType": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf",
+        "extension": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf",
+        "storageStrategy": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf"
+      },
+      "invalid": {
+        "fileUploadType": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf",
+        "extension": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf",
+        "mime": "アップロード可能な拡張子: hwp、doc、txt、ppt、xls、jpg、png、gif、zip、hwpx、docx、pptx、xlsx、pdf"
+      },
+      "max": {
+        "desc": "添付ファイルは{{max}}個までアップロードできます.",
+        "title": "添付ファイル数を超える"
+      },
+      "maxSize": {
+        "desc": "10MB以下のファイルのみアップロードできます.",
+        "title": "ファイルサイズ超過"
+      },
+      "generic": "ファイルのアップロードに失敗しました"
+    },
+    "report": {
+      "uploadLimitMessage": "You can register up to 5 files. Only documents, images, or compressed files smaller than 10MB each can be uploaded.",
+      "confirm": "confirm",
+      "uploadButton": "Add",
+      "success": {
+        "title": "Upload Success",
+        "desc": "{{fileName}} file has been uploaded."
+      },
+      "error": {
+        "title": "Upload Error"
+      },
+      "exception": {
+        "no": {
+          "file": "No file selected.",
+          "fileUploadType": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "extension": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "storageStrategy": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+        },
+        "invalid": {
+          "fileUploadType": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "extension": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "mime": "Uploadable Extensions: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+        },
+        "max": {
+          "desc": "You can upload up to {{max}} files.",
+          "title": "Maximum File Limit Exceeded"
+        },
+        "maxSize": {
+          "desc": "Only files smaller than 10MB can be uploaded.",
+          "title": "File Size Exceeded"
+        },
+        "generic": "File upload failed"
+      }
+    }
+  },
+  "main": {
+    "slogan1": "あなたの特別な旅行、",
+    "slogan2": "簡単・便利な還付で完成します。",
+    "buttonTodayClose": "本日は表示しない",
+    "buttonClose": "閉じる",
+    "taxRefundGuideTitle": "Tax Refund?",
+    "taxRefundGuideSubtitle": "簡単で便利なタックスリファンドをご利用ください。",
+    "taxRefundMethodIfMissed1": "還付申請をしないまま",
+    "taxRefundMethodIfMissed2": "出国してしまった場合は？",
+    "requestRefunds": "還付申請・照会",
+    "refundEligibility": "還付対象のご案内",
+    "refundConditionsInfo1": "返金の対象者と条件について",
+    "refundConditionsInfo2": "ご案内いたします。",
+    "taxRefundMethodTitle": "還付手続きのご案内",
+    "taxRefundMethodDetail1": "返金方法に応じた返金手続きについて",
+    "taxRefundMethodDetail2": "ご案内いたします。",
+    "taxRefundLocationTitle": "還付場所のご案内",
+    "taxRefundLocationDetail1": "お近くの還付カウンタの場所を",
+    "taxRefundLocationDetail2": "簡単に探せます。",
+    "travelEnjoyment1": "旅の楽しさがもっと広がる、",
+    "travelEnjoyment2": "便利な還付サービスを今直ぐ体験してください。",
+    "alipayRefunds": "アリペイ還付はこちら",
+    "cubeRefunds": "キューブリファンド還付はこちら",
+    "yunUPay": "Yun-U Pay",
+    "weChatPay": "WeChat Pay",
+    "membershipInquiries": "加盟のお問い合わせ",
+    "membershipSlogan": "タックスリファンドサービスの登録手続きをご案内いたします。",
+    "becomeMemberJourney": "成長の旅路をともに歩みましょう。",
+    "membershipJoinProcess": "加盟手続き",
+    "membershipInquiryLink": "登録お問い合わせ",
+    "membershipService": "加盟店のサービス",
+    "partnerSlogan1": "頼もしいパートナーとしての成長に",
+    "partnerSlogan2": "これからもご一緒させていただきます。",
+    "notices": "お知らせ",
+    "requestSupplies": "消耗品申請",
+    "viewAlipayQR": "Alipay",
+    "qrCode1": "QRコードをスキャンすると、",
+    "qrCode2": "該当ページに移動します。",
+    "modal": {
+      "renewalTitle": "[お知らせ] ウェブサイトリニューアルのご案内",
+      "renewalMessage1": "キューブリファンドのウェブサイトが新しくリニューアルされました！",
+      "renewalMessage2": "既存のウェブサイトアカウント情報は2ヶ月後に削除されますので、ご注意ください。",
+      "renewalMessage3": "以前のウェブサイトで申請された払い戻しについては、お問い合わせ > 加盟および一般お問い合わせからご連絡ください。",
+      "renewalMessage4": "より良いサービスの提供に努めてまいります。",
+      "renewalMessage5": "今後ともよろしくお願いいたします。",
+      "maintenanceNotice1": "ウェブサイトリニューアル作業のため、一時的に",
+      "maintenanceNotice2": "サービスを停止いたします。",
+      "maintenanceDate": "2025年6月2日(月) 午前2:00 ～ 午前9:00"
+    }
+  },
+  "contact": {
+    "pageTitle": "登録および一般のお問い合わせ",
+    "pagedesc": "お問い合わせの作成",
+    "requiredItem": "入力必須項目",
+    "inquiryType": "お問い合わせの種類",
+    "inquiryTypeMembership": "加盟のお問い合わせ",
+    "inquiryTypeGeneral": "一般のお問い合わせ",
+    "storeName": "店舗名",
+    "enterStoreName": "店舗名を入力してください。",
+    "name": "氏名",
+    "enterYourName": "お名前を入力してください。",
+    "phone": "電話番号",
+    "enterNumbersOnly": "数字のみ入力してください。",
+    "email": "メールアドレス",
+    "mailAccount": "メールアカウント",
+    "domain": "ドメイン",
+    "keyIn": "手動入力",
+    "subject": "タイトル",
+    "enterSubject": "タイトルを入力してください。",
+    "content": "お問い合わせ内容",
+    "enterMessage": "メッセージを入力してください。",
+    "fileAttachment": "添付ファイル",
+    "addFile": "登録する",
+    "captchaInput": "セキュリティㅡ文字入力",
+    "captchaRequired": "入力必須項目",
+    "captcha": "セキュリティㅡ文字",
+    "enterCaptcha6Digits": "セキュリティコードを入力してください。",
+    "refresh": "見直し",
+    "note": "備考",
+    "contactConfirmation": "内容の確認後、入力していただいた連絡先（電話またはメールアドレス）宛に、担当者よりご連絡させていただきます。",
+    "tel": "Tel. : +82-2-6925-2033",
+    "submit": "登録",
+    "captchaError": "CAPTCHA ロードエラー",
+    "captchaReInput": "セキュリティ文字を再入力してください",
+    "titleHolderFran": "[店舗名] 加盟お問い合わせいたします",
+    "titleHolderGen": "一般お問い合わせください",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "cancelConfirm": "キャンセルしますか？",
+    "createConfirm": "登録しますか？",
+    "createCompletedConfirm": "登録されました。"
+  },
+  "faq": {
+    "pageTitle": "よくあるご質問",
+    "all": "全て",
+    "taxRefund": "還付",
+    "membership": "加盟",
+    "question1": "どんな場合に還付対象者になれますか？",
+    "answer1-1": "韓国内に6ヶ月以内滞在する外国人、または海外に2年以上居住し3ヶ月以内に短期入国した韓国人は、還付を受けることができます。 詳しくは以下の案内をご確認ください。",
+    "answer1-2": "還付対象者のご確認",
+    "question2": "還付可能な購入金額はいくらですか？",
+    "answer2-1": "1回の決済金額が15,000ウォン以上の場合、還付が可能です。",
+    "question3": "購入領収書があれば還付が可能ですか？",
+    "answer3-1": "購入レシートだけでは還付を受けることはできません。免税販売場に指定された加盟店で、購入レシートとは別に還付伝票を発行してもらう必要があります。",
+    "question4": "韓国のパスポートを持っていますが、還付は可能ですか？",
+    "answer4-1": "韓国人の場合、海外に2年以上居住し3か月以内に短期入国した場合のみ還付が可能です。",
+    "question5": "還付できる場所は空港だけですか？",
+    "answer5-1": "出国空港以外でも、都心還付またはモバイル還付を通じて還付を受けることができます。 都心還付やモバイル還付をご利用いただくと、出国時に還付カウンターを訪れる時間を節約できます。",
+    "answer5-2": "ただし、都心還付やモバイル還付の場合でも、出国の際には必ず税関で搬出確認を受ける必要があります。 詳しくは下記のリンクよりご確認いただけます。",
+    "answer5-3": "還付手続きのご案内",
+    "question6": "医療や宿泊施設の還付も税関搬出確認が必要ですか？",
+    "answer6-1": "医療や宿泊の場合、搬出する物品がないので、税関での搬出確認なしで出国空港の還付カウンター（または無人還付機）にて還付を受けることができます。",
+    "answer6-2": "※ 出国空港で還付を受けられなかった場合は、還付伝票にパスポート情報、生年月日、メールアドレスを記入のうえ、メールボックスに投函してください。",
+    "question7": "税関で搬出申告をした後、還付を受けずに出国しました。還付を受けることはできますか？",
+    "answer7-1": "はい、できます。「還付照会及び申請」メニューをご利用ください。",
+    "question8": "出国時に税関搬出申告ができなかったのですが、払い戻しはできますか？",
+    "answer8-1": "還付手続きには税関での搬出確認が必須です。税関確認が行われていない場合は、還付を受けることができません。",
+    "answer8-2": "ただし、還付伝票の有効期限内に該当商品および還付伝票を所持して再入国・再出国し、再度税関で搬出申告を行えば、還付を受けることが可能です。",
+    "question9": "税関搬出の際に購入した物品が必ず必要ですか？",
+    "answer9-1": "税関持ち出し申告の際は、必ず購入品をお持ちください。お荷物を預ける場合は、税関で持ち出し確認を受けた後に預けてください。",
+    "question10": "出国港の税関持ち出し申告場所はどこですか？",
+    "answer10-1": "税関持ち出し申告場所は出国港ごとに異なります。各出国港の詳細な場所は「還付カウンター案内」でご確認ください。",
+    "question11": "新規加盟に関するお問い合わせはどうすればいいですか？",
+    "answer11-1": "CubeRefund代表電話(+82-2-6925-2033)までお電話または「加入及び一般事項に関するお問い合わせ」メニューをご利用ください。",
+    "question12": "事業者情報はどうすれば変更できますか？",
+    "answer12-1": "事業者情報の変更は、 1:1お問い合わせのご利用またはCubeRefundへのご連絡をお願いいたします。",
+    "question13": "タックスリファンドサービス利用時に機器を購入する必要がありますか？",
+    "answer13-1": "キューブリファンドと加盟店契約を締結後、端末や必要な機器を無料で設置・提供いたします。",
+    "question14": "タックスリファンドサービス利用時に費用はかかりますか？",
+    "answer14-1": "タックスリファンドサービス利用による追加費用はありません。",
+    "question15": "タックスリファンド加盟店になるとどんなメリットがありますか？",
+    "answer15-1": "付加価値税還付による割引効果で観光客の来店が増え、売上も向上します。また、キューブリファンドは外国人観光客向けの各種マーケティング活動もサポートします。",
+    "question16": "付加価値税還付後の精算はどのように行われますか？",
+    "answer16-1": "毎月発生した還付内容の精算書は翌月2日までにメールで送付しますので、加盟店様は内容を確認の上、月末までに精算してください。",
+    "answer16-2": "四半期・半期の付加価値税申告時は還付（精算）額をゼロ税率で申告するため、実質的な負担はありません。",
+    "question17": "外国人顧客に発行した全ての還付伝票金額を精算する必要がありますか？",
+    "answer17-1": "いいえ。外国人観光客に還付が完了した分のみ精算します。",
+    "answer17-2": "伝票は発行されても、顧客が還付を受けていないものは精算されず、付加価値税申告時に売上付加価値税として納付します。",
+    "question18": "免税店（Tax Free）とタックスリファンド（Tax Refund）はどう違いますか？",
+    "answer18-1": "免税店は税金が差し引かれた（免除された）金額で購入しますが、タックスリファンドは購入時に税込みで支払い、出国時に商品を持ち出すことで税金が還付される制度です。"
+  },
+  "refundProcedureGuide": {
+    "title": "還付手続きのご案内",
+    "refundType": {
+      "title": "還付 タイプ",
+      "instantRefund": "即時還付",
+      "inCityRefund": "都心還付",
+      "airportRefund": "出国港還付",
+      "mobileRefund": "モバイル還付"
+    },
+    "instantRefundSection": {
+      "title": "即時還付",
+      "tag": "対象：物品（医療、宿泊は不可能）",
+      "description": "事後免税店で品物を購入する際に、還付金額を差し引いた金額で決済する制度",
+      "refundProcessTit": "即時還付",
+      "refundProcessTitle": "還付手続き",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "即時還付の可否を確認",
+            "purchaseCriteria": {
+              "title": "パスポート照会で即時還付対象か確認します。",
+              "criteria1": "1回の購入金額15,000ウォン以上100万ウォン未満",
+              "criteria2": "1回の入国につき、1人あたりの即時還付の購入限度額は500万ウォンです。",
+              "criteria3": "パスポート未携帯または即時還付ができない場合は、事後免税で対応します",
+              "criteria4": "※ パスポートリーダーなど、即時還付インフラを備えた加盟店のみ対応可能です。"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "refundReceipt": {
+            "title": "還付金の受け取り",
+            "refundMethod": {
+              "title": "還付方法",
+              "method1": "還付額を差し引いた金額で商品代金を決済し、還付伝票を受け取ります。",
+              "method2": "税関によるリアルタイム搬出承認を進行",
+              "method3": "還付伝票を受け取る"
+            },
+            "refundMeans": {
+              "title": "必要書類",
+              "passport": "パスポート"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "departure": {
+            "title": "出国",
+            "departureMethod": {
+              "title": "出国方法",
+              "method": "税関の搬出確認が不必要です。"
+            }
+          }
+        }
+      }
+    },
+    "inCityRefundSection": {
+      "title": "都心還付",
+      "tag": "対象：物品、医療、宿泊",
+      "description": "出国の前に市内に設置された都心還付カウンターや無人還付機（KIOSK）を利用して還付を受ける制度",
+      "refundProcessTitle": "還付手続き",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "purchaseAndPayment": {
+            "title": "品物の購入および決済",
+            "purchaseCriteria": {
+              "title": "購入基準",
+              "criteria1": "還付伝票1枚あたりの購入金額は15,000ウォン以上600万ウォン以下",
+              "criteria2": "合計購入金額の限度なし",
+              "criteria3": "決済時に還付伝票を受け取り（未受領の場合は還付不可)"
+            },
+            "requiredDocuments": {
+              "title": "必要書類",
+              "passport": "パスポート"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "refundReceipt": {
+            "title": "還付金の受け取り",
+            "refundMethod": {
+              "title": "還付方法",
+              "method": "パスポート、還付伝票、クレジットカードを持参のうえ、市内の還付カウンター（無人還付機）に訪問",
+              "method1": "パスポートおよび還付伝票を提示（スキャン）後、還付金を受け取ります"
+            },
+            "refundMeans": {
+              "title": "還付手段",
+              "means1": "現金（税関搬出の担保としてクレジットカードの担保設定が必要）",
+              "means2": "クレジットカード (VISA、MASTER、JCB)",
+              "means3": "Alipay",
+              "means4": "WeChat Pay",
+              "means5": "クレジットカード、Alipay、WeChat Payは、税関搬出確認後に指定口座へ送金されます。"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "customsDeclaration": {
+            "title": "税関の搬出申告",
+            "howToProceed": {
+              "title": "申告方法",
+              "method1": "出国の際、税関に購入品とパスポートを提示し、還付伝票の搬出確認を受けてください（ただし、医療および宿泊に関する還付については、税関での搬出確認は不要です）。",
+              "method2": "搬出しなかった場合、クレジットカード担保金の請求または還付ができない"
+            }
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "出国",
+            "departureRequirements": {
+              "title": "出国基準",
+              "criteria1": "還付伝票の発行日から3か月以内に搬出確認および出国を行う。"
+            }
+          }
+        }
+      }
+    },
+    "airportRefundSection": {
+      "title": "出国港還付",
+      "tag": "対象：物品、医療、宿泊",
+      "description": "出国の時出国港に設置された都心還付カウンターまたは無人還付機（KIOSK）を利用して還付を受ける制度",
+      "refundProcessTitle": "還付手続き",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "品物の購入および決済",
+            "purchaseRequirements": {
+              "title": "購入基準",
+              "criteria1": "1回の購入金額15,000ウォン以上600万ウォン以下",
+              "criteria2": "合計購入金額の限度なし",
+              "criteria3": "決済時に還付伝票を受け取り（未受領の場合は還付不可)"
+            },
+            "requiredDocuments": {
+              "title": "必要書類",
+              "passport": "パスポート"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "customsDeclaration": {
+            "title": "税関の搬出申告",
+            "howToProceed": {
+              "title": "申告方法",
+              "method": "出国の際、税関に購入品とパスポートを提示し、還付伝票の搬出確認を受けてください（ただし、医療および宿泊に関する還付については、税関での搬出確認は不要です）。"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "refundPayment": {
+            "title": "還付金の受け取り",
+            "refundMethod": {
+              "title": "還付方法",
+              "method": "出国場内に設置された還付カウンターまたは無人還付機で還付",
+              "method1": "パスポートおよび税関で搬出確認を受けた還付伝票を提示またはスキャンして還付",
+              "method2": "還付カウンター（無人還付機）が設置されていない出国場では、メールボックスをご利用ください（還付手段などを還付伝票に記載する必要がある）。"
+            },
+            "refundMeans": {
+              "title": "還付手段",
+              "means1": "現金, Alipay, WeChat Pay",
+              "means2": "出国港ごとに異なる"
+            }
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "出国",
+            "departureRequirements": {
+              "title": "出国基準",
+              "method": "還付伝票の発行日から3か月以内に搬出確認および出国を行う。"
+            }
+          }
+        }
+      }
+    },
+    "mobileRefundSection": {
+      "viewAlipayQR": "Alipayアプリを開く",
+      "viewCubeQR": "CubeRefund モバイル還付申請へ",
+      "title": "モバイル還付",
+      "tag": "対象：物品（医療、宿泊は不可能）",
+      "description": "出国前後にモバイルシステムを利用して、便利に還付申請ができるサービス",
+      "refundProcessTitle": "還付手続き",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "品物の購入および決済",
+            "purchaseRequirements": {
+              "title": "購入基準",
+              "criteria1": "1回の購入金額15,000ウォン以上600万ウォン以'下",
+              "criteria2": "決済時に還付伝票を受け取り（未受領の場合は還付不可)",
+              "title2": "必要書類",
+              "criteria3": "パスポート"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "customsDeclaration": {
+            "title": "税関の搬出申告",
+            "howToProceed": {
+              "title": "申告方法",
+              "method": "出国時に税関で購入品、パスポート、還付伝票を提示し、持ち出し確認を受けてください（医療・宿泊の還付は税関での持ち出し確認は不要です）。"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "refundRequest": {
+            "title": "タックスヘイブンの申請",
+            "howToProceed": {
+              "title": "要請方法",
+              "method": "キューブリファンドのモバイル還付申請サイトまたはアリペイアプリを利用して還付を申請してください。"
+            },
+            "alipayAppLink": "Alipay",
+            "cubeRefundMobileLink": "Mobile CubeRefund"
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "出国",
+            "departureRequirements": {
+              "title": "出国基準",
+              "criteria": "還付伝票の発行日から3か月以内に搬出確認および出国を行う。",
+              "criteria2": "※税関での搬出確認後、申請口座へ送金されます。"
+            },
+            "mobileRefundLink": "モバイル還付クイックアクセス",
+            "alipayRefund": {
+              "title": "Alipay",
+              "qrCode": {
+                "title": "Alipay",
+                "value": "Alipay QR Code"
+              }
+            },
+            "cubeRefund": {
+              "title": "CubeRefund",
+              "qrCode": {
+                "title": "Mobile CubeRefund",
+                "value": "Mobile CubeRefund QR Code"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "refundLocationGuide": {
+    "title": "還付場所のご案内",
+    "viewLocationTitle": "場所を見る",
+    "inCityRefund": "都心還付",
+    "airportRefund": "出国港還付",
+    "inCityRefundSection": {
+      "title": "都心還付",
+      "refundCenters": {
+        "title": "還付場所",
+        "all": "全て",
+        "seoul": "ソウル",
+        "incheon": "仁川",
+        "daegu": "大邱",
+        "busan": "釜山",
+        "unstaffed": "無人",
+        "staffed": "有人"
+      },
+      "contact": "連絡先",
+      "hours": "運営時間",
+      "copyAddress": "住所をコピー",
+      "viewOnMap": "位置表示"
+    },
+    "airportRefundSection": {
+      "title": "出国港還付",
+      "refundCenters": {
+        "title": "還付場所",
+        "incheonAirportT1": {
+          "title": "仁川国際空港Ｔ1",
+          "customsLocation": {
+            "title": "税関位置",
+            "location": "3階E、Jカウンター付の付近"
+          },
+          "refundCenterLocation": {
+            "title": "還付カウンターの位置",
+            "location": "3階28番ゲート付近"
+          },
+          "hours": {
+            "title": "運営時間",
+            "staffed": "有人",
+            "staffedHours": "24時間",
+            "unstaffed": "無人",
+            "unstaffedHours": "24時間"
+          },
+          "availableCurrencies": {
+            "title": "還付通貨",
+            "staffed": {
+              "title": "有人",
+              "currencies": "KRW、USD、CNY、JPY"
+            },
+            "unstaffed": {
+              "title": "無人",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "地図を見る"
+        },
+        "incheonAirportT2": {
+          "title": "仁川国際空港T2",
+          "customsLocation": {
+            "title": "税関位置",
+            "location": "3階F、Gカウンター付近"
+          },
+          "refundCenterLocation": {
+            "title": "還付カウンターの位置",
+            "location": "3階225番、249番、274番ゲート付近"
+          },
+          "hours": {
+            "title": "運営時間",
+            "staffed": "有人",
+            "staffedHours": "24時間",
+            "unstaffed": "無人",
+            "unstaffedHours": "24時間"
+          },
+          "availableCurrencies": {
+            "title": "還付通貨",
+            "staffed": {
+              "title": "有人",
+              "currencies": "KRW、USD、CNY、JPY"
+            },
+            "unstaffed": {
+              "title": "無人",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "地図を見る"
+        },
+        "gimpoAirport": {
+          "title": "金浦国際空港",
+          "customsLocation": {
+            "title": "税関位置",
+            "location": "2階1番ゲート付近"
+          },
+          "refundCenterLocation": {
+            "title": "還付カウンターの位置",
+            "location": "3階36番ゲート付近"
+          },
+          "hours": {
+            "title": "運営時間",
+            "staffed": "有人",
+            "staffedHours": "06:30 ~ 20:00",
+            "unstaffed": "無人",
+            "unstaffedHours": "24時間"
+          },
+          "availableCurrencies": {
+            "title": "還付通貨",
+            "staffed": {
+              "title": "有人",
+              "currencies": "KRW、USD、CNY、JPY"
+            },
+            "unstaffed": {
+              "title": "無人",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "地図を見る"
+        },
+        "gimhaeAirport": {
+          "title": "金海国際空港",
+          "customsLocation": {
+            "title": "税関位置",
+            "location": "2階B24チェックインカウンター付近"
+          },
+          "refundCenterLocation": {
+            "title": "還付カウンターの位置",
+            "location": "2階4番ゲート付近"
+          },
+          "hours": {
+            "title": "運営時間",
+            "staffed": "有人",
+            "staffedHours": "06:30 ~ 21:00"
+          },
+          "availableCurrencies": {
+            "title": "還付通貨",
+            "staffed": {
+              "title": "有人",
+              "currencies": "KRW、USD、CNY、JPY"
+            }
+          },
+          "directions": "地図を見る"
+        },
+        "jejuAirport": {
+          "title": "済州国際空港",
+          "customsLocation": {
+            "title": "税関位置",
+            "location": "3階5番ゲート付近"
+          },
+          "refundCenterLocation": {
+            "title": "還付カウンターの位置",
+            "location": "3階16番ゲート付近"
+          },
+          "hours": {
+            "title": "運営時間",
+            "staffed": "有人",
+            "staffedHours": "06:00 ~ 22:00"
+          },
+          "availableCurrencies": {
+            "title": "還付通貨",
+            "staffed": {
+              "title": "有人",
+              "currencies": "KRW、USD、CNY、JPY"
+            }
+          },
+          "directions": "地図を見る"
+        }
+      },
+      "notice": {
+        "title": "ご注意事項",
+        "description01": "上記以外の他の出国港では、還付カウンターの代わりにメールボックスを運営しています。還付申請をご希望の場合は、メールボックスをご利用ください。",
+        "description02": "メールボックス運営空港：仁川国際空港Ｔ1/T2、金浦国際空港、金海国際空港、済州国際空港、大邱国際空港、清州国際空港、務安国際空港、襄陽国際空港",
+        "description03": "メールボックス運営港湾：仁川港、釜山港、平沢港、群山港、束草港"
+      }
+    }
+  },
+  "refundInquiryAndApplication": {
+    "title": "還付照会および申請",
+    "searchRefundSlip": {
+      "title": "還付伝票の照会",
+      "requiredFields": "必須入力項目",
+      "serialNo": {
+        "label": "発行番号 (Serial No.)",
+        "placeholder": "Serial No.を入力"
+      },
+      "paymentTotal": {
+        "label": "総額（Payment Total）",
+        "placeholder": "数字のみ入力"
+      },
+      "searchButton": "照会",
+      "searchResultsTitle": "還付伝票照会履歴",
+      "refundStatusGuide": {
+        "title": "還付状況案内",
+        "noSlip": {
+          "status": "伝票なし",
+          "description": "一致する伝票がありません。"
+        },
+        "awaitingCustomsRelease": {
+          "status": "未持ち出し",
+          "description": "伝票はまだキューブリファンドに到着していません。お客様の税関持ち出し申告状況を確認中です。"
+        },
+        "refundAvailable": {
+          "status": "還付可能",
+          "description": "税関持ち出し申告または出国確認が完了しました。還付を進めてください。"
+        },
+        "refundInProgress": {
+          "status": "還付申請中",
+          "description": "還付申請が完了しました。出国港によって最大2ヶ月かかる場合があります。"
+        },
+        "inCityRefundInProgress": {
+          "status": "都心還付中",
+          "description": "還付申請が完了しました。持ち出し後に還付が進行されます。"
+        },
+        "refundComplete": {
+          "status": "還付完了",
+          "description": "還付が完了しました。"
+        },
+        "refundImpossible": {
+          "status": "還付不可",
+          "description": "カードで還付の場合、国内発行カード、アメックスカード、デビットカードは還付不可です。アリペイ還付の場合、メールアドレスでは還付できません。"
+        }
+      },
+      "statusLabels": {
+        "awaitingCustomsRelease": "未持ち出し",
+        "refundComplete": "還付完了",
+        "refundAvailable": "還付可能",
+        "refundImpossible": "還付不可"
+      },
+      "slipDetails": {
+        "serialNo": "還付伝票の番号",
+        "purchaseDate": "購入日",
+        "refundAmount": "還付金額",
+        "totalPurchaseAmount": "総購入金額"
+      },
+      "noSlipFound": "存在しない伝票番号です。伝票番号をご確認ください。",
+      "notice": {
+        "title": "注意事項",
+        "item1": "税関による搬出確認が完了した場合に限り、還付申請が可能です。",
+        "item2": "購入日から3ヶ月を超えた場合は、還付申請ができません。",
+        "item3": "還付伝票にCubeRefundのロゴがあるか必ずご確認ください。",
+        "item4": "為替レートにより実際の還付額と多少差が生じる場合があります。",
+        "item5": "還付申請を希望する取引を選択し、次へのボタンを押してください。",
+        "item6": "還付状況についての詳細は、CubeRefundカスタマーサポートまでお問い合わせください。（cube@cuberefund.com / 02-6925-2033）"
+      },
+      "requestRefundButton": "還付申請",
+      "questionsAboutRefund": "還付についてご不明な点はございますか？",
+      "faq": {
+        "title": "よくある質問",
+        "link": "クイックアクセス"
+      },
+      "refundInquiry": {
+        "title": "還付お問い合わせ",
+        "link": "クイックアクセス"
+      }
+    },
+    "acknowledgmentOfPolicy": {
+      "title": "申請同意",
+      "consentToUniqueIdCollection": {
+        "title": "固有識別情報の取得・利用への同意(必須)",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청 처리",
+        "itemsCollected": "수집하는 개인정보 항목 : 여권번호",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "귀하는 위와 같이 고유식별정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "上記の固有識別情報の収集・利用に同意します。"
+      },
+      "consentToPersonalInfoCollection": {
+        "title": "個人情報収集・利用同意（必須）",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청 처리",
+        "itemsCollected": "수집하는 개인정보 항목 : 연락처, 이메일, 여권성명, 국적, 생년월일, 신용카드번호",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "귀하는 위와 같이 개인정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "上記の個人情報収集・利用案内に同意します。"
+      },
+      "consentToThirdPartyUniqueIdSharing": {
+        "title": "固有識別情報の第三者提供への同意（必須）",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행 및 환급정보 제공",
+        "recipients": "개인정보 제공받는 자 : 국세청, 관세청, 문화체육부, 보건복지부",
+        "itemsShared": "제공하는 개인정보 항목 : 여권번호",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "위의 고유식별정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "上記の個人情報収集・利用案内に同意します。"
+      },
+      "consentToThirdPartyPersonalDataSharing1": {
+        "title": "固有識別情報の第三者提供への同意（必須）",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행 및 환급정보 제공",
+        "recipients": "개인정보 제공받는 자 : 국세청, 관세청",
+        "itemsShared": "제공하는 개인정보 항목 : 여권정보(성명, 국적)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "위의 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "上記の個人情報の取得・利用に同意します。"
+      },
+      "consentToThirdPartyPersonalDataSharing2": {
+        "title": "個人情報第三者提供同意（必須）",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 절차 진행",
+        "recipients": "개인정보 제공받는 자 : 문화체육부, 보건복지부",
+        "itemsShared": "제공하는 개인정보 항목 : 여권번호(성명, 국적, 생년월일)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "개인정보 수집에 동의하지 않을 수 있습니다. 단, 동의하지 않을 경우 가맹점 가입 신청 및 문의하기 접수가 되지 않습니다",
+        "agreement": "上記の個人情報収集・利用案内に同意します。"
+      },
+      "consentToThirdPartyPersonalDataSharing3": {
+        "title": "固有識別情報の第三者提供への同意（必須）",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행",
+        "recipients": "개인정보 제공받는 자 : 롯데카드, VISA, Master, JCB, UnionPay, 글로벌텍스프리",
+        "itemsShared": "제공하는 개인정보 항목 : 카드정보(카드번호, 이름)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 관련 법령 및 규약 등에 근거한 기간까지",
+        "rightToRefuse": "위의 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "上記の個人情報第三者提供に同意します。"
+      },
+      "consentToPersonalInfoCollectionOptional": {
+        "title": "個人情報収集・利用同意（選択）",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청",
+        "itemsCollected": "수집하는 개인정보 항목 : 성별",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "귀하는 위와 같이 개인정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "上記の個人情報収集・利用案内に同意します。",
+        "disagreement": "固有識別情報の第三者提供への同意（必須）"
+      },
+      "agreeAll": "全て同意",
+      "backButton": "戻る",
+      "nextButton": "次へ"
+    },
+    "refundApplicationAndPaymentMethodRegistration": {
+      "title": "還付申請および<br class='mo-show'>還付手段登録",
+      "requestedRefundsTitle": "還付伝票申請履歴",
+      "totalEstimatedRefund": "総還付予定額（KRW）",
+      "passportDetails": {
+        "title": "パスポート情報入力",
+        "requiredFields": "必須入力項目",
+        "nameInPassport": {
+          "label": "パスポート氏名（英字）",
+          "placeholder": "パスポート氏名（英字"
+        },
+        "passportNumber": "パスポート番号",
+        "nationality": {
+          "label": "国籍",
+          "placeholder": "国籍を選択"
+        },
+        "gender": "性別",
+        "dateOfBirth": "生年月日"
+      },
+      "contactInformation": {
+        "title": "連絡先情報入力",
+        "requiredFields": "必須入力項目",
+        "phone": "連絡先",
+        "email": "メールアドレス"
+      },
+      "refundMethod": {
+        "title": "還付手段",
+        "requiredFields": "必須入力項目",
+        "meansOfRefund": "決済手段",
+        "creditCard": "クレジットカード",
+        "alipay": "アリペイ",
+        "wechatPay": "ウィーチャットペイ",
+        "cardNumber": {
+          "label": "カード番号",
+          "placeholder": "「-」を除いて数字のみ入力"
+        }
+      },
+      "notice": {
+        "title": "注意事項",
+        "item1": "為替レートにより実際の還付額と多少差が生じる場合があります。",
+        "item2": "還付申請が完了したものは修正できませんので、入力内容を再度ご確認ください。"
+      },
+      "backButton": "戻る",
+      "submitButton": "申請"
+    },
+    "refundApplicationResult": {
+      "title": "還付申請結果",
+      "requestedRefundsTitle": "還付伝票申請履歴",
+      "notice": {
+        "title": "注意事項",
+        "item1": "還付状況についての詳細は、CubeRefundカスタマーサポートまでお問い合わせください。",
+        "item2": "cube@cuberefund.com  / +82-2-6925-2033"
+      },
+      "confirmButton": "確認"
+    },
+    "won": "ウォン"
+  },
+  "fairTrade": {
+    "title": "Compliance",
+    "imageAlt": "Compliance Image",
+    "description1": "All business practices are conducted with ethics as the highest priority, ensuring transparency and compliance with the law.",
+    "description2": "Our policies guide all employees in understanding and upholding ethical standards.",
+    "goToLink": "View",
+    "lotteCompliance": {
+      "title": "LOTTE Group",
+      "subtitle": "Compliance"
+    },
+    "lotteGroup": {
+      "title": "LOTTE Group",
+      "subtitle": "Ombudsman"
+    },
+    "lotteInnovate": {
+      "title": "LOTTE Innovate",
+      "subtitle": "Ombudsman"
+    }
+  },
+  "ethicsGuide": {
+    "pageTitle": "Ombudsman",
+    "tabs": {
+      "guide": "How to Use",
+      "report": "Submit a Report",
+      "result": "Progress on Your Report"
+    },
+    "reportTabs": {
+      "anonymous": "Make a report anonymously",
+      "identified": "Make a report in your name"
+    }
+  },
+  "ethicsNewspaper": {
+    "title": "About the Ombudsman?",
+    "description": "The Ombudsman of CubeRefund is here to receive reports of instances running counter to CubeRefund's business ethics, such as abuse of powers for personal gains or a third party's gains, violations of internal financial policies, sexual harassment, corruption, bullying, and neglect of corporate social responsibility.The Ombudsman of CubeRefund is here to receive reports of instances running counter to CubeRefund's business ethics, such as abuse of powers for personal gains or a third party's gains, violations of internal financial policies, sexual harassment, corruption, bullying, and neglect of corporate social responsibility.",
+    "notice": "We welcome your feedback and reports.",
+    "reportTarget": {
+      "title": "What You Should Report",
+      "corruption": {
+        "title": "Corruption",
+        "description": "Unfair and unacceptable practices in business (examples: unfair promotions or dismissals, giving or taking of bribes)"
+      },
+      "humanRights": {
+        "title": "Human Rights in the Workplace",
+        "description": "Sexual harassment, bullying, and other instances creating conflict among employees"
+      },
+      "ethicsViolation": {
+        "title": "Trade Ethics",
+        "description": "Losses incurred in transactions with CubeRefund due to unethical practices"
+      },
+      "complaints": {
+        "title": "Complaints",
+        "description": "Feedback on improving efficiency and business ethics"
+      },
+      "accountingFraud": {
+        "title": "Finances",
+        "description": "Unfair or unacceptable practices of employees in internal finances"
+      },
+      "codeViolation": {
+        "title": "Code of Ethics",
+        "description": "Violations of CubeRefund's Code of Ethics"
+      }
+    },
+    "process": {
+      "title": "The Ombudsman Process",
+      "steps": {
+        "reception": {
+          "title": "Submission of report",
+          "description": "A report is submitted through the Ombudsman webpage."
+        },
+        "verification": {
+          "title": "Review of report",
+          "description": "The report is reviewed internally. The reporter's identity is kept confidential."
+        },
+        "investigation": {
+          "title": "Investigation",
+          "description": "Investigation plans are formed and implemented. The investigation period depends on the subject and range of investigation."
+        },
+        "completion": {
+          "title": "Completion of investigations",
+          "description": "Investigations are completed when the veracity of the report is confirmed by evidence."
+        },
+        "conclusion": {
+          "title": "Closure",
+          "description": "Disciplinary action is executed according to internal policy."
+        },
+        "result": {
+          "title": "Notification of outcome",
+          "description": "Excluding instances where the due rights and interests of CubeRefund can be infringed, the outcome of the submitted report is notified."
+        }
+      }
+    },
+    "protection": {
+      "title": "We Protect You",
+      "description": "Reporters remain 100% anonymous. We make sure no reporters are subjected to disadvantages for making reports.",
+      "target": {
+        "title": "Protection",
+        "items": {
+          "security": "Submitted reports and ensuing investigations are kept confidential. Identifying information of reporters and stakeholders is protected. Please do not make false reports of a malicious nature.",
+          "identity": "Reporter's identity",
+          "evidence": "Evidence provided by the reporter; information collected through investigations",
+          "implication": "Identifying information",
+          "followUp": "Actions taken as a result of a report",
+          "relatedParties": "Identity of cooperating parties"
+        }
+      },
+      "policy": {
+        "title": "Policy",
+        "items": {
+          "investigation": "Investigations take place if a submitted report is factual and detailed.",
+          "confidentiality": "The reporter's identity and reported information are kept strictly confidential. The Ombudsman system is protected with security measures. The handling of reports is reserved for persons sworn to confidentiality.",
+          "noDisadvantage": "Reporters experience no disadvantage whatsoever.",
+          "reasonableHandling": "All extenuating circumstances are taken into consideration when a reporter reports their own wrongdoing."
+        }
+      }
+    }
+  },
+  "anonymousReport": {
+    "required": "Required",
+    "guide": {
+      "title": "Submitting a Report",
+      "security": "CubeRefund's Ombudsman system is protected with security technology. If you submit a report anonymously, your identity remains anonymous.",
+      "content": "Investigations may not take place if a submitted report lacks facts and details.",
+      "response": "If you submit a report in your name, you will receive a response by email. The response can also be viewed by logging in through the Progress on Your Report tab with your ID and password."
+    },
+    "target": {
+      "title": "Who you are reporting",
+      "company": "Company",
+      "companyPlaceholder": "Select a company name.",
+      "department": "Department",
+      "departmentPlaceholder": "Enter your department.",
+      "name": "Name",
+      "namePlaceholder": "enter the name of the person you are reporting to."
+    },
+    "content": {
+      "title": "What you are reporting",
+      "titleLabel": "Subject",
+      "titlePlaceholder": "Enter a subject.",
+      "contentLabel": "Message",
+      "contentPlaceholder": "Enter your Message.",
+      "fileUpload": "Attachment"
+    },
+    "verification": {
+      "title": "Login credential for checking the progress on your report",
+      "id": "ID",
+      "idPlaceholder": "Enter at least 6 characters",
+      "checkId": "Check availability",
+      "password": "Password",
+      "passwordPlaceholder": "Enter a combination of letters, numbers, and symbols, 8 to 20 characters in length"
+    },
+    "captcha": {
+      "title": "Captcha input",
+      "label": "Captcha",
+      "placeholder": "Enter Captcha",
+      "refresh": "Refresh"
+    },
+    "dialog": {
+      "confirm": {
+        "title": "Submit",
+        "description": "Would you like to register?",
+        "confirm": "Submit"
+      },
+      "completed": {
+        "title": "Registration Complete",
+        "description": "Your registration has been successfully completed."
+      },
+      "fail": {
+        "title": "Registration Failed",
+        "description": "Registration failed. Please contact the administrator.",
+        "confirm": "Submit"
+      },
+      "cancel": {
+        "description": "Do you want to cancel?",
+        "confirm": "Confirm"
+      }
+    },
+    "cancel": "Cancel",
+    "submit": "Registration",
+    "idCheckErrorMessage": "This ID is currently in use.",
+    "idAvailableMessage": "This ID is available for use."
+  },
+  "identifiedReport": {
+    "guide": {
+      "title": "Submitting a Report",
+      "info1": "CubeRefund's Ombudsman system is protected with security technology. If you submit a report anonymously, your identity remains anonymous.",
+      "info2": "Investigations may not take place if a submitted report lacks facts and details.",
+      "info3": "If you submit a report in your name, you will receive a response by email. The response can also be viewed by logging in through the Progress on Your Report tab with your ID and password."
+    },
+    "reporterInfo": {
+      "title": "Your details",
+      "required": "Required",
+      "company": "Company",
+      "companyPlaceholder": "Select a company name.",
+      "department": "Department",
+      "departmentPlaceholder": "Enter your department.",
+      "name": "Name",
+      "namePlaceholder": "Please enter your name",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter numbers only",
+      "email": "Email",
+      "emailLocalPlaceholder": "mail account",
+      "emailDomain": "Domain",
+      "emailDomainPlaceholder": "Domain"
+    },
+    "targetInfo": {
+      "title": "Who you are reporting",
+      "company": "Company",
+      "department": "Department",
+      "name": "Name",
+      "namePlaceholder": "enter the name of the person you are reporting to."
+    },
+    "reportContent": {
+      "title": "What you are reporting",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter a subject.",
+      "content": "Message",
+      "contentPlaceholder": "Enter your Message.",
+      "fileAttachment": "Attachment"
+    },
+    "verificationInfo": {
+      "title": "Login credential for checking the progress on your report",
+      "id": "ID",
+      "idPlaceholder": "Enter at least 6 characters",
+      "duplicateCheck": "Check availability",
+      "password": "Password",
+      "passwordPlaceholder": "Enter a combination of letters, numbers, and symbols, 8 to 20 characters in length"
+    },
+    "security": {
+      "title": "Captcha input",
+      "captcha": "Captcha",
+      "captchaPlaceholder": "Enter Captcha",
+      "refresh": "Refresh",
+      "notice": "Notice",
+      "noticeContent": "We'll be in touch by email as soon as we can."
+    },
+    "captcha": {
+      "title": "Captcha input",
+      "label": "Captcha",
+      "placeholder": "Enter Captcha",
+      "refresh": "Refresh"
+    },
+    "alerts": {
+      "register": {
+        "title": "Register",
+        "confirm": "Would you like to register?",
+        "success": "Registration completed successfully.",
+        "fail": "Registration failed. Please contact the administrator."
+      },
+      "idCheck": {
+        "duplicate": "This ID is currently in use.",
+        "available": "This ID is available for use."
+      }
+    },
+    "cancel": "Cancel",
+    "submit": "Registration",
+    "confirm": "Confirm",
+    "required": "Required fields"
+  },
+  "resultConfirm": {
+    "title": "Progress on Your Report",
+    "required": "Required",
+    "verification": {
+      "id": {
+        "label": "ID",
+        "placeholder": "Enter at least 6 characters"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter a combination of letters, numbers, and symbols, 8 to 20 characters in length"
+      }
+    },
+    "buttons": {
+      "confirm": "confirm"
+    },
+    "info": {
+      "enterCredentials": "Please enter the ID and password you entered as information for confirming the report.",
+      "credentialsUsage": "The ID and password you entered are used to check reports and do not provide a separate search function."
+    },
+    "result": {
+      "title": "Progress on Your Report",
+      "status": "Result status",
+      "statusTypes": {
+        "received": {
+          "text": "Report received",
+          "description": "Your reported has been received."
+        },
+        "inProgress": {
+          "text": "Processing",
+          "description": "Based on the report, we are currently checking the content and conducting an investigation in accordance with the investigation plan."
+        },
+        "completed": {
+          "text": "Complete",
+          "description": "Investigations have concluded. View the outcome of your report."
+        }
+      },
+      "content": {
+        "title": "Details",
+        "processDate": "Complete Date",
+        "additionalInquiry": "If you have any additional inquiries regarding the results of the action, please resubmit."
+      }
+    },
+    "reporterInfo": {
+      "title": "Your details",
+      "company": "Company",
+      "department": "Department",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "targetInfo": {
+      "title": "You reported",
+      "company": "Company",
+      "department": "Department",
+      "name": "Name"
+    },
+    "reportContent": {
+      "title": "Your report",
+      "subject": "Subject",
+      "content": "Message",
+      "attachments": "Attachment"
+    },
+    "alerts": {
+      "noData": {
+        "title": "",
+        "description": "No information was found. Please check again.",
+        "confirm": "confirm"
+      }
+    }
+  },
+  "locations": {
+    "title": "Why CubeRefund?",
+    "subtitle": "CubeRefundほかにはない特別なサービスをご紹介いたします。",
+    "services": {
+      "service1": {
+        "title": "多様な業種、様々な規模の事後免税事業所にサービスを提供し、ノウハウを保有",
+        "desc1": "韓国のTax Refundが可能なすべての業種にサービスの提供ができます。",
+        "desc2": "小規模店舗から大型デパートまで、様々な店にサービスの提供が可能です。"
+      },
+      "service2": {
+        "title": "専門の営業社員が免税事業所のオープンをサポート",
+        "desc1": "必要に応じて、免税販売場指定証の申請手続きをサポートいたします。",
+        "desc2": "店舗にて還付に必要な機器を無償で提供・設置いたします。（専用端末、専用プログラム、パスポートリーダーなど）"
+      },
+      "service3": {
+        "title": "専門家による安定的な運営サポート",
+        "desc1": "店舗ごとに担当者が全国の還付機器を無償で管理いたします（保守・消耗品のサポートなど）。",
+        "desc2": "店舗で発生する還付関連のお問い合わせについて専門の相談員が対応します。",
+        "desc3": "四半期別の取引履歴資料を提供し、付加価値税の申告が簡単になります。"
+      },
+      "service4": {
+        "title": "外国人観光客販売レポートの提供",
+        "desc": "外国人への販売状況と外国人の入国動向データを提供することで、需要の予測と販促活動をサポートします。"
+      },
+      "service5": {
+        "title": "外国人集客マーケティングのサポート",
+        "desc": "CubeRefundがもつ様々なマーケティングチャンネルにより、広報やプロモーションのサポートが可能です。"
+      },
+      "service6": {
+        "title": "安定したITシステムの運用",
+        "desc": "専門データセンターを通して最上級のセキュリティを確保し、断絶のない安定的なシステムを提供します。"
+      }
+    },
+    "inquiry": "加盟申請及びお問い合わせ"
+  },
+  "franchise": {
+    "process": {
+      "title": "加盟手続きのご案内",
+      "tabs": {
+        "goods": "物品",
+        "medical": "医療",
+        "accommodation": "宿泊"
+      },
+      "steps": {
+        "step1": {
+          "title": "CubeRefundの加盟店の契約",
+          "description": "CubeRefund代表番号（02-6935-2033）へのお電話で加盟申請",
+          "inquiryLink": "登録お問い合わせはこちら"
+        },
+        "step2": {
+          "goods": {
+            "title": "免税店指定申請書",
+            "description": "店舗の所在地を管轄する税務署にて［外国人観光客免税販売場指定証］を申請",
+            "subDescription": "CubeRefundの代行申請が可能",
+            "link": "外国人観光客免税販売場指定証の申請はこちら",
+            "link2": "指定証の申請はこちら"
+          },
+          "medical": {
+            "title": "外国人患者誘致機関の登録",
+            "description": "保健産業振興院への［外国人患者誘致機関登録証］の申請",
+            "link": "保健産業振興院はこちら",
+            "link2": "院はこちら"
+          },
+          "accommodation": {
+            "title": "特例適用観光宿泊施設の指定申請",
+            "description": "韓国ホテル業協会または韓国リゾートコンドミニアム経営協会へ申請",
+            "links": {
+              "hotel": "韓国ホテル業協会はこちら",
+              "hotel2": "会はこちら",
+              "condo": "韓国リゾートコンドミニアム経営協会はこちら",
+              "condo2": "アム経営協会はこちら"
+            }
+          }
+        },
+        "step3": {
+          "title": "還付サービスの開始",
+          "description": "還付装備の設置及びトレーニング",
+          "subDescription": "端末機および必要な備品を無償提供"
+        }
+      },
+      "inquiryButton": "加盟お問い合わせ"
+    }
+  },
+  "privacyPolicy": {
+    "pageTitle": "Privacy Policy",
+    "selectOptions": {
+      "option1_2025_06_02": "2025.06.02 Privacy Policy"
+    },
+    "intro": {
+      "paragraph1": "Cuberefund Co., Ltd. (hereinafter referred to as the \"Company\") highly values the protection of users' personal information and is committed to ensuring that personal information provided online while using the Company's services is protected. The Company complies with the \"Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.\" and the \"Personal Information Protection Act,\" and has established a privacy policy to do its best to protect user rights."
+    },
+    "mainPoints": {
+      "title": "Key Privacy Policy Points",
+      "item1": {
+        "alt": "General personal information collection icon",
+        "title": "General Personal Information Collection",
+        "description": "Name (English), email, phone number, etc."
+      },
+      "item2": {
+        "alt": "Purpose of processing personal information icon",
+        "title": "Purpose of Processing Personal Information",
+        "description": "General inquiries, refund processing, ombudsman, etc."
+      },
+      "item3": {
+        "alt": "Retention period icon",
+        "title": "Retention Period",
+        "description": "Until termination of service use agreement. However, records of contracts, withdrawals, payments, and supply of goods in e-commerce: 5 years."
+      },
+      "item4": {
+        "alt": "Destruction procedure icon",
+        "title": "Destruction Procedure",
+        "description": "Immediate destruction after the retention period based on collection consent."
+      },
+      "item5": {
+        "alt": "Security measures icon",
+        "title": "Security Measures",
+        "description": "Training for employees handling personal information, installation of security programs, etc."
+      },
+      "item6": {
+        "alt": "Complaint handling department icon",
+        "title": "Complaint Handling Department",
+        "description": "Affiliated Research Institute privacy@cuberefund.com"
+      },
+      "itemNote": "※ Please check the main text of the Privacy Policy for details."
+    },
+    "contentsOverview": {
+      "title": "The privacy policy for Cuberefund's website internet services includes the following:",
+      "item1": "1. Purpose of Collection and Use of Personal Information",
+      "item2": "2. Items and Methods of Collecting Personal Information",
+      "item3": "3. Processing and Retention Period of Personal Information",
+      "item4": "4. Matters Concerning Provision of Personal Information",
+      "item5": "5. Rights and Obligations of Data Subjects and Legal Representatives, and How to Exercise Them",
+      "item6": "6. Procedure and Method for Destroying Personal Information",
+      "item7": "7. Measures to Ensure Personal Information Security",
+      "item8": "8. Affiliation/Name and Contact Information of the Personal Information Manager and Officer for the Service",
+      "item9": "9. Duty of Notification"
+    },
+    "section1": {
+      "title": "1. Purpose of Collection and Use of Personal Information",
+      "paragraph1": "The Company processes personal information for the following purposes. Personal information being processed will not be used for purposes other than those stated, and if the purpose of use changes, necessary measures such as obtaining separate consent will be taken in accordance with Article 18 of the Personal Information Protection Act.",
+      "subPointA": "A. Provision of domestic tax refund services, including issuance of refund slips",
+      "subPointB": "B. Merchant registration, service provision, and maintenance"
+    },
+    "section2": {
+      "title": "2. Items and Methods of Collecting Personal Information",
+      "paragraph1": "The Company collects and uses personal information within the minimum scope necessary for service provision in accordance with the Personal Information Protection Act.",
+      "subSection2_1": {
+        "title": "2-1. Personal Information Items Processed Without Consent of the Data Subject",
+        "paragraph1": "- The Company processes the following personal information items without the data subject's consent based on Article 15, Paragraph 1, Item 4 (execution of contract) of the Personal Information Protection Act."
+      },
+      "subSection2_2": {
+        "title": "2-2. Personal Information Items Processed With Consent of the Data Subject",
+        "paragraph1": "- The Company collects the following personal information based on the Personal Information Protection Act below."
+      },
+      "subSection2_3": {
+        "title": "2-3. Methods of Collecting Personal Information",
+        "item1": "- When the data subject consents to the processing of personal information and directly inputs it during merchant registration and service use.",
+        "item2": "- When the data subject directly provides personal information through the website, phone, etc., during consultation via customer center.",
+        "item3": "- When personal information is received from a third party contracted with Cuberefund (In such cases, the third party obtains consent for providing personal information from the data subject before providing it to Cuberefund, in accordance with the Personal Information Protection Act).",
+        "item4": "- When IP address, cookies, service usage records, device information, and transaction history are automatically or manually generated and collected during service use."
+      },
+      "subSection2_4": {
+        "title": "2-4. The following information may be generated and collected during service use:",
+        "item1": "- Service usage records, access logs, cookies, access IP information",
+        "subItemA": {
+          "title": "A. Collection Methods",
+          "paragraph1": "- The Company collects personal information through the following methods:",
+          "point1": "Cuberefund website, Cuberefund refund system, merchant management system"
+        },
+        "subItemB": {
+          "title": "B. Installation, Operation, and Refusal of Automatic Personal Information Collection Devices",
+          "paragraph1": "- The Company uses 'cookies' that store and frequently retrieve usage information to provide users with improved services.",
+          "paragraph2": "- Cookies are small pieces of information sent by the server (http) operating the website to the user's computer browser and may be stored on the user's PC hard disk.",
+          "point1": "Purpose of using cookies: Used as a basis for providing optimized information to users by identifying visit and usage patterns, search terms, security access status, etc., for each service and website visited by the user.",
+          "point2": "Installation, operation, and refusal of cookies: You can refuse to store cookies through option settings in Tools > Internet Options > Privacy menu at the top of your web browser."
+        }
+      }
+    },
+    "table1": {
+      "header1": "Category",
+      "header2": "Collection Purpose",
+      "header3": "Collected Items",
+      "header4": "Retention and Use Period",
+      "row1": {
+        "col1": "Merchant Management",
+        "col2": "Merchant service and management",
+        "col3": "Name, contact, email, account number, address",
+        "col4": "Until contract termination"
+      },
+      "row2": {
+        "col1": "Merchant Inquiry",
+        "col2": "Merchant registration inquiry",
+        "col3": "Name, contact, email",
+        "col4": "3 years"
+      },
+      "row3": {
+        "col1": "General Inquiry",
+        "col2": "General inquiry",
+        "col3": "Name, contact, email",
+        "col4": "3 years"
+      },
+      "row4": {
+        "col1": "Ombudsman",
+        "col2": "Processing of ombudsman submissions",
+        "col3": "Name, contact, email",
+        "col4": "3 years"
+      }
+    },
+    "table2": {
+      "header1": "Legal Basis",
+      "header2": "Category",
+      "header3": "Collection Purpose",
+      "header4": "Collected Items",
+      "header5": "Retention and Use Period",
+      "row1": {
+        "col1": "Personal Information Protection Act Article 24, Paragraph 1, Item 1 (Unique Identification Information)",
+        "col2": "Domestic Tax Refund",
+        "col3": "Required",
+        "col4": "Refund Application",
+        "col5": "Passport Number",
+        "col6": "5 years"
+      },
+      "row2": {
+        "col1": "Personal Information Protection Act Article 15, Paragraph 1, Item 1 (Consent)",
+        "col2": "Required",
+        "col3": "Contact, email, passport name, nationality, date of birth, credit card number",
+        "col4": "5 years"
+      },
+      "row3": {
+        "col1": "Optional",
+        "col2": "Gender"
+      }
+    },
+    "section3": {
+      "title": "3. Processing and Retention Period of Personal Information",
+      "paragraph1": "The Company processes and retains personal information within the retention/use period agreed upon at the time of collection from the data subject or within the retention/use period stipulated by law.",
+      "subPointA": "A. Domestic tax refund: Until termination of service use agreement or merchant registration, provided that if debt/credit relationships remain, until such relationships are settled.",
+      "subPointB": "B. Records of contracts, withdrawals, payments, and supply of goods in e-commerce: 5 years.",
+      "subPointC": {
+        "title": "C. Cookie Information",
+        "item1": "- Retention items: Computer communication, internet log records, access point tracking data",
+        "item2": "- Retention basis: Storage of communication fact confirmation data according to Article 15-2 of the 「Communications Secret Protection Act」",
+        "item3": "- Retention period: 3 months"
+      }
+    },
+    "section4": {
+      "title": "4. Matters Concerning Provision of Personal Information to Third Parties",
+      "paragraph1": "The Company uses users' personal information within the scope notified in \"1. Purpose of Collection and Use of Personal Information\" and does not use it beyond this scope or, in principle, disclose/provide users' personal information to external parties without prior consent."
+    },
+    "table3": {
+      "header1": "Recipient",
+      "header2": "Items",
+      "header3": "Purpose of Provision",
+      "header4": "Retention and Use Period",
+      "row1": {
+        "col1": "National Tax Service",
+        "col2": "Passport information (passport number, name, nationality)",
+        "col3": "Provision of refund information",
+        "col4": "5 years"
+      },
+      "row2": {
+        "col1": "Korea Customs Service",
+        "col2": "Passport information (passport number, name, nationality)",
+        "col3": "Provision of refund procedure",
+        "col4": "5 years"
+      },
+      "row3": {
+        "col1": "Ministry of Culture, Sports and Tourism",
+        "col2": "Passport information (passport number, name, nationality, date of birth)",
+        "col3": "Processing of refund procedure",
+        "col4": "5 years"
+      },
+      "row4": {
+        "col1": "Ministry of Health and Welfare",
+        "col2": "Passport information (passport number, name, nationality, date of birth)",
+        "col3": "Processing of refund procedure",
+        "col4": "5 years"
+      },
+      "row5": {
+        "col1": "LOTTE Card, VISA, Master, JCB, UnionPay, Global Tax Free",
+        "col2": "Card information (card number, name)",
+        "col3": "Processing of refund procedure",
+        "col4": "Until the period based on relevant laws and agreements"
+      }
+    },
+    "section5": {
+      "title": "5. Rights and Obligations of Data Subjects and Legal Representatives, and How to Exercise Them",
+      "subPointA": {
+        "title": "A. The data subject may exercise the following personal information protection rights against the Company at any time:",
+        "item1": "Request to view personal information",
+        "item2": "Request for correction if there are errors, etc.",
+        "item3": "Request for deletion",
+        "item4": "Request to stop processing"
+      },
+      "subPointB": "B. The rights under paragraph A can be exercised by contacting the personal information protection officer and responsible department or the Company in writing, by phone, email, fax, etc., and the Company will take action without delay.",
+      "subPointC": "C. If the data subject requests correction or deletion of errors in personal information, the Company will not use or provide the personal information until the correction or deletion is completed.",
+      "subPointD": "D. The rights under paragraph A can be exercised through a legal representative of the data subject or an authorized agent. In this case, a power of attorney according to Appendix Form No. 11 of the Notification on Personal Information Processing Methods must be submitted."
+    },
+    "section6": {
+      "title": "6. Procedure and Method for Destroying Personal Information",
+      "paragraph1": "The Company destroys the relevant personal information without delay when it becomes unnecessary, such as due to the expiration of the retention period or achievement of the processing purpose.",
+      "subPointA": {
+        "title": "A. Destruction Procedure",
+        "item1": "Information entered by the user is destroyed immediately after the retention period based on collection consent. However, if storage is required by other laws, it is stored for a certain period in a separate DB (or separate documents for paper) and is not used for other purposes. (Refer to '3. Processing and Retention Period of Personal Information')"
+      },
+      "subPointB": {
+        "title": "B. Destruction Method",
+        "item1": "Personal information printed on paper is shredded or incinerated.",
+        "item2": "Personal information stored in electronic file format is deleted using a technical method that makes records unrecoverable."
+      }
+    },
+    "section7": {
+      "title": "7. Measures to Ensure Personal Information Security",
+      "paragraph1": "The Company takes the following measures to ensure the security of personal information:",
+      "subPointA": {
+        "title": "A. Administrative Measures",
+        "item1": {
+          "title": "Training for employees handling personal information",
+          "description": "Employees handling personal information are designated and limited to a minimum, and compliance with the privacy policy is always emphasized through regular training for these employees."
+        }
+      },
+      "subPointB": {
+        "title": "B. Technical Measures",
+        "item1": "To prevent leakage and damage of personal information due to hacking or computer viruses, security programs are installed and periodically updated/checked, and systems are installed in areas with controlled external access, with technical/physical monitoring and blocking."
+      },
+      "subPointC": {
+        "title": "C. Physical Measures",
+        "item1": "Access control for unauthorized persons: A separate physical storage location for personal information is maintained, and access control procedures are established and operated."
+      }
+    },
+    "section8": {
+      "title": "8. Matters Concerning the Personal Information Protection Officer of the Service",
+      "paragraph1": "The Company has designated a personal information protection officer as follows to be responsible for overall personal information processing tasks and to handle complaints and damage relief for data subjects related to personal information processing.",
+      "officer": {
+        "title": "A. Personal Information Protection Officer",
+        "name": "Name: Se-yoon Yeom",
+        "position": "Affiliation/Position: Director of Affiliated Research Institute",
+        "contact": "Contact: gardenco@cuberefund.com, 02-6925-2033"
+      },
+      "manager": {
+        "title": "B. Personal Information Protection Manager",
+        "name": "Name: Mun-seong Park",
+        "position": "Affiliation/Position: Director of Affiliated Research Institute",
+        "contact": "Contact: parkmunsung@cuberefund.com, 02-6925-2033"
+      },
+      "paragraph2": "Users can report all personal information protection-related complaints arising from using the Company's services to the personal information manager or the responsible department. The Company will provide prompt and sufficient answers to users' reports. If you need to report or consult about other personal information infringements, please contact the institutions below.",
+      "externalContact1": "Personal Information Infringement Report Center: privacy.kisa.or.kr (Dial 118 without area code)",
+      "externalContact2": "Supreme Prosecutors' Office Cyber Investigation Division: www.spo.go.kr (Dial 1301 without area code)",
+      "externalContact3": "National Police Agency Cyber Bureau: https://ecrm.police.go.kr/ (Dial 182 without area code)"
+    },
+    "section9": {
+      "title": "9. Duty of Notification",
+      "paragraph1": "If there are additions, deletions, or modifications to the current privacy policy, they will be notified through the 'Notices' section of the website at least 7 days before the revision.",
+      "announcementDate": "Announcement Date: May 26, 2025",
+      "effectiveDate": "Effective Date: May 26, 2025",
+      "version": "Version Number: V1.0"
+    }
+  },
+  "validation": {
+    "required": "Please enter {{field}}.",
+    "selectRequired": "Please select {{field}}.",
+    "minLength": "Please enter at least {{length}} characters.",
+    "maxLength": "Please enter within {{length}} characters.",
+    "invalidPhone": "The phone number format is invalid.",
+    "invalidEmail": "Please enter a valid email format.",
+    "reporterIdMinLength": "Please enter at least 6 characters.",
+    "reporterIdMaxLength": "Please enter within 20 characters.",
+    "idDuplicateCheck": "Please check for ID duplication.",
+    "idAlreadyInUse": "This ID is already in use.",
+    "passwordFormat": "Please enter 8-20 characters using a combination of English letters, numbers, and special characters.",
+    "contact": {
+      "contactType": {
+        "required": "お問い合わせの種類を選択してください。"
+      },
+      "franchiseName": {
+        "required": "フランチャイズ名を入力してください。"
+      },
+      "name": {
+        "required": "お名前を入力してください。",
+        "maxLength": "100文字以内で入力してください。"
+      },
+      "phoneNumber": {
+        "required": "電話番号を入力してください。",
+        "format": "電話番号の形式が正しくありません。"
+      },
+      "email": {
+        "localRequired": "メールアドレスのユーザー名を入力してください。",
+        "domainRequired": "メールアドレスのドメインを入力してください。",
+        "maxLength": "20文字以内で入力してください。",
+        "format": "有効なメールアドレス形式で入力してください。"
+      },
+      "title": {
+        "required": "件名を入力してください。",
+        "maxLength": "100文字以内で入力してください。"
+      },
+      "content": {
+        "required": "内容を入力してください。",
+        "maxLength": "1500文字以内で入力してください。"
+      },
+      "captcha": {
+        "required": "セキュリティコードを入力してください。"
+      }
+    }
+  },
+  "taxRefundAlert": {
+    "transRefNo": "返金伝票を入力してください。",
+    "transRefNo12": "返金伝票は 12 桁でなければなりません。",
+    "totalAmount": "総額を入力してください。",
+    "totalAmount1500": "総額は15,000ウォン以上でなければなりません。",
+    "genderM": "男",
+    "genderF": "女",
+    "genderSelect": "性別の選択",
+    "year": "年",
+    "month": "月",
+    "day": "日",
+    "alipay": "アリペイバーコード番号と携帯電話番号を入力",
+    "wechat": "ウィチャペイIDを入力",
+    "confirm": "確認",
+    "transNo": "伝票シリアル番号",
+    "totalCont": "購入総額",
+    "Date": "購入日",
+    "validation": {
+      "passportNo": {
+        "required": "パスポート番号を入力してください。",
+        "minLength": "パスポート番号は少なくとも5文字でなければなりません。",
+        "maxLength": "パスポート番号は最大9文字以内でなければなりません。",
+        "format": "パスポート番号にはアルファベットと数字のみを含める必要があります。"
+      },
+      "passportNameLast": {
+        "required": "Last Name を入力してください。",
+        "maxLength": "24 文字以内で入力してください",
+        "format": "Last Name は英語のみ入力可能です。"
+      },
+      "passportNameFirst": {
+        "required": "First Name を入力してください。",
+        "maxLength": "15 文字以内で入力してください",
+        "format": "First Nameは英語のみ入力可能です。"
+      },
+      "nationality": {
+        "required": "国籍を入力してください。"
+      },
+      "gender": {
+        "required": "性別を入力してください。"
+      },
+      "birthDate": {
+        "required": "生年月日を入力してください。"
+      },
+      "phoneNumber": {
+        "required": "電話番号は必須です。",
+        "maxLength": "20 文字以内で入力してください",
+        "format": "電話番号は数字のみ入力可能です。"
+      },
+      "emailLocal": {
+        "required": "メールのユーザー名を入力してください。",
+        "maxLength": "99 文字以内で入力してください"
+      },
+      "emailDomain": {
+        "required": "メール ドメインを入力してください。",
+        "maxLength": "100文字以内で入力してください"
+      },
+      "email": {
+        "invalid": "正しいメール形式を入力してください。"
+      },
+      "refundType": {
+        "required": "返金手段を選択してください。",
+        "invalid": "有効な払い戻し手段を選択してください。"
+      },
+      "refundInfo": {
+        "required": "払い戻し情報を入力してください。",
+        "maxLength": "40 文字以内で入力してください",
+        "cardNumber": "カード番号は 16 桁の数字でなければなりません。国内発行カードは使用できません。",
+        "alipay": "アリペイ番号は 11 桁以上でなければなりません。",
+        "wechatPay": "ウィチャペイ番号は5桁以上でなければなりません。"
+      },
+      "tranRefNo": {
+        "required": "返金伝票を入力してください。",
+        "maxLength": "100 文字以内で入力してください",
+        "length": "返金伝票は 12 桁でなければなりません。",
+        "duplicate": "すでに登録済みの伝票です。"
+      },
+      "amount": {
+        "required": "総額を入力してください。",
+        "minimum": "総額は15,000ウォン以上でなければなりません。"
+      }
+    },
+    "resultMessages": {
+      "success": "払い戻し申請完了",
+      "fail": "返金不可",
+      "amount": "返金額",
+      "amountTotal": "総払い戻し見積額",
+      "invalidCardCompany": "取引不可のカード会社です。",
+      "invalidSlipNumber": "存在しない伝票番号です。伝票を確認してください。",
+      "passportMismatch": "エクスポート時にパスポート情報と一致しません。",
+      "canceledSlip": "キャンセルされた伝票です。伝票を確認してください。",
+      "refundedSlip": "返金済みの伝票です。伝票を確認してください。",
+      "customsVerificationRequired": "税関の輸出確認が必要です。伝票を確認してください。",
+      "contactAdmin": "管理者にお問い合わせください。",
+      "default": "不明なエラーが発生しました。管理者にお問い合わせください。",
+      "nodata": "結果情報なし",
+      "termRefund1Agreement": "固有識別情報の同意が必要です。",
+      "termRefund2Agreement": "個人情報の収集および利用の同意が必要です。",
+      "termRefund3Agreement": "固有識別情報の第三者共有の同意が必要です。",
+      "termRefund4Agreement": "個人情報の第三者提供の同意が必要です。",
+      "termRefund5Agreement": "個人情報の第三者提供の同意が必要です。",
+      "termRefund6Agreement": "個人情報の第三者提供の同意が必要です。"
+    }
+  }
+}

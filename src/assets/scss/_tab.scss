@@ -1,0 +1,381 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+.tab-wrap {
+	.tab-head {
+		@include rem (margin-bottom, 64);
+		@include mobile {
+			display: flex;
+			overflow-x: auto;
+			-ms-overflow-style: none; 
+			scrollbar-width: none;
+
+			&::-webkit-scrollbar {
+				display: none; 
+			}
+		}
+		.tab-head-item {
+			@include rem (padding, 16px 32px);
+			@include f(20, 500, 1.6);
+			@include rem (border-radius, 80);
+			color: $color-212529;
+			background-color: $color-f1f3f5;
+			border: none;
+			&[data-state="active"] {
+				font-weight: 700;
+				background-color: $color-259abd;
+				color: $color-ffffff;
+			}
+			& + .tab-head-item {
+				@include rem (margin-left, 16);
+				@include mobile {
+					@include rem (margin-left, 8);
+				}
+			}
+			@include mobile {
+				min-width: fit-content;
+				&::-webkit-scrollbar {
+					display: none; 
+				}
+			}
+		}  
+
+		&.tab-sticky {
+			position: sticky;
+			background: transparent;
+			@include rem (padding, 24px 0);
+			@include rem (top, 128);
+			z-index: 9;
+		}
+	}
+	&.scroll-type {
+		.tab-head {
+			display: flex;
+			align-items: center;
+			overflow-x: auto;
+			overflow-y: hidden;
+			.tab-head-item {
+				flex-shrink: 0;
+			}
+		}	
+	}
+	&.step-type {
+		.tab-head {
+			@include rem (border-radius, 80);
+			display: flex;
+			align-items: center;
+			background-color: $color-f1f3f5;
+		}
+		.tab-head-item {
+			@include rem (width, 100%);
+			@include rem (column-gap, 8);
+			@include f(20, 500, 1.6);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color : $color-495057;
+			span {
+				@include rem (margin-left, 12);
+				position: relative;
+				&::before {
+					@include rem (top, 50%);
+					@include rem (left, -44);
+					@include rem (width, 32);
+					@include rem (height, 31);
+					content: '';
+					position: absolute;
+					transform: translateY(-50%);
+				}
+			}
+			&:nth-child(1)span::before {
+				background: url("../images/icon/ico_step_01_off.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(2)span::before {
+				background: url("../images/icon/ico_step_02_off.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(3)span::before {
+				background: url("../images/icon/ico_step_03_off.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(4)span::before {
+				background: url("../images/icon/ico_step_04_off.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(1)[data-state="active"]span::before {
+				background: url("../images/icon/ico_step_01_on.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(2)[data-state="active"]span::before {
+				background: url("../images/icon/ico_step_02_on.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(3)[data-state="active"]span::before {
+				background: url("../images/icon/ico_step_03_on.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+			&:nth-child(4)[data-state="active"]span::before {
+				background: url("../images/icon/ico_step_04_on.png") no-repeat center center;
+				background-size: 100% auto;
+			}
+		
+		}
+	}
+	&.type01 {
+		.tab-head {
+			@include rem (margin-bottom, 32);
+			.tab-head-item {
+				@include rem (padding, 0 0 11px 0);
+				@include f(20, 400, 1.6);
+				@include rem (border-radius, 0);
+				color: $color-495057;
+				background-color: $color-transparent;
+				border: none;
+				@include mobile {
+					@include f(16, 400, 1.6);
+				}
+				&[data-state="active"] {
+					font-weight: 700;
+					color: $color-212529;
+					border-bottom: 3px solid $color-212529;
+				}
+				& + .tab-head-item {
+					@include rem (margin-left, 24);
+				}
+			}  
+		}
+	}
+	&.type02 {
+		.tab-head {
+			@include rem (margin-bottom, 32);
+			.tab-head-item {
+				@include rem (padding, 8px 24px);
+				@include f(20, 400, 1.6);
+				@include rem (border-radius, 80);
+				color: $color-212529;
+				background-color: $color-f1f3f5;
+				border: none;
+				&[data-state="active"] {
+					font-weight: 600;
+					color: $color-ffffff;
+					background-color: $color-212529;
+				}
+				& + .tab-head-item {
+					@include rem (margin-left, 16);
+					@include mobile {
+						@include rem (margin-left, 8);
+					}
+				}
+			}  
+
+			@include mobile {
+				display: flex;
+			}
+		}
+	}
+	&.type04 {
+		.tab-head {
+			@include rem(margin, 20px 0);
+			display: flex;
+			justify-content: center;
+			@include rem(gap, 32);
+			@include rem(padding, 0 24px);
+			
+			@include mobile {
+				overflow-x: auto;
+				-webkit-overflow-scrolling: touch;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
+				justify-content: flex-start;
+				padding-bottom: 4px;
+				
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+			
+			.tab-head-item {
+				@include f(16, 400, 1.6);
+				color: $color-495057;
+				background-color: $color-transparent;
+				border: none;
+				border-radius: 0;
+				@include rem(padding, 3px 0 8px 0);
+				white-space: nowrap;
+				
+				@include mobile {
+					flex-shrink: 0;
+				}
+				
+				&[data-state="active"] {
+					font-weight: 700;
+					color: $color-259abd;
+					border-bottom: 3px solid $color-259abd;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1023px) {
+	.tab-wrap {
+		.tab-head {
+			@include rem (margin-bottom, 40);
+			.tab-head-item {
+				@include rem (padding, 11px 16px);
+				@include f(16, 500, 1.6);
+				// @include rem (border-radius, 80);
+				// color: $color-212529;
+				// background-color: $color-f1f3f5;
+				// border: none;
+				&[data-state="active"] {
+					font-weight: 600;
+					// background-color: $color-259abd;
+					// color: $color-ffffff;
+				}
+				& + .tab-head-item {
+					// @include rem (margin-left, 16);
+				}
+			}  
+
+			&.tab-sticky {
+				@include rem (top, 70);
+				@include rem (padding, 12px 0);
+				background-color: rgba(255, 255, 255, 0.1);
+    			backdrop-filter: blur(4px);
+			}
+		}
+		// 미디어쿼리 써서 768 414 도 다시 잡아줘야함
+		&.step-type {
+			.tab-head {
+				@include rem (padding, 0 24px);
+				@include rem (height, 48);
+				justify-content: space-between;
+				// @include rem (border-radius, 80);
+				// display: flex;
+				// align-items: center;
+				// background-color: $color-f1f3f5;
+			}
+			.tab-head-item {
+				@include rem (height, 48);
+				@include rem (padding, 0);			
+				@include rem (width, 32);
+				// @include rem (column-gap, 8);
+				// display: flex;
+				// align-items: center;
+				// justify-content: center;
+				span {
+					@include rem (margin-left, 32);
+					@include rem (width, 100%);
+					// position: relative;
+					&::before {
+						@include rem (left, -32);
+						// @include rem (top, 50%);
+						// @include rem (width, 32);
+						// @include rem (height, 31);
+						// content: '';
+						// position: absolute;
+						// transform: translateY(-50%);
+					}
+				}
+				& + .tab-head-item {
+					@include rem (margin-left, 0);
+				}
+				&[data-state="active"] {
+					@include rem (width, 214);
+				}
+				&[data-state="active"]:nth-child(1) {
+					@include rem (margin-left, -24);
+				}
+				&[data-state="active"]:last-child {
+					@include rem (margin-right, -24);
+				}
+				&[data-state="active"] span::before{
+					@include rem (left, -16);
+				}
+				&[data-state="inactive"] span{
+					font-size: 0;
+				}
+				&:nth-child(1)span::before {
+					// background: url("../images/icon/ico_step_01_off.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(2)span::before {
+					// background: url("../images/icon/ico_step_02_off.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(3)span::before {
+					// background: url("../images/icon/ico_step_03_off.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(4)span::before {
+					// background: url("../images/icon/ico_step_04_off.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(1)[data-state="active"]span::before {
+					// background: url("../images/icon/ico_step_01_on.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(2)[data-state="active"]span::before {
+					// background: url("../images/icon/ico_step_02_on.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(3)[data-state="active"]span::before {
+					// background: url("../images/icon/ico_step_03_on.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+				&:nth-child(4)[data-state="active"]span::before {
+					// background: url("../images/icon/ico_step_04_on.png") no-repeat center center;
+					// background-size: 100% auto;
+				}
+			
+			}
+		}
+		&.type01 {
+			.tab-head {
+				// @include rem (margin-bottom, 32);
+				.tab-head-item {
+					// @include rem (padding, 0 0 11px 0);
+					// @include f(20, 400, 1.6);
+					// @include rem (border-radius, 0);
+					// color: $color-495057;
+					// background-color: $color-transparent;
+					// border: none;
+					&[data-state="active"] {
+						// font-weight: 700;
+						// color: $color-212529;
+						// border-bottom: 3px solid $color-212529;
+					}
+					& + .tab-head-item {
+						// @include rem (margin-left, 24);
+					}
+				}  
+			}
+		}
+		&.type02 {
+			.tab-head {
+				@include rem (margin-bottom, 24);
+				.tab-head-item {
+					@include rem (padding, 10px 16px);
+					@include f(14, 600, 1.4);
+					@include rem (border-radius, 60);
+					// color: $color-212529;
+					// background-color: $color-f1f3f5;
+					// border: none;
+					&[data-state="active"] {
+						// font-weight: 600;
+						// color: $color-ffffff;
+						// background-color: $color-212529;
+						border-bottom: 0;
+					}
+					& + .tab-head-item {
+						// @include rem (margin-left, 16);
+					}
+				}  
+			}
+		}
+	}
+	
+}

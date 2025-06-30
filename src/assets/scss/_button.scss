@@ -1,0 +1,157 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+.btn-wrap {
+	@include rem (width, 100%);
+	.btn-inner {
+		@include rem (margin-top, 40);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&.two-btn {
+			.btn {
+				@include rem (width, 50%);
+			}
+		}
+		&.line-type {
+			@include rem (padding-top, 40);
+			border-top: 1px solid $color-dee2e6;
+		}
+	}
+}
+
+.btn {
+	@include rem (width, 320);
+	@include rem (height, 56px !important);
+  	@include rem (border-radius, 12px !important);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem !important;
+	font-weight: 700 !important;
+	line-height: 1.4 !important;
+	box-shadow: none !important;
+	border: none !important;
+		outline: none !important;
+		@include mobile {
+			@include rem (width, 100%);
+		}
+	& + .btn {
+		@include rem (margin-left, 16);
+	}
+	&.a-type {
+		&:hover {
+			background-color: $color-259abd !important;
+			color: $color-ffffff !important;
+		}
+	}
+}
+
+.btn-primary {
+	background-color: $color-259abd !important;
+	color: $color-ffffff;
+}
+
+.btn-default {
+	background-color: $color-f1f3f5 !important;
+	color: $color-434343 !important;
+	border: none !important;
+}
+.btn-line {
+	background-color: $color-ffffff !important;
+	color: $color-259abd !important;
+	border: 1px solid $color-259abd !important;
+}
+.btn-delete {
+	background-color: $color-f1f3f5 !important;
+	border-color: $color-f1f3f5 !important;
+	color: $color-434343;
+}
+.btn-disabled {
+	background-color: $color-ced4da !important;
+	color: $color-adb5bd !important;
+	opacity: 1 !important;
+}
+.file-btn {
+	@include rem (width, 92);
+	@include rem (height, 48px !important);
+	@include rem (border-radius, 8px !important);
+	background-color: $color-ffffff !important;
+	border: 1px solid $color-212529 !important;
+	color: $color-212529 !important;
+}
+.add-btn {
+	@include rem (width, 580);
+	@include rem (height, 48px !important);
+	@include rem (border-radius, 8px !important);
+	background-color: $color-ffffff !important;
+	border: 1px solid $color-212529 !important;
+	color: $color-212529 !important;
+	&::after {
+		content: '';
+		position: relative;
+		display: inline;
+		@include rem (width, 20);
+		@include rem (height, 20);
+		@include rem (margin-left, 6);
+		background: url('../images/btn/btn_add.svg') 50% 50% / 100% no-repeat;
+	}
+	@include mobile {
+		width: 100%;
+	}
+}
+
+.close-btn {
+	@include rem (width, 24);
+	@include rem (height, 24);
+	padding: 0;
+	background: url('../images/btn/btn_close_black.svg') 50% 50% / 100% no-repeat;
+}
+
+.refresh-btn {
+	@include rem (width, 80);
+	@include rem (height, 64px !important);
+	@include rem (padding, 0 !important);
+	@include rem (border-radius, 8);
+	background-color: $color-ffffff !important;
+	border: 1px solid $color-212529 !important;
+	color: $color-212529 !important;
+	display: flex;
+	flex-direction: column;
+	
+}
+.btn-download {
+	@include rem (width, 24);
+	@include rem (height, 24px !important);
+	@include rem (padding, 0 !important);
+	@include rem (border-radius, 8);
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+
+
+@media (max-width: 1023px) {
+	.btn-wrap {
+		.btn-inner {
+			@include rem (margin-top, 24);
+			&.line-type {
+				@include rem (margin-top, 40);
+				@include rem (padding-top, 24);
+				// border-top: 1px solid $color-dee2e6;
+			}
+		}
+	}
+	
+	.file-btn {
+		@include rem (height, 48px !important);
+	}
+}
+
+// 버튼 호버, 포커스 공통 [ 아웃라인 없애기 ]
+button:hover,
+button:focus-visible {
+	border-color: transparent;
+	outline: none;
+}

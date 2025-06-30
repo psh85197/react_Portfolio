@@ -1,0 +1,87 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.refund-bx {
+	@include rem (margin-top, 16);
+
+	.refund-list {
+		@include rem (column-gap, 24);
+		display: flex;
+		align-items: center;
+
+		.refund-item {
+			@include rem (width, 100%);
+			@include rem (padding, 24px 32px);
+			@include rem (border-radius, 20);
+			border: 1px solid $color-f1f3f5;
+			background-color: $color-f8f9fa;
+			@include mobile {
+				@include rem (padding, 20);
+				@include rem (border-radius, 12);
+			}
+
+			p {
+				@include rem (margin-bottom, 16);
+				@include mobile {
+					@include rem (margin-bottom, 12);
+				}
+			}
+
+			a {
+				@include rem (width, 100%);
+				@include rem (column-gap, 4);
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				color: $color-495057;
+
+				img {
+					@include rem (width, 24);
+					@include rem (height, 24);
+					background-size: 100% auto;
+				}
+
+				&:hover {
+					color: $color-495057;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.refund-bx {
+		// @include rem (margin-top, 16);
+	
+		.refund-list {
+			display: block;
+	
+			.refund-item {
+				& + .refund-item {
+					@include rem (margin-top, 16);
+				}
+				p {
+					// @include rem (margin-bottom, 16);
+				}
+	
+				a {
+					// @include rem (width, 100%);
+					// @include rem (column-gap, 4);
+					// display: flex;
+					// align-items: center;
+					// justify-content: flex-end;
+					// color: $color-495057;
+	
+					img {
+						// @include rem (width, 24);
+						// @include rem (height, 24);
+					}
+	
+					&:hover {
+						// color: $color-495057;
+					}
+				}
+			}
+		}
+	}
+}

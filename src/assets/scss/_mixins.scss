@@ -1,0 +1,64 @@
+@use "sass:meta";
+@use "sass:list";
+@use "sass:math";
+
+// 반응형 믹스인
+@mixin mobile {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+// @mixin tablet {
+//   @media (min-width: 768px) and (max-width: 1023px) {
+//     @content;
+//   }
+// }
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+
+// px → rem 변환 함수
+@function rem($px) {
+  @return #{math.div($px, 10)}rem;
+}
+
+// rem 믹스인: 여러 값 지원
+@mixin rem($property, $values...) {
+  $converted: ();
+
+  @each $value in $values {
+    @if meta.type-of($value) == 'number' and math.unit($value) != '%' {
+      $converted: list.append($converted, rem($value));
+    } @else {
+      $converted: list.append($converted, $value);
+    }
+  }
+
+  #{$property}: $converted;
+}
+
+// rem 변환 헬퍼 함수
+@function rem($px) {
+  @return #{$px / 10}rem; // 기준이 10px인 경우
+}
+
+// 폰트 믹스인: weight와 line-height는 선택적
+@mixin f($size, $weight: 400, $line-height: 1.3) {
+  font-size: rem($size);
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+// 폰트 함수: 객체 스타일 반환
+@function f($size, $weight: 400, $line-height: 1.3) {
+  @return (
+    font-size: rem($size),
+    font-weight: $weight,
+    line-height: $line-height
+  );
+}

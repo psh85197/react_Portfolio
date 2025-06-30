@@ -1,0 +1,78 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.notice-wrap {
+	@include mobile {
+		.table-search-bx + .table-wrap {
+			@include rem (margin-top, 32);
+		}
+	}
+
+}
+
+.notice-details-wrap {
+	.badge-group {
+		@include rem (margin-bottom, 12);
+
+		.badge {
+			@include rem (padding, 2px 12px);
+			@include f(15, 400, 1.4);
+		}
+	}
+
+	.hgroup-wrap {
+		&.line-type {
+			@include rem (padding-bottom, 32);
+			border-color: $color-dee2e6;
+			@include mobile {
+				@include rem (padding-bottom, 24);
+			}
+		}
+		h2 {
+			&+p {
+				@include rem (margin-top, 12);
+			}
+		}
+
+		p {
+			color: $color-868e96;
+		}
+	}
+	.notice-details-bx {
+		@include rem (margin-top, 64);
+		@include mobile {
+			@include rem (margin-top, 48);
+		}
+		.notice-details-list{
+			border-top: 1px solid $color-dee2e6;
+			border-bottom: 1px solid $color-dee2e6;
+		}
+		.notice-details-item {
+			& + .notice-details-item {
+				border-top: 1px solid $color-dee2e6;
+			}
+			a {
+				@include rem (padding, 20);
+				display: flex;
+				align-items: center;
+				@include mobile {
+					@include rem (padding, 20px 8px);
+				}
+				&:hover {
+					color: $color-212529;
+				}
+				span {
+						@include f(16, 500, 1.6);
+						color: $color-868e96;
+						&.txt {
+							@include rem (margin-left, 40);
+							color: $color-212529;
+							@include mobile {
+								@include rem (margin-left, 20);
+							}
+						}
+				}
+			}
+		}	
+	}
+}

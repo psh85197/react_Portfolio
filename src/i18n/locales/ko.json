@@ -1,0 +1,2375 @@
+{
+  "contactPage": {
+    "title": "가입 문의 및 신청"
+  },
+  "unit": "원",
+  "introduction": {
+    "title": "Tax Refund 소개",
+    "whatIsTaxRefund": {
+      "title": "택스리펀드란?",
+      "description": "외국인 관광객이 사후 면세판매장에서 구매한 물품을 사용하지 않고 해외로 반출하는 경우, 해당 물품에 부과된 부가가치세를 환급해 주는 제도입니다.",
+      "relatedLaw": "※ 관련법령",
+      "lawDescription": "「조세특례제한법」 외국인관광객 등에 대한 부가가치세 및 개별소비세 특례규정"
+    },
+    "eligibleItems": {
+      "title": "환급 대상자 조건",
+      "eligiblePersons": {
+        "title": "환급 대상자",
+        "items": [
+          "대한민국 내에서 비거주자이며 무소득자",
+          "국내 체류기간 6개월 이내 외국인 (외국환거래법에 따른 비거주자)",
+          "국내체류기간 3개월 이내, 해외 2년 이상 거주한 재외국민 (주재원, 유학, 취업, 연수 등)"
+        ]
+      },
+      "ineligiblePersons": {
+        "title": "환급 비대상자",
+        "items": [
+          "체류기간 초과자 (외국인 6개월 / 내국인 3개월)",
+          "대한민국 주재 외교관 (이에 준하는 외국공관원 포함)",
+          "대한민국 주재 국제연합군 및 미국군의 장병 및 군무원",
+          "대한민국에서 소득이 있는 취업자",
+          "법인사업자"
+        ]
+      },
+      "ineligibleNotices": {
+        "title": "환급 대상 및 절차 안내 바로가기",
+        "link": "바로가기",
+        "items": {
+          "1": "환급 대상 세부 안내",
+          "2": " 환급 절차 세부 안내"
+        }
+      }
+    }
+  },
+  "features": {
+    "title": "서비스 특장점",
+    "description": "Tax Refund 매장 서비스의 특장점을 소개합니다. ",
+    "mainTitle": "Tax Refund 매장 운영, 이런점이 달라집니다.",
+    "feature1": {
+      "title": "외국인 관광객 매출 증가",
+      "description": ["부가세 환급에 따른 할인효과(6~8%)로 관광객의 방문이 증가하고, 매출도 함께 상승합니다."]
+    },
+    "feature2": {
+      "title": "사후면세 매장으로 홍보 가능",
+      "description": [
+        "온ㆍ오프라인을 통해서 Tax Refund 매장으로 홍보가 가능합니다.",
+        "특히, 중국, 일본, 대만, 동남아 관광객들에게 사후 면세제도에 대한 인지도가 높아, 매장 방문 시 만족도가 높습니다."
+      ]
+    },
+    "feature3": {
+      "title": "가맹점 추가 비용 부담 없음",
+      "description": ["고객이 돌려받는 환급금은 물품 가격에 포함 된 부가세를 환급하는 것으로, 매장에서 별도의 비용을 부담하지 않습니다."]
+    },
+    "feature4": {
+      "title": "전국의 모든 매장에 서비스 가능",
+      "description": [
+        "외국인 관광객이 방문하는 매장은 전국 어디라도 면세사업장 운영이 가능합니다.",
+        "일반 매장보다 환급액 만큼의 가격 경쟁력이 있어, 고객 유치에도 유리합니다."
+      ]
+    },
+    "whyCubeRefundButton": "Why CubeRefund?"
+  },
+  "traveler": {
+    "announcement": {
+      "modal": {
+        "title": "약도 보기",
+        "addressCopySuccess": "주소 복사가 완료되었습니다.",
+        "confirm": "확인",
+        "title": "약도 보기"
+      }
+    },
+    "applyRefund": {
+      "title": "환급 조회 및 신청",
+      "description": "환급을 신청해 주세요.",
+      "tabs": {
+        "step1": "신청 동의",
+        "step2": "환급 신청 및 수단 등록",
+        "step3": "환급 신청 결과"
+      },
+      "terms": {
+        "uniqueId": {
+          "title": "고유 식별 정보 수집·이용 동의 (필수)"
+        }
+      },
+      "form": {
+        "gender": {
+          "label": "성별",
+          "options": {
+            "male": "남",
+            "female": "여"
+          }
+        }
+      },
+      "step2": {
+        "title": "환급전표 신청 내역",
+        "refundable": "환급 가능",
+        "receiptNumber": "전표 일련 번호",
+        "purchaseDate": "구매일자",
+        "totalAmount": "총 구매 금액",
+        "refundAmount": "환급 금액",
+        "totalRefundAmount": "총 환급 예상액 (KRW)",
+        "passportInfo": {
+          "title": "여권 정보 작성",
+          "required": "필수 입력 항목",
+          "name": {
+            "label": "여권성명(영문)",
+            "lastName": "Last Name",
+            "firstName": "First Name"
+          },
+          "number": "여권번호",
+          "nationality": "국적",
+          "gender": "성별",
+          "birthDate": "생년월일"
+        },
+        "contactInfo": {
+          "title": "연락처 정보 작성",
+          "phone": {
+            "label": "연락처",
+            "placeholder": "-제외하고 숫자만 입력"
+          },
+          "email": {
+            "label": "이메일",
+            "id": "ID"
+          }
+        },
+        "paymentMethod": {
+          "title": "결제 수단",
+          "cardSelection": "카드 선택",
+          "creditCard": "신용카드",
+          "alipay": "Alipay",
+          "wechatPay": "WeChat Pay",
+          "cardNumber": {
+            "label": "카드번호",
+            "placeholder": "-제외하고 숫자만 입력"
+          }
+        },
+        "notes": {
+          "title": "유의사항",
+          "items": [
+            "환율에 따라 실제 환급액과 다소 차이가 발생할 수 있습니다.",
+            "환급 신청이 완료된 건에 대해서는 수정이 불가능하므로, 입력하신 정보를 다시 한번 확인해 주세요."
+          ]
+        },
+        "buttons": {
+          "prev": "이전",
+          "apply": "신청"
+        }
+      },
+      "step3": {
+        "title": "환급전표 조회 내역"
+      }
+    },
+    "refundEligibility": {
+      "title": "환급 대상 안내",
+      "description": "분야별 환급 방법과 대상 확인해 주세요.",
+      "tabs": {
+        "goods": "물품",
+        "medical": "의료",
+        "accommodation": "숙박"
+      },
+      "goods": {
+        "title": "물품",
+        "description1": "법에서 금하거나 세관에서 육안으로 확인할",
+        "description2": "수 없는 물품과 면세품을 제외한 모든 물품",
+        "imageAlt": "큐브리펀드 모바일 셀프 반출 오픈",
+        "eligiblePerson": {
+          "title": "대상자",
+          "description": "대한민국 내 비거주자이며 무소득자",
+          "eligible": "환급 대상자",
+          "eligibleList": [
+            "국내체류기간 6개월 이내 외국인",
+            "국내체류기간 3개월 이내, 해외 2년이상 거주한 재외국민"
+          ],
+          "ineligible": "환급 비대상자",
+          "ineligibleList": [
+            "체류기간 초과자, 주한외교관, 주한미군, 국내 취업자, 대리인, 법인"
+          ]
+        },
+        "eligibleItems": {
+          "title": "대상물품",
+          "description": "면세판매장에서 구매한 물품 중, 법에서 금지하지 않는 물품",
+          "eligible": "환급 대상 물품",
+          "eligibleList": [
+            "1회 구매금액 15,000원 이상",
+            "구매 후 3개월 이내, 세관에서 해외 반출을 확인 받은 물품"
+          ],
+          "ineligible": "환급 비대상 물품",
+          "ineligibleList": [
+            "해외 반출 이전에 개봉하였거나 소비한 물품",
+            "세관에서 반출 확인을 받지 않은 물품",
+            "총포, 도검, 화약, 문화재, 마약 등 법에서 금하는 물품",
+            "조리하여 식당에서 파는 음식, 마사지 등 세관에서 육안으로 확인할 수 없는 물품",
+            "면세품"
+          ]
+        },
+        "procedures": {
+          "title": "환급 절차 바로가기",
+          "immediate": "즉시 환급",
+          "city": "도심 환급",
+          "departure": "출국항 환급",
+          "mobile": "모바일 환급"
+        }
+      },
+      "medical": {
+        "title": "의료",
+        "description1": "외국인 환자가 특례적용 의료기관에서",
+        "description2": "제공받은 의료용역",
+        "eligiblePerson": {
+          "title": "대상자",
+          "description": "대한민국 내 비거주자이며 무소득자",
+          "eligible": "환급 대상자",
+          "eligibleList": [
+            "국내체류기간 6개월 이내 외국인",
+            "국내체류기간 3개월 이내, 해외 2년이상 거주한 재외국민"
+          ],
+          "ineligible": "환급 비대상자",
+          "ineligibleList": [
+            "체류기간 초과자, 주한외교관, 주한미군, 국내 취업자, 대리인, 법인"
+          ]
+        },
+        "eligibleItems": {
+          "title": "대상의료",
+          "description": "특례적용의료기관에서 제공받은 부가가치세가 과세되는 의료용역",
+          "eligible": "환급 대상 의료",
+          "eligibleList1": [
+            "쌍커풀수술",
+            "코성형수술",
+            "유방수술",
+            "지방흡인술",
+            "주름살제거술",
+            "안면윤곽술",
+            "치아성형술",
+            "악안면교정술",
+            "기타"
+          ],
+          "eligibleList2": [
+            "여드름치료술",
+            "제모술",
+            "색소모반, 주근깨, 흑색점, 기미치료술",
+            "탈모치료술, 모발이식술",
+            "문신술 및 문신제거술, 피어싱",
+            "지방융해술",
+            "피부 재생술, 피부미백술",
+            "항노화치료술 및 모공축소술"
+          ],
+          "ineligible": "환급 비대상 의료",
+          "ineligibleList": [
+            "대상을 제외한 시술"
+          ]
+        },
+        "procedures": {
+          "title": "환급 절차 바로가기",
+          "city": "도심 환급",
+          "departure": "출국항 환급",
+          "mobile": "모바일 환급"
+        }
+      },
+      "accommodation": {
+        "title": "숙박",
+        "description1": "외국인 관광객이 특례지정 관광호텔에서",
+        "description2": "제공받은 숙박용역",
+        "imageAlt": "큐브리펀드 모바일 셀프 반출 오픈",
+        "eligiblePerson": {
+          "title": "대상자",
+          "description": "대한민국 내 비거주자이며 무소득자",
+          "eligible": "환급 대상자",
+          "eligibleList": [
+            "국내체류기간 6개월 이내 외국인",
+            "국내체류기간 3개월 이내, 해외 2년이상 거주한 재외국민",
+            "숙박용역을 공급받은 날로부터 3개월 이내로 해외출국"
+          ],
+          "ineligible": "환급 비대상자",
+          "ineligibleList": [
+            "체류기간 초과자, 주한외교관, 주한미군, 국내 취업자, 대리인, 법인"
+          ]
+        },
+        "eligibleItems": {
+          "title": "대상숙박",
+          "description": "외국인 관광객이 특례적용 관광숙박시설에서 제공받은 숙박용역",
+          "eligible": "환급 대상 숙박",
+          "eligibleList": [
+            "30박 이하 객실요금 (객실요금에 포함된 조식 포함)",
+            "개별관광객 (FIT)",
+            "체크아웃 후 3개월 이내 출국하는 경우"
+          ],
+          "ineligible": "환급 비대상 숙박",
+          "ineligibleList": [
+            "30박을 초과한 경우",
+            "별도로 구입한 조식, 봉사료 및 기타",
+            "단체관광객 (패키지 상품)"
+          ]
+        },
+        "procedures": {
+          "title": "환급 절차 바로가기",
+          "city": "도심 환급",
+          "departure": "출국항 환급",
+          "mobile": "모바일 환급"
+        }
+      }
+    }
+  },
+  "greeting": {
+    "welcome": "CEO Message",
+    "marketLeader1": "K-쇼핑을 완성하는",
+    "marketLeader2": "스마트",
+    "marketLeader3": "택스리펀드",
+    "marketLeader4": "플랫폼",
+    "companyMission": "먼저 저희 큐브리펀드를 찾아주신 여러분께 진심으로 감사의 인사를 드립니다.",
+    "hello": "큐브리펀드는 외국인 관광객들이 대한민국에서의 쇼핑을 보다 편리하고 즐겁게 마무리할 수 있도록, 혁신적인 택스리펀드 서비스를 제공하고자 설립되었습니다.",
+    "globalPartnership": "설립 이후, 롯데이노베이트와 글로벌 택스리펀드 전문기업인 Planet Payment Group Holdings의 투자와 협력을 통해 기술력과 서비스 경쟁력을 갖춘 기업으로 성장해 왔습니다.",
+    "planet": "현재 큐브리펀드는 환급서비스는 물론 외국인 관광객 대상 사후 면세사업장에 특화된 마케팅서비스를 제공함으로써 고객과 파트너 모두에게 실질적인 가치를 제공하는 【밸류 크리에이터(Value Creator)】로 자리매김하고 있습니다.",
+    "futureCommitment": "앞으로도 큐브리펀드는 외국인 고객의 쇼핑 여정을 보다 행복하게 완성하는 플랫폼으로서, 대한민국의 브랜드 가치를 세계에 알리는 데 앞장서겠습니다.",
+    "happy": "기술 혁신과 고객 중심의 서비스를 바탕으로, 더 나은 내일을 만들어가는 큐브리펀드의 혁신에 많은 관심과 성원을 부탁드립니다.",
+    "thankYou": "감사합니다.",
+    "ceoTitle": "대표이사 좌정훈",
+    "ceoName": "좌정훈"
+  },
+  "location": {
+    "title": "오시는 길",
+    "headOfficeTitle": "큐브리펀드",
+    "addressLabel": "주소",
+    "headOfficeAddress": "서울시 금천구 가산디지털2로 187, 2층",
+    "phoneLabel": "대표번호",
+    "emailLabel": "이메일",
+    "faxLabel": "팩스",
+    "salesOfficeTitle": "영업 사무실",
+    "salesOfficeAddress": "서울시 중구 을지로 264, 11층",
+    "viewMap": "지도 보기",
+    "refundInfoTitle": "환급 위치 안내",
+    "refundLocationDowntown": "도심 환급",
+    "refundLocationDeparture": "출국항 환급",
+    "learnMore": "안내 바로가기"
+  },
+  "history": {
+    "pageTitle": "연혁",
+    "tabs": {
+      "currentTo2020": "2014 ~ 2010",
+      "2019To2015": "2019 ~ 2015",
+      "2014To2010": "현재 ~ 2020"
+    },
+    "milestones": {
+      "currentTo2020": {
+        "title": "현재 ~ 2020",
+        "years": {
+          "y2025": {
+            "title": "2025",
+            "items": {
+              "y2025_06": {
+                "date": "2025. 06",
+                "desc": "큐브리펀드 리뉴얼 홈페이지 OPEN"
+              },
+              "y2025_04": {
+                "date": "2025. 04",
+                "desc": "클라우드 환급시스템 구축"
+              }
+            }
+          },
+          "y2024": {
+            "title": "2024",
+            "items": {
+              "y2024_12": {
+                "date": "2024. 12",
+                "desc": "BI Report 시스템 OPEN"
+              },
+              "y2024_05": {
+                "date": "2024. 05",
+                "desc": "부산 도심 환급센터 OPEN"
+              },
+              "y2024_04": {
+                "date": "2024. 04",
+                "desc": "도심 환급센터 OPEN (롯데호텔 부산점)"
+              },
+              "y2024_02_01": {
+                "date": "2024. 02",
+                "desc": "차세대 키오스크 도입"
+              },
+              "y2024_02_02": {
+                "date": "2024. 02",
+                "desc": "모바일 셀프 반출 시범사업 OPEN"
+              },
+              "y2024_01": {
+                "date": "2024. 01",
+                "desc": "전국 유지보수 서비스망 구축"
+              }
+            }
+          },
+          "y2022": {
+            "title": "2022",
+            "items": {
+              "y2022_01": {
+                "date": "2022. 01",
+                "desc": "예약발행 시스템 OPEN"
+              }
+            }
+          },
+          "y2020": {
+            "title": "2020",
+            "items": {
+              "y2020": {
+                "date": "2020",
+                "desc": "한국관광공사 지역관광거점도시 즉시 환급 사업자 선정(전주/안동)"
+              }
+            }
+          }
+        }
+      },
+      "2019To2015": {
+        "title": "2019 ~ 2015",
+        "imageAlt": "큐브리펀드 큐알 이미지",
+        "imageKey": "history_images02",
+        "years": {
+          "y2019": {
+            "title": "2019",
+            "items": {
+              "y2019_04_01": {
+                "date": "2019. 04",
+                "desc": "Alipay 앱 환급서비스 개시"
+              },
+              "y2019_04_02": {
+                "date": "2019. 04",
+                "desc": "큐브리펀드 모바일 환급서비스 개시"
+              },
+              "y2019_04_03": {
+                "date": "2019. 04",
+                "desc": "롯데마트 환급서비스 개시"
+              }
+            }
+          },
+          "y2018": {
+            "title": "2018",
+            "items": {
+              "y2018_09": {
+                "date": "2018. 09",
+                "desc": "Alipay 실시간 환급 업무제휴"
+              },
+              "y2018_08": {
+                "date": "2018. 08",
+                "desc": "롯데백화점 환급창구 운영"
+              },
+              "y2018_04": {
+                "date": "2018. 04",
+                "desc": "롯데호텔 숙박용역 환급 개시"
+              },
+              "y2018_03": {
+                "date": "2018. 03",
+                "desc": "텐센트(WeChat Pay) 실시간 환급 업무제휴"
+              },
+              "y2018_01": {
+                "date": "2018. 01",
+                "desc": "호텔 숙박용역 환급창구운영사업자 지정"
+              }
+            }
+          },
+          "y2017": {
+            "title": "2017",
+            "items": {
+              "y2017_08": {
+                "date": "2017. 08",
+                "desc": "롯데백화점 본점 즉시 환급서비스 개시"
+              },
+              "y2017_03_01": {
+                "date": "2017. 03",
+                "desc": "도심 환급센터 OPEN (롯데피트인 동대문점)"
+              },
+              "y2017_03_02": {
+                "date": "2017. 03",
+                "desc": "유럽 Tax Refund社 Planet(舊. Fintrax) 투자유치 및 사업제휴"
+              }
+            }
+          },
+          "y2016": {
+            "title": "2016",
+            "items": {
+              "y2016_09": {
+                "date": "2016. 09",
+                "desc": "인천국제공항 유인 환급창구 운영"
+              },
+              "y2016_08": {
+                "date": "2016. 08",
+                "desc": "부산 도심 환급센터 OPEN"
+              },
+              "y2016_05": {
+                "date": "2016. 05",
+                "desc": "롯데이노베이트(舊.롯데정보통신) 투자유치"
+              },
+              "y2016_01": {
+                "date": "2016. 01",
+                "desc": "즉시 환급 서비스 개시"
+              }
+            }
+          },
+          "y2015": {
+            "title": "2015",
+            "items": {
+              "y2015_10_01": {
+                "date": "2015. 10",
+                "desc": "부산항 환급창구 운영"
+              },
+              "y2015_10_02": {
+                "date": "2015. 10",
+                "desc": "평택항 환급창구 운영"
+              },
+              "y2015_03": {
+                "date": "2015. 03",
+                "desc": "홍대 도심 환급센터 OEPN"
+              },
+              "y2015_01_01": {
+                "date": "2015. 01",
+                "desc": "인천항 제2터미널 환급서비스 개시"
+              },
+              "y2015_01_02": {
+                "date": "2015. 01",
+                "desc": "제주 도심 환급센터 OPEN"
+              }
+            }
+          }
+        }
+      },
+      "2014To2010": {
+        "title": "2014 ~ 2010",
+        "imageAlt": "큐브리펀드 공항 이미지",
+        "imageKey": "history_images03",
+        "years": {
+          "y2014": {
+            "title": "2014",
+            "items": {
+              "y2014_12": {
+                "date": "2014. 12",
+                "desc": "대구/양양국제공항 환급서비스 개시"
+              },
+              "y2014_11": {
+                "date": "2014. 11",
+                "desc": "청주국제공항 환급서비스 개시"
+              },
+              "y2014_10": {
+                "date": "2014. 10",
+                "desc": "인천항 제1터미널 환급서비스 개시"
+              },
+              "y2014_07_01": {
+                "date": "2014. 07",
+                "desc": "환급창구 운영시스템 및 방법에 대한 특허 등록"
+              },
+              "y2014_05": {
+                "date": "2014. 05",
+                "desc": "도심 환급센터 OPEN (서울시 명동 중소기업유통센터)"
+              },
+              "y2014_02_01": {
+                "date": "2014. 02",
+                "desc": "온라인을 이용한 내국세 환급시스템 및 그 방법에 대한 특허 등록"
+              }
+            }
+          },
+          "y2013": {
+            "title": "2013",
+            "items": {
+              "y2013_09": {
+                "date": "2013. 09",
+                "desc": "인천국제공항 전자환급서비스 개시"
+              },
+              "y2013_01": {
+                "date": "2013. 01",
+                "desc": "김포국제공항 환급서비스 개시"
+              }
+            }
+          },
+          "y2012": {
+            "title": "2012",
+            "items": {
+              "y2012_12": {
+                "date": "2012. 12",
+                "desc": "제주국제공항 환급서비스 개시"
+              },
+              "y2012_01": {
+                "date": "2012. 01",
+                "desc": "벤처기업 등록"
+              }
+            }
+          },
+          "y2011": {
+            "title": "2011",
+            "items": {
+              "y2011_07_01": {
+                "date": "2011. 07",
+                "desc": "신한은행 - 내국세 지정운영업체 업무 제휴 계약 체결"
+              },
+              "y2011_07_02": {
+                "date": "2011. 07",
+                "desc": "김포국제공항 KIOSK 설치 및 운영"
+              },
+              "y2011_02": {
+                "date": "2011. 02",
+                "desc": "환급창구 운영사업자 지정"
+              }
+            }
+          },
+          "y2010": {
+            "title": "2010",
+            "items": {
+              "y2010_12": {
+                "date": "2010. 12",
+                "desc": "신한 Love KOREA 카드 서비스 개시"
+              },
+              "y2010_08": {
+                "date": "2010. 08",
+                "desc": "법인설립"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "franchise": "가맹 고객",
+    "franchiseLocations": "Why CubeRefund?",
+    "franchiseProcess": "가맹 절차 안내",
+    "franchiseNotice": "가맹점 공지사항",
+    "franchiseNoticeNoticeDetail": "가맹점 공지사항 상세",
+    "franchiseSupplies": "소모품 신청",
+    "franchiseManual": "매뉴얼",
+    "traveler": "Tourist",
+    "travelerEligibility": "환급 대상 안내",
+    "travelerMethods": "환급 절차 안내",
+    "travelerReceipts": "환급창구 안내",
+    "travelerApplyRefund": "환급 조회 및 신청",
+    "travelerApplyRefundSelect": "환급 전표 조회 및 신청",
+    "travelerApplyRefundApply": "환급신청 작성",
+    "taxRefund": "Service",
+    "taxRefundIntroduction": "Tax Refund 소개",
+    "taxRefundFeatures": "서비스 특장점",
+    "contact": "Contact",
+    "contactSignupInquiry": "가입 및 일반 문의",
+    "contactFaq": "자주 묻는 질문",
+    "company": "Company",
+    "companyGreeting": "CEO Message",
+    "companyHistory": "연혁",
+    "companyLocation": "오시는 길",
+    "companyNotice": "공지사항",
+    "companyNoticeNoticeList": "공지사항 목록",
+    "companyNoticeNoticeDefault": "상세",
+    "footer": "Footer",
+    "footer1Dep": "Footer1Dep",
+    "footerTermFairTrade": "컴플라이언스",
+    "footerEthicsGuide": "신문고",
+    "footerEthicsReport": "제보하기",
+    "footerSitemap": "사이트맵",
+    "footer2Dep": "Footer2Dep",
+    "footerTermPrivacyPolicy": "개인정보처리방침",
+    "footerTermVideoPrivacy": "영상정보처리기기 운영 지침",
+    "footerTermServiceTerms": "이용약관",
+    "footerTermLegalNotice": "법적고지",
+    "footerTermEmailReject": "이메일무단수집거부"
+  },
+  "notice": {
+    "pageTitle": "공지사항",
+    "searchPlaceholder": "검색어를 입력해 주세요.",
+    "noLabel": "No",
+    "titleLabel": "제목",
+    "registrationDateLabel": "등록일",
+    "noResultsFound": "조회된 내역이 없습니다.",
+    "topNoticeBadge": "공지",
+    "noTitle": "제목 없음",
+    "badge": "공지",
+    "prev": "이전",
+    "next": "다음",
+    "list": "목록"
+  },
+  "footer": {
+    "addressTitle": "주소",
+    "addressValue": "서울시 금천구 가산디지털2로 187, 2층 (08500)",
+    "telTitle": "대표번호",
+    "emailTitle": "이메일",
+    "copyright": "© COPYRIGHTⓒCUBEREFUND Co., LTD. ALL RIGHT RESERVED.",
+    "familySiteTitle": "패밀리 사이트",
+    "fax": "FAX",
+    "familySite": {
+      "lotteHoldings": "롯데지주",
+      "lotteInnovate": "롯데이노베이트",
+      "planet": "planet"
+    }
+  },
+  "common": {
+    "logoAltText": "로고",
+    "required": "필수 입력 항목",
+    "cancel": "취소",
+    "submit": "등록",
+    "confirm": "확인",
+    "noData": "조회된 내역이 없습니다.",
+    "noContent": "조회된 내용이 없습니다."
+  },
+  "file": {
+    "uploadLimitMessage": "최대 5개만 등록 가능하며, 10MB 미만의 문서, 그림, 압축 파일만 등록할 수 있습니다.",
+    "confirm": "확인",
+    "uploadButton": "등록하기",
+    "success": {
+      "title": "업로드 성공",
+      "desc": "{{fileName}} 파일이 업로드되었습니다."
+    },
+    "error": {
+      "title": "업로드 오류"
+    },
+    "exception": {
+      "no": {
+        "file": "파일이 선택되지 않았습니다.",
+        "fileUploadType": "파일 업로드 유형이 누락되었습니다.",
+        "extension": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+        "storageStrategy": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+      },
+      "invalid": {
+        "fileUploadType": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+        "extension": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+        "mime": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+      },
+      "max": {
+        "desc": "첨부파일은 {{max}}개까지 업로드할 수 있습니다.",
+        "title": "첨부파일 개수 초과"
+      },
+      "maxSize": {
+        "desc": "10MB 미만의 파일만 업로드할 수 있습니다.",
+        "title": "파일 크기 초과"
+      },
+      "generic": "파일 업로드에 실패했습니다"
+    },
+    "report": {
+      "uploadLimitMessage": "최대 5개만 등록 가능하며, 10MB 미만의 문서, 그림, 압축 파일만 등록할 수 있습니다.",
+      "confirm": "확인",
+      "uploadButton": "등록하기",
+      "success": {
+        "title": "업로드 성공",
+        "desc": "{{fileName}} 파일이 업로드되었습니다."
+      },
+      "error": {
+        "title": "업로드 오류"
+      },
+      "exception": {
+        "no": {
+          "file": "파일이 선택되지 않았습니다.",
+          "fileUploadType": "파일 업로드 유형이 누락되었습니다.",
+          "extension": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "storageStrategy": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+        },
+        "invalid": {
+          "fileUploadType": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "extension": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf",
+          "mime": "업로드 가능한 확장자: hwp, doc, txt, ppt, xls, jpg, png, gif, zip, hwpx, docx, pptx, xlsx, pdf"
+        },
+        "max": {
+          "desc": "첨부파일은 {{max}}개까지 업로드할 수 있습니다.",
+          "title": "첨부파일 개수 초과"
+        },
+        "maxSize": {
+          "desc": "10MB 미만의 파일만 업로드할 수 있습니다.",
+          "title": "파일 크기 초과"
+        },
+        "generic": "파일 업로드에 실패했습니다"
+      }
+    }
+  },
+  "main": {
+    "slogan1": "당신의 특별한 여행,",
+    "slogan2": "더 쉽고 편리한 환급으로 완성됩니다.",
+    "buttonTodayClose": "오늘 하루 열지 않기",
+    "buttonClose": "닫기",
+    "taxRefundGuideTitle": "Tax Refund?",
+    "taxRefundGuideSubtitle": "쉽고 편리한 택스리펀드를 시작해 보세요.",
+    "taxRefundMethodIfMissed1": "환급 신청을",
+    "taxRefundMethodIfMissed2": "못하고 출국 했다면?",
+    "requestRefunds": "환급 신청/조회",
+    "refundEligibility": "환급 대상 안내",
+    "refundConditionsInfo1": "환급 가능한 대상과 조건을",
+    "refundConditionsInfo2": "안내해드립니다.",
+    "taxRefundMethodTitle": "환급 절차 안내",
+    "taxRefundMethodDetail1": "환급방법에 따른",
+    "taxRefundMethodDetail2": "환급절차를 안내해드립니다.",
+    "taxRefundLocationTitle": "환급창구 안내",
+    "taxRefundLocationDetail1": "가까운 환급창구 위치를",
+    "taxRefundLocationDetail2": "쉽게 찾아보세요.",
+    "travelEnjoyment1": "여행의 즐거움을 더하는",
+    "travelEnjoyment2": "편리한 환급 서비스를 지금 경험해 보세요.",
+    "alipayRefunds": "Alipay 환급 바로가기",
+    "cubeRefunds": "큐브리펀드 환급 바로가기",
+    "yunUPay": "Yun-U Pay",
+    "weChatPay": "WeChat Pay",
+    "membershipInquiries": "가맹 문의",
+    "membershipSlogan": "택스리펀드 서비스 가입절차를 안내해 드립니다.",
+    "becomeMemberJourney": "성장의 여정에 함께 해주세요.",
+    "membershipJoinProcess": "가맹 절차 안내",
+    "membershipInquiryLink": "가입 문의",
+    "membershipService": "가맹점 서비스",
+    "partnerSlogan1": "든든한 동반자로서 함께 만들어온 성장,",
+    "partnerSlogan2": "앞으로도 함께 하겠습니다.",
+    "notices": "공지사항",
+    "requestSupplies": "소모품 신청",
+    "viewAlipayQR": "Alipay",
+    "qrCode1": "QR 코드를 스캔하시면",
+    "qrCode2": "해당 페이지로 이동합니다.",
+    "modal": {
+      "renewalTitle": "[공지] 홈페이지 리뉴얼 안내",
+      "renewalMessage1": "큐브리펀드 홈페이지가 새롭게 리뉴얼 되었습니다!",
+      "renewalMessage2": "기존 홈페이지 계정 정보는 2개월 후 일괄 삭제될 예정이오니 이용에 참고해주시기 바라며,",
+      "renewalMessage3": "기존 홈페이지에서 환급 신청한 건은 Contact > 가맹 및 일반 문의를 통하여 문의주시면 연락드리겠습니다.",
+      "renewalMessage4": "보다 나은 서비스를 위해 항상 노력하겠습니다.",
+      "renewalMessage5": "감사합니다.",
+      "maintenanceNotice1": "홈페이지 개편 작업으로 일시적으로",
+      "maintenanceNotice2": "이용이 중단됩니다.",
+      "maintenanceDate": "2025.06.02(월) AM 02:00 - 09:00"
+    }
+  },
+  "contact": {
+    "pageTitle": "가입 및 일반 문의",
+    "pagedesc": "문의 작성",
+    "requiredItem": "필수 입력 항목",
+    "inquiryType": "문의 유형",
+    "inquiryTypeMembership": "가맹 문의",
+    "inquiryTypeGeneral": "일반 문의",
+    "storeName": "매장명",
+    "enterStoreName": "매장명을 입력해주세요.",
+    "name": "성명",
+    "enterYourName": "성명을 입력해주세요.",
+    "phone": "전화번호",
+    "enterNumbersOnly": "'-제외하고 숫자만 입력",
+    "email": "이메일",
+    "mailAccount": "메일계정",
+    "domain": "도메인",
+    "keyIn": "직접 입력",
+    "subject": "제목",
+    "enterSubject": "제목을 입력해주세요.",
+    "content": "내용",
+    "enterMessage": "내용을 입력해주세요.",
+    "fileAttachment": "파일첨부",
+    "addFile": "등록하기",
+    "captchaInput": "보안 문자 입력",
+    "captchaRequired": "필수 입력 항목",
+    "captcha": "보안 문자",
+    "enterCaptcha6Digits": "보안 문자 입력",
+    "refresh": "새로고침",
+    "note": "비고",
+    "contactConfirmation": "담당자 확인 후 입력하신 이메일 또는 전화로 연락드리겠습니다.",
+    "tel": "대표전화 : 02-6925-2033",
+    "submit": "등록",
+    "captchaError": "CAPTCHA 로드 오류",
+    "captchaReInput": "보안문자를 다시 입력해주세요",
+    "titleHolderFran": "[매장명] 가맹문의 드립니다",
+    "titleHolderGen": "일반문의 드립니다",
+    "cancel": "취소",
+    "confirm": "확인",
+    "cancelConfirm": "취소하시겠습니까?",
+    "createConfirm": "등록하시겠습니까?",
+    "createCompletedConfirm": "등록되었습니다."
+  },
+  "faq": {
+    "pageTitle": "자주 묻는 질문",
+    "all": "전체",
+    "taxRefund": "환급",
+    "membership": "가맹",
+    "question1": "환급 대상자는 어떻게 되나요?",
+    "answer1-1": "국내 체류기간 6개월 이내 외국인과 내국인의 경우 해외에 2년이상 거주 중 3개월이내 단기 입국한 경우 환급 가능합니다. 보다 자세한 내용은 아래 경로에서 확인할 수 있습니다.",
+    "answer1-2": "환급 대상자 확인",
+    "question2": "환급 가능한 구매금액은 얼마인가요?",
+    "answer2-1": "결제 건당 15,000원 이상인 경우 환급이 가능합니다.",
+    "question3": "구매 영수증으로 환급이 가능한가요?",
+    "answer3-1": "구매 영수증으로는 환급이 불가능합니다. 면세판매장으로 지정된 가맹점에서 구매영수증과 별도로 환급전표를 발급 받으셔야 환급이 가능합니다.",
+    "question4": "한국 여권 소지자인데 환급을 받을 수 있나요?",
+    "answer4-1": "내국인의 경우, 해외에 2년이상 거주 중인 재외국민이 3개월이내 단기 입국한 경우 환급 가능합니다. ",
+    "question5": "환급은 공항에서만 가능한가요?",
+    "answer5-1": "출국항 외에도, 도심 환급 또는 모바일 환급을 통해 환급 받으실 수 있습니다. 도심 환급, 모바일 환급을 이용하시는 경우 출국 시 환급창구를 방문하는 시간을 절약하실 수 있습니다.",
+    "answer5-2": "단, 도심 환급/모바일 환급의 경우에도 출국 시 세관반출 확인을 반드시 받으셔야 합니다. 보다 자세한 내용은 아래 링크를 통해 확인하실수 있습니다.",
+    "answer5-3": "환급 절차 안내 확인",
+    "question6": "의료나 숙박시설에 대한 환급도 세관 반출 확인을 받아야 하나요?",
+    "answer6-1": "의료나 숙박은 반출할 물품이 없으므로 세관 반출 확인 없이, 출국항 환급창구(또는 무인환급기)에서 환급을 받을 수 있습니다.",
+    "answer6-2": "※ 출국항에서 환급을 못 받았다면, 환급전표에 여권정보, 생년월일, 이메일 기재 후 메일박스에 넣어주세요.",
+    "question7": "세관반출 신고 후 환급을 받지 못하고 출국을 했습니다. 환급을 받을 수 있나요?",
+    "answer7-1": "네, 가능합니다. '환급 조회 및 신청' 메뉴를 이용해주세요.",
+    "question8": "출국 시 세관반출 신고를 못했는데, 환급을 받을 수 있나요?",
+    "answer8-1": "세관반출 확인은 환급처리의 필수조건입니다. 세관반출 확인을 받지 않은 경우 환급을 받을 수 없습니다.",
+    "answer8-2": "단, 세관반출 유효기간내 물품 및 환급전표를 소지하여 재입국 및 재출국시 다시 세관반출 신고를 하시면 환급을 받을 수 있습니다.",
+    "question9": "세관 반출시 구매했던 물품이 꼭 있어야 하나요?",
+    "answer9-1": "세관반출 신고 시 물품을 꼭 소지하여야 합니다. 물품을 수화물로 위탁하는 경우에는 세관에서 반출 확인을 받은 후 위탁하시기 바랍니다.",
+    "question10": "출국항의 세관 반출신고 장소는 어디에 있나요?",
+    "answer10-1": "세관 반출 신고 장소는 출국항별로 상이합니다. 출국항별 상세위치는 '환급창구 안내'에서 확인하시기 바랍니다.",
+    "question11": "신규 가맹 문의는 어떻게 해야 하나요?",
+    "answer11-1": "큐브리펀드 대표전화(02-6925-2033)로 전화 또는 '가입 및 일반 문의' 메뉴를 이용해주세요.",
+    "question12": "사업자 정보 변경 시 어떻게 해야 하나요?",
+    "answer12-1": "사업자 정보 변경 시 일반 문의를 남겨주시거나, 큐브리펀드로 연락주시기 바랍니다.",
+    "question13": "택스리펀드 서비스 이용 시 장비를 구입해야 하나요?",
+    "answer13-1": "큐브리펀드와 가맹점 계약 체결 후 단말기와 필요한 물품을 무료로 설치/제공해 드립니다.",
+    "question14": "택스리펀드 서비스 이용 시 비용이 있나요?",
+    "answer14-1": "택스리펀드 서비스 이용에 따른 추가 비용은 없습니다.",
+    "question15": "택스리펀드 가맹점이 되면 무엇이 좋아지나요?",
+    "answer15-1": "부가세 환급에 따른 할인 효과로 관광객의 방문이 증가하고, 매출도 함께 상승합니다. 또한 큐브리펀드는 외국인 관광객을 대상으로 한 각종 마케팅 활동을 지원해 드립니다.",
+    "question16": "부가세 환급 후 정산은 어떻게 진행되나요?",
+    "answer16-1": "매월 발생한 환급내역에 대한 정산(청구)서 익월 2일까지 메일로 송부드리며, 가맹점에서는 내역을 확인 후 말일까지 정산해 주시면 됩니다.",
+    "answer16-2": "분/반기 부가세 신고시 환급(정산)액을 영세율로 신고하게 되며 실질적으로 가맹점이 부담할 금액은 없습니다.",
+    "question17": "외국인 고객에게 발행된 모든 환급전표 금액 정산해야 하나요?",
+    "answer17-1": "아닙니다. 외국인 관광객에게 환급이 완료된 건에 대해서만 정산합니다.",
+    "answer17-2": "전표는 발행 되었으나, 고객이 환급받지 않은 건은 정산되지 않으며, 부가세 신고 시 매출부가세로 납부하시게 됩니다.",
+    "question18": "면세점(Tax Free)과 택스리펀드(Tex Refund)는 어떻게 다른 가요?",
+    "answer18-1": "면세점은 세금이 차감(면제)된 금액으로 구매하는 반면, 택스리펀드는 물건 구매시 세금이 포함된 금액으로 결제 후, 출국 시 구매물품을 소지하는 경우 세금을 환급받는 제도입니다."
+  },
+  "refundProcedureGuide": {
+    "title": "환급 절차 안내",
+    "refundType": {
+      "title": "환급 유형",
+      "instantRefund": "즉시 환급",
+      "inCityRefund": "도심 환급",
+      "airportRefund": "출국항 환급",
+      "mobileRefund": "모바일 환급"
+    },
+    "instantRefundSection": {
+      "title": "즉시 환급",
+      "tag": "대상 : 물품 (의료/숙박 불가)",
+      "description": "사후 면세사업장에서 물품을 구매하는 시점에 환급액을 차감한 가격으로 결제하는 제도",
+      "refundProcessTit": "즉시 환급",
+      "refundProcessTitle": "환급 절차",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "즉시 환급 가능여부 확인",
+            "purchaseCriteria": {
+              "title": "여권 조회를 통해 즉시 환급 대상자 여부 확인",
+              "criteria1": "1회 구매금액 15,000원 이상 100만원 미만",
+              "criteria2": "1회 입국 시, 1인당 즉시 환급 총 구매한도 500만원",
+              "criteria3": "여권 미소지 또는 즉시 환급 불가 시 사후 환급 진행",
+              "criteria4": "※ 여권리더기 등 즉시 환급 인프라 구비 된 가맹점만 가능"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "refundReceipt": {
+            "title": "환급금 수령",
+            "refundMethod": {
+              "title": "환급 방법",
+              "method1": "환급금액이 차감된 금액으로 물품대금 결제 및 환급전표 수령",
+              "method2": "관세청 실시간 반출 승인 진행",
+              "method3": "환급전표 수령"
+            },
+            "refundMeans": {
+              "title": "필요 서류",
+              "passport": "여권"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "departure": {
+            "title": "출국",
+            "departureMethod": {
+              "title": "출국 기준",
+              "method": "세관 반출 확인 절차 불필요"
+            }
+          }
+        }
+      }
+    },
+    "inCityRefundSection": {
+      "title": "도심 환급",
+      "tag": "대상 : 물품, 의료, 숙박",
+      "description": "출국 전 시내에 설치된 도심 환급창구(무인환급기)를 이용하여 환급받는 제도",
+      "refundProcessTitle": "환급 절차",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "purchaseAndPayment": {
+            "title": "물품 구매 및 결제",
+            "purchaseCriteria": {
+              "title": "구매 기준",
+              "criteria1": "환급전표 1장당 구매금액 15,000원 이상 600만원 이하",
+              "criteria2": "총 구매금액 한도 제한 없음",
+              "criteria3": "결제 시 환급전표 수령 (미수령 시 환급 불가)"
+            },
+            "requiredDocuments": {
+              "title": "필요 서류",
+              "passport": "여권"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "refundReceipt": {
+            "title": "환급금 수령",
+            "refundMethod": {
+              "title": "환급 방법",
+              "method": "여권, 환급전표, 신용카드를 소지하고, 도심 환급창구(무인환급기) 방문",
+              "method1": "여권 및 환급전표 제시(스캔) 후 환급금 수령"
+            },
+            "refundMeans": {
+              "title": "환급 수단",
+              "means1": "현금 (세관 반출 담보용, 신용카드 담보 설정)",
+              "means2": "신용카드 (VISA, MASTER, JCB)",
+              "means3": "Alipay",
+              "means4": "WeChat Pay",
+              "means5": "신용카드, Alipay, WeChat Pay는 세관반출 확인 후 지정계좌로 송금"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "customsDeclaration": {
+            "title": "세관 반출 신고",
+            "howToProceed": {
+              "title": "신고 방법",
+              "method1": "출국 시 세관에서 구매물품과 여권, 환급전표를 제시하고 반출 확인 (의료, 숙박 환급은 세관 반출확인 불필요)",
+              "method2": "미반출 시 신용카드 담보금 청구 또는 환급 취소"
+            }
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "출국",
+            "departureRequirements": {
+              "title": "출국 기준",
+              "criteria1": "환급전표 발행일로부터 3개월 이내 반출 확인 및 출국"
+            }
+          }
+        }
+      }
+    },
+    "airportRefundSection": {
+      "title": "출국항 환급",
+      "tag": "대상 : 물품, 의료, 숙박",
+      "description": "출국 시 출국항에 설치된 환급창구 또는 무인환급기(KIOSK)를 이용하여 환급받는 제도",
+      "refundProcessTitle": "환급 절차",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "물품 구매",
+            "purchaseRequirements": {
+              "title": "구매 기준",
+              "criteria1": "1회 구매금액 15,000원 이상",
+              "criteria2": "총 구매금액 한도 제한 없음",
+              "criteria3": "결제 시 환급전표 수령 (미수령 시 환급 불가)"
+            },
+            "requiredDocuments": {
+              "title": "필요 서류",
+              "passport": "여권"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "customsDeclaration": {
+            "title": "세관 반출 신고",
+            "howToProceed": {
+              "title": "신고 방법",
+              "method": "출국 시 세관에서 구매물품과 여권, 환급전표를 제시하고 반출 확인 (의료, 숙박 환급은 세관 반출확인 불필요)"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "refundPayment": {
+            "title": "환급금 수령",
+            "refundMethod": {
+              "title": "환급 방법",
+              "method": "출국장내에 설치된 환급창구 또는 무인환급기에서 환급",
+              "method1": "여권 및 세관에서 반출확인 받은 환급전표를 제시 또는 스캔후 환급",
+              "method2": "환급창구(무인환급기) 미설치 출국장은, 메일박스 이용 (환급수단 등 환급전표에 기재 필요)"
+            },
+            "refundMeans": {
+              "title": "환급 수단",
+              "means1": "현금, Alipay, WeChat Pay",
+              "means2": "출국항별 상이"
+            }
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "출국",
+            "departureRequirements": {
+              "title": "출국 방법",
+              "method": "환급전표 발행일로부터 3개월 이내 반출 확인 및 출국"
+            }
+          }
+        }
+      }
+    },
+    "mobileRefundSection": {
+      "viewAlipayQR": "Alipay앱 바로가기",
+      "viewCubeQR": "큐브리펀드 모바일 환급신청 바로가기",
+      "title": "모바일 환급",
+      "tag": "대상 : 물품 (의료/숙박 불가)",
+      "description": "출국 전후에 모바일 시스템을 이용하여 편리하게 환급 신청할 수 있는 서비스",
+      "refundProcessTitle": "환급 절차",
+      "refundProcess": {
+        "step1": {
+          "stepTitle": "STEP 1",
+          "goodsPurchase": {
+            "title": "물품 구매",
+            "purchaseRequirements": {
+              "title": "구매 기준",
+              "criteria1": "1회 구매금액 15,000원 이상",
+              "criteria2": "결제 시 환급전표 수령 (미수령 시 환급 불가)",
+              "title2": "필요 서류",
+              "criteria3": "여권"
+            }
+          }
+        },
+        "step2": {
+          "stepTitle": "STEP 2",
+          "customsDeclaration": {
+            "title": "세관 반출 신고",
+            "howToProceed": {
+              "title": "신고 방법",
+              "method": "출국 시 세관에서 구매물품과 여권, 환급전표를 제시하고 반출 확인 (의료, 숙박 환급은 세관 반출확인 불필요)"
+            }
+          }
+        },
+        "step3": {
+          "stepTitle": "STEP 3",
+          "refundRequest": {
+            "title": "환급 신청",
+            "howToProceed": {
+              "title": "요청 방법",
+              "method": "큐브리펀드 모바일 환급신청 사이트 또는 Alipay앱을 이용하여 환급 요청"
+            },
+            "alipayAppLink": "Alipay앱 바로가기",
+            "cubeRefundMobileLink": "큐브리펀드 모바일 환급신청 바로가기"
+          }
+        },
+        "step4": {
+          "stepTitle": "STEP 4",
+          "departure": {
+            "title": "출국",
+            "departureRequirements": {
+              "title": "출국 기준",
+              "criteria": "환급전표 발행일로부터 3개월 이내 반출 확인 및 출국",
+              "criteria2": "※ 세관반출 확인 후 신청계좌로 송금"
+            },
+            "mobileRefundLink": "모바일 환급 바로가기",
+            "alipayRefund": {
+              "title": "Alipay 환급",
+              "qrCode": {
+                "title": "Alipay QR보기",
+                "value": "Alipay 환급 바로가기"
+              }
+            },
+            "cubeRefund": {
+              "title": "큐브리펀드 환급",
+              "qrCode": {
+                "title": "큐브리펀드 QR보기",
+                "value": "큐브리펀드 환급 바로가기"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "refundLocationGuide": {
+    "title": "환급 창구 안내",
+    "viewLocationTitle": "위치 보기",
+    "inCityRefund": "도심 환급",
+    "airportRefund": "출국항 환급",
+    "inCityRefundSection": {
+      "title": "도심 환급",
+      "refundCenters": {
+        "title": "환급창구 위치",
+        "all": "전체",
+        "seoul": "서울",
+        "incheon": "인천",
+        "daegu": "대구",
+        "busan": "부산",
+        "unstaffed": "무인",
+        "staffed": "유인"
+      },
+      "contact": "연락처",
+      "hours": "운영 시간",
+      "copyAddress": "주소 복사",
+      "viewOnMap": "위치 보기"
+    },
+    "airportRefundSection": {
+      "title": "출국항 환급",
+      "refundCenters": {
+        "title": "환급창구 위치",
+        "incheonAirportT1": {
+          "title": "인천국제공항T1",
+          "customsLocation": {
+            "title": "세관 위치",
+            "location": "3층 E, J카운터 부근"
+          },
+          "refundCenterLocation": {
+            "title": "창구 위치",
+            "location": "3층 28번 게이트 부근"
+          },
+          "hours": {
+            "title": "운영 시간",
+            "staffed": "유인",
+            "staffedHours": "24시간",
+            "unstaffed": "무인",
+            "unstaffedHours": "24시간"
+          },
+          "availableCurrencies": {
+            "title": "지급 가능 통화",
+            "staffed": {
+              "title": "유인",
+              "currencies": "KRW, USD, CNY, JPY"
+            },
+            "unstaffed": {
+              "title": "무인",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "약도 보기"
+        },
+        "incheonAirportT2": {
+          "title": "인천국제공항T2",
+          "customsLocation": {
+            "title": "세관 위치",
+            "location": "3층 F, G 카운터 부근"
+          },
+          "refundCenterLocation": {
+            "title": "창구 위치",
+            "location": "3층 225번, 249번, 274번 게이트 부근"
+          },
+          "hours": {
+            "title": "운영 시간",
+            "staffed": "유인",
+            "staffedHours": "24시간",
+            "unstaffed": "무인",
+            "unstaffedHours": "24시간"
+          },
+          "availableCurrencies": {
+            "title": "지급 가능 통화",
+            "staffed": {
+              "title": "유인",
+              "currencies": "KRW, USD, CNY, JPY"
+            },
+            "unstaffed": {
+              "title": "무인",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "약도 보기"
+        },
+        "gimpoAirport": {
+          "title": "김포국제공항",
+          "customsLocation": {
+            "title": "세관 위치",
+            "location": "2층 1번 게이트 부근"
+          },
+          "refundCenterLocation": {
+            "title": "창구 위치",
+            "location": "3층 36번 게이트 부근"
+          },
+          "hours": {
+            "title": "운영 시간",
+            "staffed": "유인",
+            "staffedHours": "06:30 ~ 20:00",
+            "unstaffed": "무인",
+            "unstaffedHours": "24시간"
+          },
+          "availableCurrencies": {
+            "title": "지급 가능 통화",
+            "staffed": {
+              "title": "유인",
+              "currencies": "KRW, USD, JPY, Alipay"
+            },
+            "unstaffed": {
+              "title": "무인",
+              "currencies": "KRW, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "약도 보기"
+        },
+        "gimhaeAirport": {
+          "title": "김해국제공항",
+          "customsLocation": {
+            "title": "세관 위치",
+            "location": "2층 B24 체크인 카운터 부근"
+          },
+          "refundCenterLocation": {
+            "title": "창구 위치",
+            "location": "2층 4번 게이트 부근"
+          },
+          "hours": {
+            "title": "운영 시간",
+            "staffed": "유인",
+            "staffedHours": "06:30 ~ 21:00"
+          },
+          "availableCurrencies": {
+            "title": "지급 가능 통화",
+            "staffed": {
+              "title": "유인",
+              "currencies": "KRW, USD, JPY, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "약도 보기"
+        },
+        "jejuAirport": {
+          "title": "제주국제공항",
+          "customsLocation": {
+            "title": "세관 위치",
+            "location": "3층 5번 게이트 부근"
+          },
+          "refundCenterLocation": {
+            "title": "창구 위치",
+            "location": "3층 16번 게이트 부근"
+          },
+          "hours": {
+            "title": "운영 시간",
+            "staffed": "유인",
+            "staffedHours": "06:00 ~ 22:00"
+          },
+          "availableCurrencies": {
+            "title": "지급 가능 통화",
+            "staffed": {
+              "title": "유인",
+              "currencies": "KRW, USD, CNY, Alipay, WeChat Pay"
+            }
+          },
+          "directions": "약도 보기"
+        }
+      },
+      "notice": {
+        "title": "유의사항",
+        "description01": "상기 외 다른 출국항은 환급창구 대신 메일박스를 운영하고 있습니다. 환급 신청을 원하는 경우 메일박스를 이용해주시기 바랍니다.",
+        "description02": "메일박스 운영 공항 : 인천국제공항 T1/T2, 김포국제공항, 김해국제공항, 제주국제공항, 대구국제공항, 청주국제공항, 무안국제공항, 양양국제공항",
+        "description03": "메일박스 운영 항만 : 인천항 제2여객터미널, 부산항, 평택항, 군산항, 속초항"
+      }
+    }
+  },
+  "refundInquiryAndApplication": {
+    "title": "환급 조회 및 신청",
+    "searchRefundSlip": {
+      "title": "환급전표 조회",
+      "requiredFields": "필수 입력 항목",
+      "serialNo": {
+        "label": "발행번호 (Serial No.)",
+        "placeholder": "Serial No. 입력"
+      },
+      "paymentTotal": {
+        "label": "총액 (Payment Total)",
+        "placeholder": "숫자만 입력"
+      },
+      "searchButton": "조회",
+      "searchResultsTitle": "환급전표 조회 내역",
+      "refundStatusGuide": {
+        "title": "환급 상태 안내",
+        "noSlip": {
+          "status": "전표없음",
+          "description": "일치하는 전표가 없습니다."
+        },
+        "awaitingCustomsRelease": {
+          "status": "미반출",
+          "description": "아직 큐브리펀드로 전표가 도착하지 않았습니다. 고객님의 세관 반출 신고여부를 확인 중입니다."
+        },
+        "refundAvailable": {
+          "status": "환급가능",
+          "description": "세관반출신고 또는 출국 확인이 완료 되었습니다. 환급을 진행해주세요."
+        },
+        "refundInProgress": {
+          "status": "환급중",
+          "description": "환급 신청이 완료되었습니다. 출국항에 따라 최대 2개월이 소요될 수 있습니다."
+        },
+        "inCityRefundInProgress": {
+          "status": "도심 환급중",
+          "description": "환급신청이 완료되었습니다. 반출 후 환급이 진행됩니다."
+        },
+        "refundComplete": {
+          "status": "환급완료",
+          "description": "환급이 완료되었습니다."
+        },
+        "refundImpossible": {
+          "status": "환급불가",
+          "description": "카드로 환급 시 국내발급카드, 아멕스카드, 체크카드는 환급 불가합니다. Alipay 환급 시, 이메일주소로는 환급불가합니다."
+        }
+      },
+      "statusLabels": {
+        "awaitingCustomsRelease": "미반출",
+        "refundComplete": "환급완료",
+        "refundAvailable": "환급가능",
+        "refundImpossible": "환급불가"
+      },
+      "slipDetails": {
+        "serialNo": "발행번호",
+        "purchaseDate": "구매일자",
+        "refundAmount": "환급 금액",
+        "totalPurchaseAmount": "총 구매 금액"
+      },
+      "noSlipFound": "존재하지 않는 전표번호. 전표번호를 확인해 주세요.",
+      "notice": {
+        "title": "유의사항",
+        "item1": "세관으로부터 반출 확인이 완료된 건에 한해서만 환급 신청이 가능합니다.",
+        "item2": "구매일로부터 3개월 초과된 건은 환급 신청이 불가능합니다.",
+        "item3": "구매영수증의 CubeRefund 로고가 있는지 꼭 확인하세요.",
+        "item4": "환율에 따라 실제 환급액과 다소 차이가 발생할 수 있습니다.",
+        "item5": "환급 신청이 가능한 환급전표를 선택 후, 환급신청 버튼을 눌러 주세요.",
+        "item6": "자세한 사항은 하단의 '환급 문의'를 이용해 주세요.(cube@cuberefund.com / +82-2-6925-2033)"
+      },
+      "requestRefundButton": "환급신청",
+      "questionsAboutRefund": "환급에 대해 궁금한 사항이 있으신가요?",
+      "faq": {
+        "title": "자주 묻는 질문",
+        "link": "바로가기"
+      },
+      "refundInquiry": {
+        "title": "환급 문의",
+        "link": "바로가기"
+      }
+    },
+    "acknowledgmentOfPolicy": {
+      "title": "신청 동의",
+      "consentToUniqueIdCollection": {
+        "title": "고유 식별 정보 수집·이용 동의 (필수)",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청 처리",
+        "itemsCollected": "수집하는 개인정보 항목 : <span class=\"text-emphasis\">여권번호</span>",
+        "retentionPeriod": "개인정보의 보유·이용기간 : <span class=\"text-emphasis\">5년</span>",
+        "rightToRefuse": "귀하는 위와 같이 고유식별정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "위 고유 식별 정보의 수집 이용에 동의합니다."
+      },
+      "consentToPersonalInfoCollection": {
+        "title": "개인정보 수집 이용 동의 (필수)",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청 처리",
+        "itemsCollected": "수집하는 개인정보 항목 : 연락처, 이메일, 여권성명, 국적, 생년월일, 신용카드번호",
+        "retentionPeriod": "개인정보의 보유·이용기간 : <span class=\"text-emphasis\">5년</span>",
+        "rightToRefuse": "귀하는 위와 같이 개인정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "위 개인정보 수집 이용안내에 동의합니다."
+      },
+      "consentToThirdPartyUniqueIdSharing": {
+        "title": "고유식별정보 제3자 제공 동의 (필수)",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행 및 환급정보 제공",
+        "recipients": "개인정보 제공받는 자 : 국세청, 관세청, 문화체육부, 보건복지부",
+        "itemsShared": "제공하는 개인정보 항목 : 여권번호",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "위의 고유식별정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "위 고유식별정보 제3자 제공에 동의합니다."
+      },
+      "consentToThirdPartyPersonalDataSharing1": {
+        "title": "개인정보 제3자 제공 동의 (필수)",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행 및 환급정보 제공",
+        "recipients": "개인정보 제공받는 자 : 국세청, 관세청",
+        "itemsShared": "제공하는 개인정보 항목 : 여권정보(성명, 국적)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "위의 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "위 개인정보 제3자 제공 동의(필수) 이용에 동의합니다."
+      },
+      "consentToThirdPartyPersonalDataSharing2": {
+        "title": "개인정보 제3자 제공 동의 (필수)",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 절차 진행",
+        "recipients": "개인정보 제공받는 자 : 문화체육부, 보건복지부",
+        "itemsShared": "제공하는 개인정보 항목 : 여권번호(성명, 국적, 생년월일)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "개인정보 수집에 동의하지 않을 수 있습니다. 단, 동의하지 않을 경우 가맹점 가입 신청 및 문의하기 접수가 되지 않습니다",
+        "agreement": "위 개인정보 제3자 제공 동의 이용에 동의합니다."
+      },
+      "consentToThirdPartyPersonalDataSharing3": {
+        "title": "개인정보 제3자 제공 동의 (필수)",
+        "purpose": "개인정보의 제공 목적 : 환급 절차 진행",
+        "recipients": "개인정보 제공받는 자 : 롯데카드, VISA, Master, JCB, UnionPay, 글로벌텍스프리",
+        "itemsShared": "제공하는 개인정보 항목 : 카드정보(카드번호, 이름)",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 관련 법령 및 규약 등에 근거한 기간까지",
+        "rightToRefuse": "위의 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 환급 절차 진행에 제한을 받을 수 있습니다.",
+        "agreement": "위 개인정보 제3자 제공 동의 이용에 동의합니다."
+      },
+      "consentToPersonalInfoCollectionOptional": {
+        "title": "개인정보 수집 이용 동의(선택)",
+        "purpose": "개인정보의 수집 이용 목적 : 환급 신청",
+        "itemsCollected": "수집하는 개인정보 항목 : 성별",
+        "retentionPeriod": "개인정보의 보유·이용기간 : 5년",
+        "rightToRefuse": "귀하는 위와 같이 개인정보를 수집·이용하는데 동의를 거부할 권리가 있습니다. 그러나, 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.",
+        "agreement": "위 개인정보 수집 이용안내에 동의합니다.",
+        "disagreement": "위 개인정보 수집 이용안내에 동의하지 않습니다."
+      },
+      "agreeAll": "전체 동의",
+      "backButton": "이전",
+      "nextButton": "다음"
+    },
+    "refundApplicationAndPaymentMethodRegistration": {
+      "title": "환급 신청 및 환급 수단 등록",
+      "requestedRefundsTitle": "환급전표 신청 내역",
+      "totalEstimatedRefund": "총 환급 예상액(KRW)",
+      "passportDetails": {
+        "title": "여권 정보 작성",
+        "requiredFields": "필수 입력 항목",
+        "nameInPassport": {
+          "label": "여권성명(영문)",
+          "placeholder": "여권성명(영문)"
+        },
+        "passportNumber": "여권번호",
+        "nationality": {
+          "label": "국적",
+          "placeholder": "국적 선택"
+        },
+        "gender": "성별",
+        "dateOfBirth": "생년월일"
+      },
+      "contactInformation": {
+        "title": "연락처 정보 작성",
+        "requiredFields": "필수 입력 항목",
+        "phone": "연락처",
+        "email": "이메일"
+      },
+      "refundMethod": {
+        "title": "환급 수단",
+        "requiredFields": "필수 입력 항목",
+        "meansOfRefund": "결제 수단",
+        "creditCard": "신용카드",
+        "alipay": "Alipay",
+        "wechatPay": "WeChat Pay",
+        "cardNumber": {
+          "label": "카드번호",
+          "placeholder": "-제외하고 숫자만 입력"
+        }
+      },
+      "notice": {
+        "title": "유의사항",
+        "item1": "환율에 따라 실제 환급액과 다소 차이가 발생할 수 있습니다.",
+        "item2": "환급 신청이 완료된 건에 대해서는 수정이 불가능하므로, 입력하신 정보를 다시 한번 확인해 주세요."
+      },
+      "backButton": "이전",
+      "submitButton": "신청"
+    },
+    "refundApplicationResult": {
+      "title": "환급 신청 결과",
+      "requestedRefundsTitle": "환급전표 신청 내역",
+      "notice": {
+        "title": "유의사항",
+        "item1": "진행 상태의 자세한 사항은 큐브리펀드 고객센터로 문의 바랍니다.",
+        "item2": "cube@cuberefund.com / 02-6925-2033"
+      },
+      "confirmButton": "확인"
+    },
+    "won": "원"
+  },
+  "fairTrade": {
+    "title": "컴플라이언스",
+    "imageAlt": "컴플라이언스 이미지",
+    "description1": "모든 경영 활동에 있어 '윤리'를 최우선 가치로 삼고, 투명하고 적법하게 모든 업무를 수행해 나가고 있습니다.",
+    "description2": "또한 모든 임직원들이 공감하고 실천할 수 있는 규정을 마련하여 올바른 행동과 가치 판단의 기준으로 삼고 있습니다.",
+    "goToLink": "바로가기",
+    "lotteCompliance": {
+      "title": "롯데그룹",
+      "subtitle": "컴플라이언스"
+    },
+    "lotteGroup": {
+      "title": "롯데그룹",
+      "subtitle": "신문고"
+    },
+    "lotteInnovate": {
+      "title": "롯데이노베이트",
+      "subtitle": "신문고"
+    }
+  },
+  "ethicsGuide": {
+    "pageTitle": "신문고",
+    "tabs": {
+      "guide": "이용안내",
+      "report": "제보하기",
+      "result": "처리결과 확인"
+    },
+    "reportTabs": {
+      "anonymous": "익명 제보",
+      "identified": "실명 제보"
+    }
+  },
+  "ethicsNewspaper": {
+    "title": "신문고란?",
+    "description": "큐브리펀드에서 경험하신 '직무 관련 권한 남용 등을 통한 자기 또는 제3자 이익 도모 행위, 내부회계관리규정 위반 행위, 성희롱 행위, 부패 행위, 직장 내 괴롭힘 행위, 기타 사회적 책임에 반하는 사항'에 대한 제보를 받는 열린 공간입니다.",
+    "notice": "의견이나 신고사항이 있으시다면 언제든지 신문고를 이용하십시오.",
+    "reportTarget": {
+      "title": "제보 대상",
+      "corruption": {
+        "title": "부정/비리",
+        "description": "직원의 비리, 부당행위, 금품 및 향응 접대 수수 등 사회적 통념상 용인될 수 없는 행위"
+      },
+      "humanRights": {
+        "title": "인권/환경",
+        "description": "직장 내 성희롱 및 직원상호간의 품위 손상 행위"
+      },
+      "ethicsViolation": {
+        "title": "법규 윤리 위반",
+        "description": "큐브리펀드와 거래상 비윤리 행위로 제반의 불이익을 당한 사항"
+      },
+      "complaints": {
+        "title": "불만사항",
+        "description": "비효율 요소 및 윤리경영 활동을 위한 제도 개선 사항"
+      },
+      "accountingFraud": {
+        "title": "회계부정",
+        "description": "임직원의 내부회계관련 비리 및 부정 행위"
+      },
+      "codeViolation": {
+        "title": "윤리행동강령 위배",
+        "description": "큐브리펀드 윤리행동강령에 위반 되는 행위"
+      }
+    },
+    "process": {
+      "title": "처리 절차",
+      "steps": {
+        "reception": {
+          "title": "제보 접수",
+          "description": "제보자가 신문고 제보하기를 통해 등록한 사항은 담당부서에 접수 됩니다"
+        },
+        "verification": {
+          "title": "내용 확인",
+          "description": "제보하신 내용은 제보자 신분보호 원칙하에 관련 부서 확인 등 사전 절차를 거치게 됩니다."
+        },
+        "investigation": {
+          "title": "조사 개시",
+          "description": "조사인원, 기간 등 조사계획이 확정된 후 순차적으로 진행되며, 조사 대상 및 범위에 따라 조사 기간이 달라질 수 있습니다."
+        },
+        "completion": {
+          "title": "조사 완료",
+          "description": "객관적인 근거 확보 및 조사를 통해 제보 내용의 사실 여부가 확인 되면 제보 조사가 완료됩니다."
+        },
+        "conclusion": {
+          "title": "종결",
+          "description": "조사 완료 후 회사 내부 규정에 따라 징계가 확정 된 경우 종결처리하게 됩니다."
+        },
+        "result": {
+          "title": "처리결과 확인",
+          "description": "회사의 정당한 권리와 이익을 침해하는 경우를 제외하고 신문고 처리결과를 확인 할 수 있습니다."
+        }
+      }
+    },
+    "protection": {
+      "title": "제보자 보호",
+      "description": "제보자에 대해서는 본인의 동의 없이 그 신분을 노출하거나 이를 암시하는 어떠한 정보도 공개하지 않으며, 불이익을 당하지 않도록 하겠습니다.",
+      "target": {
+        "title": "보호 대상",
+        "items": {
+          "security": "접수된 내용은 철저한 보안유지를 통해 비공개로 조사되며, 제보자 및 관련 이해관계자들에 대한 제보 정보도 철저히 보호하겠습니다. 단, 타인에 대한 근거없는 비방이나 음해를 목적으로 한 이용은 삼가바랍니다.",
+          "identity": "제보자 신분",
+          "evidence": "제보자가 제시한 증거 또는 제보 관련 수집 정보",
+          "implication": "협의 대상자를 암시할 수 있는 사항",
+          "followUp": "제보 이후 결과 사후조치 등",
+          "relatedParties": "조사 협조자 등 관련 이해관계자들에 대한 정보"
+        }
+      },
+      "policy": {
+        "title": "보호 정책",
+        "items": {
+          "investigation": "제보 내용이 구체적이고 사실근거가 명확한 경우 조사를 실시합니다.",
+          "confidentiality": "제보자 및 제보 내용은 대외비로 엄격히 처리되며, 제보 시스템은 안전한 보안 체계로 보호되고 있습니다. 또한 제보 처리는 제보 내용에 대한 엄격한 비밀준수를 서약한 제한된 인원에 의해 수행되고 있습니다.",
+          "noDisadvantage": "제보자에 대한 불이익 처분 또는 처벌이 발생하지 않도록 하겠습니다.",
+          "reasonableHandling": "본인이 관련된 부정/비리를 제보할 경우에는 충분한 정상참작을 통하여 합리적으로 처리될 것입니다."
+        }
+      }
+    }
+  },
+  "anonymousReport": {
+    "required": "필수 입력 항목",
+    "guide": {
+      "title": "제보하기 안내",
+      "security": "당사 제보시스템은 안전한 보안체계로 보호되고 있으며, 제보자가 익명으로 제보 시 제보자의 신분 확인이 불가합니다.",
+      "content": "내용이 구체적이지 않고 사실 근거가 명확하지 않는 경우, 조사가 불가능할 수 있습니다.",
+      "response": "실명 제보 시 답변 내용은 이메일로 발송되며, 처리결과 확인 화면에서 아이디와 비밀번호를 통해 답변 확인이 가능합니다."
+    },
+    "target": {
+      "title": "제보 대상",
+      "company": "회사",
+      "companyPlaceholder": "회사명을 선택해 주세요",
+      "department": "부서",
+      "departmentPlaceholder": "부서를 입력해주세요",
+      "name": "성명",
+      "namePlaceholder": "제보대상 이름을 입력해주세요"
+    },
+    "content": {
+      "title": "제보 내용",
+      "titleLabel": "제목",
+      "titlePlaceholder": "제목을 입력해주세요",
+      "contentLabel": "내용",
+      "contentPlaceholder": "내용을 입력하세요",
+      "fileUpload": "파일첨부"
+    },
+    "verification": {
+      "title": "제보 확인용 정보",
+      "id": "아이디",
+      "idPlaceholder": "6자 이상으로 입력해주세요",
+      "checkId": "중복 확인",
+      "password": "비밀번호",
+      "passwordPlaceholder": "8~20자의 영문, 숫자, 특수문자로 입력해주세요"
+    },
+    "captcha": {
+      "title": "보안 문자 입력",
+      "label": "보안문자",
+      "placeholder": "보안문자를 입력하세요",
+      "refresh": "새로고침"
+    },
+    "dialog": {
+      "confirm": {
+        "title": "등록",
+        "description": "등록하시겠습니까?",
+        "confirm": "등록"
+      },
+      "completed": {
+        "title": "등록완료",
+        "description": "등록이 완료되었습니다."
+      },
+      "fail": {
+        "title": "등록 실패",
+        "description": "등록을 실패하였습니다. 관리자에게 문의해주세요.",
+        "confirm": "등록 실패"
+      },
+      "cancel": {
+        "description": "취소하시겠습니까?",
+        "confirm": "확인"
+      }
+    },
+    "cancel": "취소",
+    "submit": "등록",
+    "idCheckErrorMessage": "사용중인 아이디입니다.",
+    "idAvailableMessage": "사용가능한 아이디입니다."
+  },
+  "identifiedReport": {
+    "guide": {
+      "title": "제보하기 안내",
+      "info1": "당사 제보시스템은 안전한 보안체계로 보호되고 있으며, 제보자가 익명으로 제보 시 제보자의 신분 확인이 불가합니다.",
+      "info2": "내용이 구체적이지 않고 사실 근거가 명확하지 않는 경우, 조사가 불가능할 수 있습니다.",
+      "info3": "실명 제보 시 답변 내용은 이메일로 발송되며, 처리결과 확인 화면에서 아이디와 비밀번호를 통해 답변 확인이 가능합니다."
+    },
+    "reporterInfo": {
+      "title": "제보자 정보",
+      "required": "필수 입력 항목",
+      "company": "회사",
+      "companyPlaceholder": "회사명을 선택해 주세요",
+      "department": "부서",
+      "departmentPlaceholder": "부서를 입력해주세요",
+      "name": "성명",
+      "namePlaceholder": "성명을 입력해주세요",
+      "phone": "전화번호",
+      "phonePlaceholder": "-제외하고 숫자만 입력",
+      "email": "이메일",
+      "emailLocalPlaceholder": "메일주소",
+      "emailDomain": "도메인",
+      "emailDomainPlaceholder": "도메인"
+    },
+    "targetInfo": {
+      "title": "제보 대상",
+      "company": "회사",
+      "department": "부서",
+      "name": "성명",
+      "namePlaceholder": "제보대상 이름을 입력해주세요"
+    },
+    "reportContent": {
+      "title": "제보 내용",
+      "subject": "제목",
+      "subjectPlaceholder": "제목을 입력해주세요",
+      "content": "내용",
+      "contentPlaceholder": "내용을 입력하세요",
+      "fileAttachment": "파일첨부"
+    },
+    "verificationInfo": {
+      "title": "제보 확인용 정보",
+      "id": "아이디",
+      "idPlaceholder": "6자 이상으로 입력해주세요",
+      "duplicateCheck": "중복 확인",
+      "password": "비밀번호",
+      "passwordPlaceholder": "8~20자의 영문,숫자,특수 문자로 조합하여 입력해주세요"
+    },
+    "security": {
+      "title": "보안 문자 입력",
+      "captcha": "보안문자",
+      "captchaPlaceholder": "보안문자를 입력하세요",
+      "refresh": "새로고침",
+      "notice": "유의사항",
+      "noticeContent": "답변은 담당자 확인 후 입력하신 이메일로 답변 드립니다."
+    },
+    "captcha": {
+      "title": "보안 문자 입력",
+      "label": "보안문자",
+      "placeholder": "보안문자를 입력하세요",
+      "refresh": "새로고침"
+    },
+    "alerts": {
+      "register": {
+        "title": "등록",
+        "confirm": "등록하시겠습니까?",
+        "success": "등록이 완료되었습니다.",
+        "fail": "등록을 실패하였습니다. 관리자에게 문의해주세요."
+      },
+      "idCheck": {
+        "duplicate": "사용중인 아이디입니다.",
+        "available": "사용가능한 아이디입니다."
+      }
+    },
+    "cancel": "취소",
+    "submit": "등록",
+    "confirm": "확인",
+    "required": "필수 입력"
+  },
+  "resultConfirm": {
+    "title": "제보 처리 결과 확인",
+    "required": "필수 입력 항목",
+    "verification": {
+      "id": {
+        "label": "아이디",
+        "placeholder": "6자 이상으로 입력해주세요"
+      },
+      "password": {
+        "label": "비밀번호",
+        "placeholder": "8~20자의 영문,숫자,특수 문자로 조합하여 입력해주세요"
+      }
+    },
+    "buttons": {
+      "confirm": "확인"
+    },
+    "info": {
+      "enterCredentials": "제보 확인용 정보로 입력 했던 아이디, 비밀번호를 입력해 주세요.",
+      "credentialsUsage": "입력하신 아이디, 비밀번호는 제보 확인용으로 사용되며 별도의 찾기 기능을 제공하지 않습니다."
+    },
+    "result": {
+      "title": "처리 결과",
+      "status": "처리 상태",
+      "statusTypes": {
+        "received": {
+          "text": "접수완료",
+          "description": "제보 내용이 담당부서에 정상적으로 접수되었습니다."
+        },
+        "inProgress": {
+          "text": "처리중",
+          "description": "제보 내용 기준으로 조사 계획에 맞춰 내용 확인 및 조사 진행중입니다."
+        },
+        "completed": {
+          "text": "처리완료",
+          "description": "조사 완료 후 종결 처리되었습니다. 처리 내용을 확인 해주세요."
+        }
+      },
+      "content": {
+        "title": "내용",
+        "processDate": "처리일",
+        "additionalInquiry": "조치 결과에 대해 추가적으로 문의주실 내용이 있으신 경우, 재접수 부탁 드립니다."
+      }
+    },
+    "reporterInfo": {
+      "title": "제보자 정보",
+      "company": "회사",
+      "department": "부서",
+      "name": "성명",
+      "phone": "전화번호",
+      "email": "이메일"
+    },
+    "targetInfo": {
+      "title": "제보자 대상",
+      "company": "회사",
+      "department": "부서",
+      "name": "성명"
+    },
+    "reportContent": {
+      "title": "제보 내용",
+      "subject": "제목",
+      "content": "내용",
+      "attachments": "첨부파일"
+    },
+    "alerts": {
+      "noData": {
+        "title": "",
+        "description": "조회된 정보가 없습니다. 다시 확인해주세요.",
+        "confirm": "확인"
+      }
+    }
+  },
+  "locations": {
+    "title": "Why CubeRefund?",
+    "subtitle": "큐브리펀드의 차별화된 서비스를 소개합니다.",
+    "services": {
+      "service1": {
+        "title": "다양한 업종, 다양한 규모의 사후 면세사업장 서비스 제공 경험 및 노하우 보유",
+        "desc1": "국내 Tax Refund 가능한 물품 판매, 의료, 숙박업에 서비스 제공이 가능합니다.",
+        "desc2": "소규모 매장부터 백화점같은 대형 매장에 이르기까지 다양한 규모의 매장에 서비스 제공이 가능합니다."
+      },
+      "service2": {
+        "title": "전문 영업사원에 의한 면세사업장 오픈 지원",
+        "desc1": "필요 시 면세판매장 지정 신청 절차를 지원해 드립니다.",
+        "desc2": "매장에서 환급에 필요한 장비를 무상으로 제공 및 설치해 드립니다. (전용단말기, 전용프로그램, 여권리더기 등)"
+      },
+      "service3": {
+        "title": "전문가에 의한 안정적인 운영 지원",
+        "desc1": "매장별 담당자가 전국의 환급장비에 대해 무상으로 관리해 드립니다. (유지보수, 소모품 지원 등)",
+        "desc2": "매장에서 발생하는 환급 관련 문의에 대해 전문 상담사가 응대해 드립니다.",
+        "desc3": "분기별 거래내역 자료를 제공하여 편리한 부가세 신고를 도와드립니다."
+      },
+      "service4": {
+        "title": "외국인 관광객 판매 리포트 제공",
+        "desc": "외국인 판매현황 및 관광객 입국동향 데이터를 제공하여 수요예측과 판촉활동에 도움을 드립니다."
+      },
+      "service5": {
+        "title": "외국인 유치 마케팅 지원",
+        "desc": "큐브리펀드가 보유한 다양한 마케팅 채널을 통해 홍보 및 프로모션 지원이 가능합니다."
+      },
+      "service6": {
+        "title": "안정적인 IT시스템 운영",
+        "desc": "전문 데이터센터를 통하여, 최상위 등급의 보안성을 확보하고 단절없는 안정적인 시스템을 제공합니다."
+      }
+    },
+    "inquiry": "가입 문의"
+  },
+  "franchise": {
+    "process": {
+      "title": "가맹 절차 안내",
+      "tabs": {
+        "goods": "물품",
+        "medical": "의료",
+        "accommodation": "숙박"
+      },
+      "steps": {
+        "step1": {
+          "title": "큐브리펀드 가맹점 계약",
+          "description": "큐브리펀드 대표전화(02-6935-2033)로 가맹 신청",
+          "inquiryLink": "가입 문의 바로가기"
+        },
+        "step2": {
+          "goods": {
+            "title": "면세판매장 지정 신청",
+            "description": "사업장 소재 관할 세무서에 [외국인 관광객 면세판매장 지정] 신청",
+            "subDescription": "희망 시 큐브리펀드 신청대행 가능",
+            "link": "외국인 관광객 면세판매장 지정 신청 바로가기",
+            "link2": "지정 신청 바로가기"
+          },
+          "medical": {
+            "title": "외국인 환자 유치기관 등록",
+            "description": "보건산업진흥원에 [외국인 환자 유치기관 등록] 신청",
+            "link": "보건산업진흥원 바로가기",
+            "link2": "바로가기"
+          },
+          "accommodation": {
+            "title": "특례적용관광숙박시설 지정 신청",
+            "description": "한국호텔업협회 또는 한국휴양콘도미니엄 경영협회에 신청",
+            "links": {
+              "hotel": "한국 호텔업 협회 바로가기",
+              "hotel2": "바로가기",
+              "condo": "한국휴양콘도미니엄 경영협회 바로가기",
+              "condo2": "경영협회 바로가기"
+            }
+          }
+        },
+        "step3": {
+          "title": "환급 서비스 개시",
+          "description": "환급 장비 설치 및 교육",
+          "subDescription": "단말기 및 필요물품 무료제공"
+        }
+      },
+      "inquiryButton": "가입 문의"
+    }
+  },
+  "privacyPolicy": {
+    "pageTitle": "개인정보처리방침",
+    "selectOptions": {
+      "option1_2025_06_02": "2025.06.02 개인정보처리방침"
+    },
+    "intro": {
+      "paragraph1": "(주)큐브리펀드(이하 \"회사\")는 이용자들의 개인정보보호를 중요시하며, 이용자가 회사의 서비스를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. 회사는 “정보통신망 이용촉진 및 정보보호에 등에 관한 법률” 및 \"개인정보보호법\"을 준수하고 있으며, 개인정보 처리방침을 마련하여 이용자 권익보호에 최선을 다하고 있습니다."
+    },
+    "mainPoints": {
+      "title": "주요 개인정보처리방침",
+      "item1": {
+        "alt": "일반 개인정보 수집 아이콘",
+        "title": "일반 개인정보 수집",
+        "description": "성명(영문), 이메일, 전화번호 등"
+      },
+      "item2": {
+        "alt": "개인정보 처리 목적 아이콘",
+        "title": "개인정보 처리 목적",
+        "description": "일반문의, 환급 처리, 신문고 등"
+      },
+      "item3": {
+        "alt": "보유 기간 아이콘",
+        "title": "보유 기간",
+        "description": "서비스 이용 계약 해지 시 까지 단, 전자상거래에서의 계약ㆍ청약철회, 대금결제, 재화 등 공급기록 : 5년"
+      },
+      "item4": {
+        "alt": "파기절차 아이콘",
+        "title": "파기절차",
+        "description": "수집 동의에 따른 보유 기간 이후 즉시 파기"
+      },
+      "item5": {
+        "alt": "안전성 확보조치 아이콘",
+        "title": "안전성 확보조치",
+        "description": "개인정보 취급 직원 교육, 보안프로그램 설치 등"
+      },
+      "item6": {
+        "alt": "고충사항 처리부서 아이콘",
+        "title": "고충사항 처리부서",
+        "description": "부설연구소 privacy@cuberefund.com"
+      },
+      "itemNote": "※ 세부 항목은 개인정보처리방침 본문 확인"
+    },
+    "contentsOverview": {
+      "title": "큐브리펀드 홈페이지 인터넷 서비스의 개인정보 처리방침은 다음과 같은 내용을 담고 있습니다.",
+      "item1": "1. 개인정보 수집 및 이용목적",
+      "item2": "2. 개인정보의 수집 항목 및 수집 방법",
+      "item3": "3. 개인정보 처리 및 보유 기간",
+      "item4": "4. 개인정보 제공에 관한 사항",
+      "item5": "5. 정보주체, 법정대리인의 권리·의무 및 행사방법",
+      "item6": "6. 개인정보 파기절차 및 파기방법",
+      "item7": "7. 개인정보 안전성 확보 조치",
+      "item8": "8. 서비스의 개인정보 관리 책임자 및 담당자의 소속/성명 및 연락처",
+      "item9": "9. 고지의 의무"
+    },
+    "section1": {
+      "title": "1. 개인정보 수집 및 이용목적",
+      "paragraph1": "회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.",
+      "subPointA": "가. 환급전표 발행 등 내국세 환급 서비스 제공",
+      "subPointB": "나. 가맹점 가입, 서비스 제공 및 유지 관리"
+    },
+    "section2": {
+      "title": "2. 개인정보의 수집 항목 및 수집 방법",
+      "paragraph1": "회사는 개인정보 보호법에 따라 서비스 제공을 위해 필요한 최소한의 범위에서 개인정보를 수집이용합니다.",
+      "subSection2_1": {
+        "title": "2-1. 정보주체의 동의를 받지 않고 처리하는 개인정보 항목",
+        "paragraph1": "- 회사는 개인정보보호법 제15조 제1항 제4호 (계약 체결 이행)에 근거하여 다음의 개인정보 항목을 정보주체의 동의 없이 처리하고 있습니다."
+      },
+      "subSection2_2": {
+        "title": "2-2. 정보주체의 동의를 받아 처리하는 개인정보 항목",
+        "paragraph1": "- 회사는 아래 개인정보 보호법에 근거하여 아래 개인정보를 수집하고 있습니다."
+      },
+      "subSection2_3": {
+        "title": "2-3. 개인정보 수집 방법",
+        "item1": "- 가맹점 가입 및 서비스 이용 과정에서 정보주체가 개인정보 처리에 대해 동의를 하고 직접 개인정보를 입력한 경우",
+        "item2": "- 고객센터를 통한 상담 과정에서 홈페이지, 전화 등을 통해 정보주체가 직접 개인정보를 제공한 경우",
+        "item3": "- 큐브리펀드와 계약한 제3자로 부터 개인정보를 제공받는 경우(단, 이러한 경우에는 「개인정보 보호법」에 따라 제3자가 정보주체에게 개인정보 제공 동의 등을 받은 후에 큐브리펀드에 제공합니다.)",
+        "item4": "- 서비스 이용 과정에서 IP 주소, 쿠키, 서비스 이용 기록, 기기정보, 거래내역이 자동 또는 수동으로 생성되어 수집되는 경우"
+      },
+      "subSection2_4": {
+        "title": "2-4. 서비스이용과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다.",
+        "item1": "- 서비스이용기록, 접속로그, 쿠키, 접속IP정보",
+        "subItemA": {
+          "title": "가. 수집방법",
+          "paragraph1": "- 회사는 다음과 같은 방법으로 개인정보를 수집합니다.",
+          "point1": "큐브리펀드 홈페이지, 큐브리펀드 환급시스템, 가맹점 관리시스템"
+        },
+        "subItemB": {
+          "title": "나. 개인정보 자동 수집 장치의 설치, 운영 및 그 거부에 관한 사항",
+          "paragraph1": "- 회사는 이용자에게 보다 개선된 서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용 합니다.",
+          "paragraph2": "- 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.",
+          "point1": "쿠키의 사용목적: 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위한 근거로 사용됩니다.",
+          "point2": "쿠키의 설치∙운영 및 거부: 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부할 수 있습니다."
+        }
+      }
+    },
+    "table1": {
+      "header1": "구분",
+      "header2": "수집 목적",
+      "header3": "수집 항목",
+      "header4": "보유 및 이용기간",
+      "row1": {
+        "col1": "가맹점 관리",
+        "col2": "가맹점 서비스 및 관리",
+        "col3": "이름, 연락처, 이메일, 계좌번호, 주소",
+        "col4": "계약 해지 시까지"
+      },
+      "row2": {
+        "col1": "가맹 문의",
+        "col2": "가맹점 가입 문의",
+        "col3": "이름, 연락처, 이메일",
+        "col4": "3년"
+      },
+      "row3": {
+        "col1": "일반 문의",
+        "col2": "일반 문의",
+        "col3": "이름, 연락처, 이메일",
+        "col4": "3년"
+      },
+      "row4": {
+        "col1": "신문고",
+        "col2": "신문고 접수 내역 처리",
+        "col3": "이름, 연락처, 이메일",
+        "col4": "3년"
+      }
+    },
+    "table2": {
+      "header1": "법적근거",
+      "header2": "구분",
+      "header3": "수집 목적",
+      "header4": "수집 항목",
+      "header5": "보유 및 이용기간",
+      "row1": {
+        "col1": "개인정보보호법 제24조 제1항 제1호 (고유식별정보)",
+        "col2": "내국세 환급",
+        "col3": "필수",
+        "col4": "환급 신청",
+        "col5": "여권번호",
+        "col6": "5년"
+      },
+      "row2": {
+        "col1": "개인정보보호법 제15조 제1항 제1호(동의)",
+        "col2": "필수",
+        "col3": "연락처, 이메일, 여권성명, 국적, 생년월일, 신용카드번호",
+        "col4": "5년"
+      },
+      "row3": {
+        "col1": "선택",
+        "col2": "성별"
+      }
+    },
+    "section3": {
+      "title": "3. 개인정보 처리 및 보유 기간",
+      "paragraph1": "회사는 정보주체로부터 개인정보 수집 시 동의 받은 개인정보 보유/이용기간 또는 법령에 따른 개인정보 보유/이용기간 내에서 개인정보를 처리/보유합니다.",
+      "subPointA": "가. 내국세 환급 : 서비스 이용계약 또는 가맹점 가입 해지시까지, 다만 채권ㆍ채무관계 잔존시에는 해당 채권ㆍ채무관계 정산시까지",
+      "subPointB": "나. 전자상거래에서의 계약ㆍ청약철회, 대금결제, 재화 등 공급기록 : 5년",
+      "subPointC": {
+        "title": "다. 쿠키 정보",
+        "item1": "- 보존 항목 : 컴퓨터통신, 인터넷 로그기록자료, 접속지 추적자료",
+        "item2": "- 보존 근거 : 「통신비밀보호법」 제 15조의2에 따른 통신사실확인자료 보관",
+        "item3": "- 보존 기간 : 3개월"
+      }
+    },
+    "section4": {
+      "title": "4. 개인정보 제3자 제공에 관한 사항",
+      "paragraph1": "회사는 이용자들의 개인정보를 \"1. 개인정보 수집 및 이용목적\"에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의 개인정보를 외부에 공개·제공하지 않습니다."
+    },
+    "table3": {
+      "header1": "제공받는 자",
+      "header2": "항목",
+      "header3": "제공받는 목적",
+      "header4": "보유 및 이용기간",
+      "row1": {
+        "col1": "국세청",
+        "col2": "여권정보(여권번호, 성명, 국적)",
+        "col3": "환급 정보 제공",
+        "col4": "5년"
+      },
+      "row2": {
+        "col1": "관세청",
+        "col2": "여권정보(여권번호, 성명, 국적)",
+        "col3": "환급 절차 제공",
+        "col4": "5년"
+      },
+      "row3": {
+        "col1": "문화체육부",
+        "col2": "여권정보(여권번호, 성명, 국적, 생년월일)",
+        "col3": "환급 절차 진행",
+        "col4": "5년"
+      },
+      "row4": {
+        "col1": "보건복지부",
+        "col2": "여권정보(여권번호, 성명, 국적, 생년월일)",
+        "col3": "환급 절차 진행",
+        "col4": "5년"
+      },
+      "row5": {
+        "col1": "롯데카드, VISA, Master, JCB, UnionPay, 글로벌텍스프리",
+        "col2": "카드정보(카드번호, 이름)",
+        "col3": "환급 절차 진행",
+        "col4": "관련 법령 및 규약 등에 근거한 기간까지"
+      }
+    },
+    "section5": {
+      "title": "5. 정보주체, 법정대리인의 권리·의무 및 행사방법",
+      "subPointA": {
+        "title": "가. 정보주체는 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.",
+        "item1": "개인정보 열람요구",
+        "item2": "오류 등이 있을 경우 정정 요구",
+        "item3": "삭제요구",
+        "item4": "처리정지 요구"
+      },
+      "subPointB": "나. 가항에 따른 권리 행사는 개인정보보호책임자 및 담당부서 또는 회사에 대해 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.",
+      "subPointC": "다. 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지 않습니다.",
+      "subPointD": "라. 가항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 처리 방법에 관한 고시 별지 제 11호 서식에 따른 위임장을 제출하셔야 합니다."
+    },
+    "section6": {
+      "title": "6. 개인정보 파기절차 및 파기방법",
+      "paragraph1": "회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.",
+      "subPointA": {
+        "title": "가. 파기절차",
+        "item1": "이용자가 입력한 정보는 수집 동의에 따른 보유 기간 이후 즉시 파기됩니다. 단, 타 법령에 따라 보관이 필요한 경우, 별도의 DB에 분리보관하여(종이의 경우 별도의 서류) 일정기간 저장하며, 다른 목적으로 이용되지 않습니다. ('3. 개인정보의 처리 및 보유기간' 참고)"
+      },
+      "subPointB": {
+        "title": "나. 파기방법",
+        "item1": "종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.",
+        "item2": "전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다."
+      }
+    },
+    "section7": {
+      "title": "7. 개인정보 안전성 확보 조치",
+      "paragraph1": "회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.",
+      "subPointA": {
+        "title": "가. 관리적 조치",
+        "item1": {
+          "title": "개인정보 취급 직원 교육",
+          "description": "개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화하고 담당자에 대한 수시 교육을 통하여 개인정보처리방침의 준수를 항상 강조하고 있습니다."
+        }
+      },
+      "subPointB": {
+        "title": "나. 기술적 조치",
+        "item1": "해킹 등에 대비 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신/점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다."
+      },
+      "subPointC": {
+        "title": "다. 물리적 조치",
+        "item1": "비 인가자 출입 통제 개인정보를 보관하고 있는 물리적 보관 장소를 별도로 두고 이에 대한 출입통제 절차를 수립, 운영하고 있습니다."
+      }
+    },
+    "section8": {
+      "title": "8. 서비스의 개인정보 보호책임자에 관한 사항",
+      "paragraph1": "회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호 책임자를 지정하고 있습니다.",
+      "officer": {
+        "title": "가. 개인정보 보호책임자",
+        "name": "이름: 염세윤",
+        "position": "소속/직책 : 부설연구소 소장",
+        "contact": "연락처 : gardenco@cuberefund.com, 02-6925-2033"
+      },
+      "manager": {
+        "title": "나. 개인정보 보호 담당자",
+        "name": "이름 : 박문성",
+        "position": "소속/직책 : 부설연구소 소장",
+        "contact": "연락처 : parkmunsung@cuberefund.com, 02-6925-2033"
+      },
+      "paragraph2": "이용자는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.",
+      "externalContact1": "개인정보침해신고센터 : privacy.kisa.or.kr(국번없이 118)",
+      "externalContact2": "대검찰청 사이버 수사과 : www.spo.go.kr (국번없이 1301)",
+      "externalContact3": "경찰청 사이버 안전국 : https://ecrm.police.go.kr/ (국번없이 182)"
+    },
+    "section9": {
+      "title": "9. 고지의 의무",
+      "paragraph1": "현 개인정보처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 '공지사항'을 통해 고지할 것입니다.",
+      "announcementDate": "공고일자 : 2025년 5월 26일",
+      "effectiveDate": "시행일자 : 2025년 5월 26일",
+      "version": "버전번호 : V1.0"
+    }
+  },
+  "validation": {
+    "required": "{{field}}을(를) 입력해 주세요.",
+    "selectRequired": "{{field}}을(를) 선택해 주세요.",
+    "minLength": "{{length}}자 이상 입력해 주세요.",
+    "maxLength": "{{length}}자 이내로 입력해 주세요.",
+    "invalidPhone": "전화번호 형식이 유효하지 않습니다.",
+    "invalidEmail": "올바른 이메일 형식을 입력해주세요.",
+    "reporterIdMinLength": "6자 이상 입력해 주세요.",
+    "reporterIdMaxLength": "20자 이내로 입력해 주세요.",
+    "idDuplicateCheck": "아이디 중복확인을 진행해주세요.",
+    "idAlreadyInUse": "이미 사용 중인 아이디입니다.",
+    "passwordFormat": "8~20자의 영문,숫자,특수문자로 조합하여 입력해 주세요.",
+    "contact": {
+      "contactType": {
+        "required": "문의 유형을 선택해 주세요."
+      },
+      "franchiseName": {
+        "required": "가맹점명을 입력해 주세요."
+      },
+      "name": {
+        "required": "성명을 입력해 주세요.",
+        "maxLength": "100자 이내로 입력해주세요"
+      },
+      "phoneNumber": {
+        "required": "전화번호를 입력해 주세요.",
+        "format": "전화번호 형식이 유효하지 않습니다."
+      },
+      "email": {
+        "localRequired": "이메일 사용자 이름을 입력해주세요.",
+        "domainRequired": "이메일 도메인을 입력해주세요.",
+        "maxLength": "20자 이내로 입력해주세요",
+        "format": "올바른 이메일 형식을 입력해주세요."
+      },
+      "title": {
+        "required": "제목을 입력해 주세요.",
+        "maxLength": "100자 이내로 입력해주세요"
+      },
+      "content": {
+        "required": "내용을 입력해 주세요.",
+        "maxLength": "1500자 이내로 입력해주세요"
+      },
+      "captcha": {
+        "required": "보안문자를 입력해 주세요."
+      }
+    }
+  },
+  "taxRefundAlert": {
+    "transRefNo": "환급전표를 입력해 주세요.",
+    "transRefNo12": "환급전표는 12자리여야 합니다.",
+    "totalAmount": "총액을 입력해 주세요.",
+    "totalAmount1500": "총액은 15,000원 이상이어야 합니다.",
+    "genderM": "남",
+    "genderF": "여",
+    "genderSelect": "성별 선택",
+    "year": "년도",
+    "month": "월",
+    "day": "일",
+    "alipay": "Alipay 바코드 번호 및 휴대폰 번호 입력",
+    "wechat": "WeChat Pay 아이디 입력",
+    "confirm": "확인",
+    "transNo": "전표일련번호",
+    "totalCont": "총 구매 금액",
+    "Date": "구매일자",
+    "resultMessages": {
+      "success": "환급 신청 완료",
+      "fail": "환급 불가",
+      "amount": "환급 금액",
+      "amountTotal": "총 환급 예상액",
+      "invalidCardCompany": "거래 불가 카드사입니다.",
+      "invalidSlipNumber": "존재하지 않는 전표 번호입니다. 전표를 확인해주세요.",
+      "passportMismatch": "반출시, 여권정보와 일치하지 않습니다.",
+      "canceledSlip": "취소된 전표입니다. 전표를 확인해주세요.",
+      "refundedSlip": "환급 완료된 전표입니다. 전표를 확인해주세요.",
+      "customsVerificationRequired": "세관의 반출 확인이 필요합니다. 전표를 확인해주세요.",
+      "contactAdmin": "관리자에게 문의하세요.",
+      "default": "알 수 없는 오류가 발생했습니다. 관리자에게 문의하세요.",
+      "nodata": "결과 정보 없음",
+      "termRefund1Agreement": "고유식별정보 동의는 필수입니다.",
+      "termRefund2Agreement": "개인정보수집이용안내 동의는 필수입니다.",
+      "termRefund3Agreement": "고유식별정보 제3자 동의는 필수입니다.",
+      "termRefund4Agreement": "개인정보 제3자 제공 동의는 필수입니다.",
+      "termRefund5Agreement": "개인정보 제3자 제공 동의는 필수입니다.",
+      "termRefund6Agreement": "개인정보 제3자 제공 동의는 필수입니다."
+    },
+    "validation": {
+      "passportNo": {
+        "required": "여권번호를 입력해 주세요.",
+        "minLength": "여권번호는 최소 5자 이상이어야 합니다.",
+        "maxLength": "여권번호는 최대 9자 이하여야 합니다.",
+        "format": "여권번호는 알파벳과 숫자만 포함해야 합니다."
+      },
+      "passportNameLast": {
+        "required": "Last Name을 입력해 주세요.",
+        "maxLength": "24자 이내로 입력해주세요",
+        "format": "Last Name은 영문만 입력 가능합니다."
+      },
+      "passportNameFirst": {
+        "required": "First Name을 입력해 주세요.",
+        "maxLength": "15자 이내로 입력해주세요",
+        "format": "First Name은 영문만 입력 가능합니다."
+      },
+      "nationality": {
+        "required": "국적을 입력해 주세요."
+      },
+      "gender": {
+        "required": "성별을 입력해 주세요."
+      },
+      "birthDate": {
+        "required": "생년월일을 입력해 주세요."
+      },
+      "phoneNumber": {
+        "required": "전화번호는 필수 값입니다.",
+        "maxLength": "20자 이내로 입력해주세요",
+        "format": "전화번호는 숫자만 입력 가능합니다."
+      },
+      "emailLocal": {
+        "required": "이메일 사용자 이름을 입력해주세요.",
+        "maxLength": "99자 이내로 입력해주세요"
+      },
+      "emailDomain": {
+        "required": "이메일 도메인을 입력해주세요.",
+        "maxLength": "100자 이내로 입력해주세요"
+      },
+      "email": {
+        "invalid": "올바른 이메일 형식을 입력해주세요."
+      },
+      "refundType": {
+        "required": "환급 수단을 선택해 주세요.",
+        "invalid": "유효한 환급 수단을 선택해 주세요."
+      },
+      "refundInfo": {
+        "required": "환급 정보를 입력해 주세요.",
+        "maxLength": "40자 이내로 입력해주세요",
+        "cardNumber": "카드번호는 16자리 숫자여야 하며, 국내 발급 카드는 사용할 수 없습니다.",
+        "alipay": "Alipay 번호는 11자리 이상이어야 합니다.",
+        "wechatPay": "WeChat Pay 번호는 5자리 이상이어야 합니다."
+      },
+      "tranRefNo": {
+        "required": "환급전표를 입력해 주세요.",
+        "maxLength": "100자 이내로 입력해주세요",
+        "length": "환급전표는 12자리여야 합니다.",
+        "duplicate": "이미 등록된 전표입니다."
+      },
+      "amount": {
+        "required": "총액을 입력해 주세요.",
+        "minimum": "총액은 15,000원 이상이어야 합니다."
+      }
+    }
+  }
+}

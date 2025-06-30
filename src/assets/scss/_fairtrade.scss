@@ -1,0 +1,122 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.fair-trade-wrap {
+
+	.hgroup-wrap p {
+		@include f(48, 700, 1.4);
+		@include mobile {
+			@include f(32, 700, 1.3);
+		}
+	}
+
+	section:nth-child(2) {
+		@include rem (margin-top, 104);
+		@include mobile {
+			@include rem (margin-top, 40);
+		}
+	}
+
+	.fair-trade-bx {
+		.fair-trade-img-bx {
+			@include rem (border-top-left-radius, 20);
+			@include rem (border-top-right-radius, 20);
+			@include rem (height, 480);
+			@include mobile {
+				@include rem (height, 140);
+			}
+			img {
+				@include rem (border-top-left-radius, 20);
+				@include rem (border-top-right-radius, 20);
+				@include rem (width, 100%);
+				@include rem (height, 100%);
+				object-fit: cover;
+				@include mobile {
+					@include rem (border-top-left-radius, 16);
+					@include rem (border-top-right-radius, 16);
+				}
+			}
+		}
+		.fair-trade-info-bx {
+			@include rem (padding, 20px 32px 24px);
+			@include rem (border-bottom-left-radius, 20);
+			@include rem (border-bottom-right-radius, 20);
+			background-color: $color-f8f9fa;
+			@include mobile {
+				@include rem (padding, 16px 20px 24px 20px);
+				@include rem (border-bottom-left-radius, 16);
+				@include rem (border-bottom-right-radius, 16);
+			}
+			p {
+				@include f(20, 400, 1.6);
+				@include mobile {
+					@include f(16, 400, 1.6);
+				}
+			}
+		}
+	}
+	.link-bx {
+		@include rem (margin-top, 80);
+		@include mobile {
+			@include rem (margin-top, 64);
+		}
+		.go-link-wrap {
+			@include rem (column-gap, 24);
+			margin: 0;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			width: 100%;
+			@include mobile {
+				grid-template-columns: repeat(1, 1fr);
+			}
+	
+			>a {
+				position: relative;
+				@include rem (border-radius, 16);
+				@include rem (padding, 32px 32px 152px 32px);
+				background: url("../images/contents/footer/fair_trade_img02.png") no-repeat center center / cover;
+				background-color: $color-f1f3f5;
+				@include mobile {
+					@include rem (padding, 0 20px 66px 20px);
+					background: url("../images/contents/footer/fair_trade_mo_img02.png") no-repeat center center / cover;
+					background-color: $color-f1f3f5;
+				}
+				&:hover {
+					background: url("../images/contents/footer/fair_trade_img02_hover.png") no-repeat center center / cover;
+					@include mobile {
+						background: url("../images/contents/footer/fair_trade_mo_img02.png") no-repeat center center / cover;
+					background-color: $color-f1f3f5;
+					}
+					.link-tit, .link-btn span {
+						color: $color-ffffff;
+						@include mobile {
+							color: $color-495057;
+						}
+					}
+					.link-btn {
+						background-color: $color-transparent !important;
+						.ico-top-right-arrow {
+							background: url("../images/icon/ico_top_right_arrow_white.png")no-repeat center center;
+							background-size: 20px 20px;
+							@include mobile {
+								background: url("../images/icon/ico_top_right_arrow.png")no-repeat center center;
+							background-size: 24px 24px;
+							}
+						}
+					}
+				}
+				.link-tit {
+					@include mobile {
+						@include rem (padding-top, 24);
+					}
+				}
+			}
+		}
+	}
+
+	@include mobile {
+		.fair-trade-bx .fair-trade-info-bx p {
+			color: $color-495057;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// 연혁 css 영역입니다.
+.history-wrap{
+  @include rem (padding, 40px 0 144px 0);
+  @include mobile {
+    @include rem (padding, 32px 0 80px 0);
+  }
+
+  .hgroup-wrap {
+    margin-bottom: 0;
+  }
+
+  section:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .tab-wrap.type02 .tab-head {
+    @include rem(margin-top, 16);
+    @include rem(margin-bottom, 80);
+    @include mobile {
+      @include rem(margin-top, 12);
+      @include rem(margin-bottom, 12);
+    }
+  }
+
+  @include mobile {
+    .f40-700-130 {
+      @include f(28, 700, 1.4);
+    }
+
+    .f32-700-140 {
+      @include f(24, 700, 1.6);
+    }
+  }
+
+  .history-content{
+    position: relative;
+    & + .history-content{
+      @include rem(margin-top, 104);
+      @include mobile{
+        @include rem(margin-top, 64);
+
+      }
+    }
+  }
+
+  .history-box {
+    position: relative;
+    .tit{
+      color: $color-212529;
+    }
+    dl {
+      dt + dd {
+        @include rem(padding-top, 24);
+        @include mobile {
+          @include rem(padding-top, 16);
+        }
+      }
+    }
+  }
+  
+  .title-wrap{
+    .tit{
+      color: $color-212529;
+    }
+  }
+  .cont-wrap{
+    display: flex;
+    @include rem(gap, 126);
+    @include rem(margin-top, 28);
+    justify-content: space-between;
+    flex-direction: unset;
+    @include mobile{
+      flex-direction: column;
+      @include rem(gap, 40 );
+    }
+  }
+  .img-cont{
+    @include rem(width, 486);
+    @include rem(border-radius,20 );
+    overflow: hidden;
+    > img{
+      width: 100%;
+    }
+    @include mobile{
+      width: 100%;
+      @include rem(border-radius, 16 );
+    }
+  }
+  .txt-cont{
+    flex: 1;
+    
+  }
+  .txt-wrap{
+    display: flex;
+    flex-direction: column;
+    @include rem(gap, 32);
+    @include rem(padding-top, 76);
+    @include mobile {
+      @include rem(padding-top, 0);
+    }
+  }
+  .year{
+    @include rem(margin-bottom, 16);
+    color:$color-259abd ;
+  }
+  .date-wrap{
+    display: flex;
+    flex-direction: column;
+    @include rem(gap, 16);
+    > li{
+      @include rem(padding, 24px 32px);
+      @include rem(border-radius, 16);
+      background-color: $color-f8f9fa;
+      .date{
+        @include f(24, 700, 1.6);
+        color: $color-495057;
+      }
+      .desc{
+        @include rem(margin-top, 8);
+        @include f(20, 400, 1.6);
+        color: $color-212529;
+      }
+      @include mobile{
+        @include rem(padding, 16px 24px);
+        .date{
+          @include f(20, 700, 1.4);
+        }
+        .desc{
+          @include rem(font-size, 16);
+          @include rem(margin-top, 4);
+        }
+      }
+    }
+  }
+}
+

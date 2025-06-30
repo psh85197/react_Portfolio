@@ -1,0 +1,93 @@
+@use '@/assets/scss/variables' as *;
+@use '@/assets/scss/mixins' as *;
+
+.tooltip {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .tooltip-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    .tooltip-icon {
+      @include rem (width, 24);
+      @include rem (height, 24);
+    }
+  }
+
+  .tooltip-wrap {
+    position: absolute;
+    z-index: 1000;
+  }
+}
+
+.refund-type {
+  @include rem (padding, 22px 32px);
+  @include rem (border-radius, 16);
+  position: relative;
+  background-color: $color-343a40;
+  top: 0;
+  left: 0;
+  @include mobile {
+    @include rem (padding, 14px 22px);
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 6.7%;
+    width: 12px;
+    height: 9px;
+    background: url("../images/icon/ico_tooltip_top_arrow.png") no-repeat center center;
+    background-size: 100% auto;
+    @include mobile {
+      @include rem (left, 161);
+    }
+  }
+
+  .tooltip-tit {
+    @include f(18, 700, 1.4);
+    color: $color-ffffff;
+  }
+
+  .tooltip-info {
+    @include rem (margin-top, 24);
+    
+    .tooltip-info-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      @include rem (column-gap, 10);
+      @include mobile {
+        flex-direction: column;
+        @include rem (row-gap, 8);
+      }
+      
+      & + .tooltip-info-item {
+        @include rem (margin-top, 20);
+      }
+      
+      .badge {
+        @include rem (padding, 5px 0);
+        @include rem (width, 82);
+        @include f(13, 700, 1.4);
+        text-align: center;
+        @include mobile {
+          @include rem (width, 76);
+        }
+      }
+    }
+    
+    .tooltip-info-item-txt {
+      @include f(16, 400, 1.6);
+      color: $color-ffffff;
+      @include mobile {
+        @include f(14, 400, 1.4);
+      }
+    }
+  }
+}
